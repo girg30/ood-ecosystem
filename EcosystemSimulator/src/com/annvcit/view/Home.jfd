@@ -1,0 +1,24 @@
+JFDML JFormDesigner: "5.2.1.0.138" Java: "1.7.0_51" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:113:p, par l {comp radioButton1:::p::p, comp radioButton2:::p::p}, space ::212:x}}"
+			"$verticalGroup": "par l {seq l {space :p:59:p, comp radioButton1:::p::p, space u:::p, comp radioButton2:::p::p, space ::156:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton1"
+				"text": "African"
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton2"
+				"text": "Finnish"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
