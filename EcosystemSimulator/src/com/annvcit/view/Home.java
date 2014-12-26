@@ -5,32 +5,93 @@
 package com.annvcit.view;
 
 import java.awt.*;
+import java.awt.event.*;
+
 import javax.swing.*;
-import javax.swing.GroupLayout;
-import javax.swing.LayoutStyle;
+
+import com.annvcit.controller.HomeEvent;
 
 /**
  * @author Chuc An Nguyen Van
  */
 public class Home extends JFrame {
+
+	
+	private static final long serialVersionUID = 1L;
+	private HomeEvent homeEvent;
 	public Home() {
 		initComponents();
+		// lập group cho radio button
+		ButtonGroup group = new ButtonGroup();
+		group.add(rbtnAfrican);
+		group.add(rbtnFinnish);
+		this.setTitle("Ecosystem Simulator");
+		
+		// add event cho jframe
+		homeEvent = new HomeEvent(this);
+	}
+
+	public static void main(String[] args) {
+		Home home = new Home();
+		home.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		home.setVisible(true);
+		
+	}
+	
+	private void rbtnAfricanActionPerformed(ActionEvent e) {
+		//System.out.println("rbtnAfrican is selected");
+		homeEvent.actionPerformed(e);
+	}
+
+	private void rbtnFinnishActionPerformed(ActionEvent e) {
+		//System.out.println("rbtnFinnish is selected");
+		homeEvent.actionPerformed(e);
+	}
+
+	
+	
+	public JRadioButton getRbtnAfrican() {
+		return rbtnAfrican;
+	}
+
+	public void setRbtnAfrican(JRadioButton rbtnAfrican) {
+		this.rbtnAfrican = rbtnAfrican;
+	}
+
+	public JRadioButton getRbtnFinnish() {
+		return rbtnFinnish;
+	}
+
+	public void setRbtnFinnish(JRadioButton rbtnFinnish) {
+		this.rbtnFinnish = rbtnFinnish;
 	}
 
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
 		// Generated using JFormDesigner Evaluation license - Chuc An Nguyen Van
-		radioButton1 = new JRadioButton();
-		radioButton2 = new JRadioButton();
+		rbtnAfrican = new JRadioButton();
+		rbtnFinnish = new JRadioButton();
 
 		//======== this ========
 		Container contentPane = getContentPane();
 
-		//---- radioButton1 ----
-		radioButton1.setText("African");
+		//---- rbtnAfrican ----
+		rbtnAfrican.setText("African");
+		rbtnAfrican.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				rbtnAfricanActionPerformed(e);
+			}
+		});
 
-		//---- radioButton2 ----
-		radioButton2.setText("Finnish");
+		//---- rbtnFinnish ----
+		rbtnFinnish.setText("Finnish");
+		rbtnFinnish.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				rbtnFinnishActionPerformed(e);
+			}
+		});
 
 		GroupLayout contentPaneLayout = new GroupLayout(contentPane);
 		contentPane.setLayout(contentPaneLayout);
@@ -39,17 +100,17 @@ public class Home extends JFrame {
 				.addGroup(contentPaneLayout.createSequentialGroup()
 					.addGap(113, 113, 113)
 					.addGroup(contentPaneLayout.createParallelGroup()
-						.addComponent(radioButton1)
-						.addComponent(radioButton2))
+						.addComponent(rbtnAfrican)
+						.addComponent(rbtnFinnish))
 					.addContainerGap(212, Short.MAX_VALUE))
 		);
 		contentPaneLayout.setVerticalGroup(
 			contentPaneLayout.createParallelGroup()
 				.addGroup(contentPaneLayout.createSequentialGroup()
 					.addGap(59, 59, 59)
-					.addComponent(radioButton1)
+					.addComponent(rbtnAfrican)
 					.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-					.addComponent(radioButton2)
+					.addComponent(rbtnFinnish)
 					.addContainerGap(156, Short.MAX_VALUE))
 		);
 		pack();
@@ -59,7 +120,7 @@ public class Home extends JFrame {
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
 	// Generated using JFormDesigner Evaluation license - Chuc An Nguyen Van
-	private JRadioButton radioButton1;
-	private JRadioButton radioButton2;
+	private JRadioButton rbtnAfrican;
+	private JRadioButton rbtnFinnish;
 	// JFormDesigner - End of variables declaration  //GEN-END:variables
 }
