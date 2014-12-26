@@ -4,7 +4,14 @@
     <eAnnotations xmi:id="_j16nkIyyEeSNrtY43VTm9A" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_j16nkYyyEeSNrtY43VTm9A" source="codegen">
         <details xmi:id="_j16nkoyyEeSNrtY43VTm9A" key="codegenDirectory" value="/do an mon hoc tkhdt/src"/>
-        <details xmi:id="_cLW6MIyzEeSNrtY43VTm9A" key="AssociatedSourceCode" value="/do an mon hoc tkhdt/src/com/annvcit/model/Lion.java;1210866360/1;/do an mon hoc tkhdt/src/com/annvcit/model/Wolf.java;3410346923/1;/do an mon hoc tkhdt/src/com/annvcit/model/AHerbivore.java;3397234297/1;/do an mon hoc tkhdt/src/com/annvcit/model/Rabbit.java;2440320476/1;/do an mon hoc tkhdt/src/com/annvcit/model/Antelope.java;863922575/1;/do an mon hoc tkhdt/src/com/annvcit/model/APlant.java;20795694/1;/do an mon hoc tkhdt/src/com/annvcit/model/Willow.java;3983073021/1;/do an mon hoc tkhdt/src/com/annvcit/model/Grass.java;2198175179/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplAfricaFacotry.java;2585421315/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFinnishFactory.java;1575372682/1;/do an mon hoc tkhdt/src/com/annvcit/model/ICreatureFactory.java;3114331193/1;/do an mon hoc tkhdt/src/com/annvcit/model/ACarnivore.java;3181287141/1;/do an mon hoc tkhdt/src/com/annvcit/model/Africa.java;3436481439/1;/do an mon hoc tkhdt/src/com/annvcit/model/Finnish.java;229996648/1;/do an mon hoc tkhdt/src/com/annvcit/model/AEcosystem.java;1767097331/1;"/>
+        <details xmi:id="_cLW6MIyzEeSNrtY43VTm9A" key="AssociatedSourceCode" value="/do an mon hoc tkhdt/src/com/annvcit/model/Lion.java;1210866360/1;/do an mon hoc tkhdt/src/com/annvcit/model/Wolf.java;3410346923/1;/do an mon hoc tkhdt/src/com/annvcit/model/AHerbivore.java;1690151533/1;/do an mon hoc tkhdt/src/com/annvcit/model/Rabbit.java;2440320476/1;/do an mon hoc tkhdt/src/com/annvcit/model/Antelope.java;863922575/1;/do an mon hoc tkhdt/src/com/annvcit/model/APlant.java;467753992/1;/do an mon hoc tkhdt/src/com/annvcit/model/Willow.java;3983073021/1;/do an mon hoc tkhdt/src/com/annvcit/model/Grass.java;2198175179/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplAfricaFacotry.java;2585421315/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFinnishFactory.java;1575372682/1;/do an mon hoc tkhdt/src/com/annvcit/model/ICreatureFactory.java;3114331193/1;/do an mon hoc tkhdt/src/com/annvcit/model/ACarnivore.java;1095393989/1;/do an mon hoc tkhdt/src/com/annvcit/model/AEcosystem.java;826817353/1;"/>
+      </contents>
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_M_lUII0iEeSr8tgZwu4ibQ" source="preferences">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_M_lUIY0iEeSr8tgZwu4ibQ" source="com.yattasolutions.codegen.reverse">
+          <details xmi:id="_M_lUIo0iEeSr8tgZwu4ibQ" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerNewFiles" value="true"/>
+          <details xmi:id="_M_l7MI0iEeSr8tgZwu4ibQ" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerChangedFiles" value="true"/>
+          <details xmi:id="_M_l7MY0iEeSr8tgZwu4ibQ" key="com.yattasolutions.codegen.reverse.roundtrip.RemoveDeletedFiles" value="true"/>
+        </contents>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="__FU2AIzwEeScxsKS8t0j_w">
@@ -37,11 +44,20 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_gMkF0IyzEeSNrtY43VTm9A" name="com">
       <packagedElement xmi:type="uml:Package" xmi:id="_gM3AwIyzEeSNrtY43VTm9A" name="annvcit">
         <packagedElement xmi:type="uml:Package" xmi:id="_gM3AwYyzEeSNrtY43VTm9A" name="model">
-          <packagedElement xmi:type="uml:Class" xmi:id="_XEVWAIyzEeSNrtY43VTm9A" name="ACarnivore" isAbstract="true"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_XEVWAIyzEeSNrtY43VTm9A" name="ACarnivore" isAbstract="true">
+            <ownedOperation xmi:id="_NcpqoI0iEeSr8tgZwu4ibQ" name="ACarnivore">
+              <eAnnotations xmi:id="_NcqRsI0iEeSr8tgZwu4ibQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_NcqRsY0iEeSr8tgZwu4ibQ" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_Ncq4wI0iEeSr8tgZwu4ibQ" type="_XEVWAIyzEeSNrtY43VTm9A" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_nXQK4IyzEeSNrtY43VTm9A" name="Lion">
             <generalization xmi:id="_6Sz18IyzEeSNrtY43VTm9A" general="_XEVWAIyzEeSNrtY43VTm9A"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRp40I0PEeSu08JHNZpjmw" name="Lion" specification="_oRgH0I0PEeSu08JHNZpjmw">
-              <ownedParameter xmi:id="_oRp40Y0PEeSu08JHNZpjmw" type="_nXQK4IyzEeSNrtY43VTm9A" direction="return"/>
+              <ownedParameter xmi:id="_oRp40Y0PEeSu08JHNZpjmw" type="_nXQK4IyzEeSNrtY43VTm9A" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>System.out.println(&quot;new Lion&quot;);&#xD;
 	</body>
@@ -56,7 +72,9 @@
           <packagedElement xmi:type="uml:Class" xmi:id="_ww6B4IyzEeSNrtY43VTm9A" name="Wolf">
             <generalization xmi:id="_5kdiMIyzEeSNrtY43VTm9A" general="_XEVWAIyzEeSNrtY43VTm9A"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_wLJkpI0PEeSu08JHNZpjmw" name="Wolf" specification="_wLJkoI0PEeSu08JHNZpjmw">
-              <ownedParameter xmi:id="_wLJkpY0PEeSu08JHNZpjmw" type="_ww6B4IyzEeSNrtY43VTm9A" direction="return"/>
+              <ownedParameter xmi:id="_wLJkpY0PEeSu08JHNZpjmw" type="_ww6B4IyzEeSNrtY43VTm9A" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>System.out.println(&quot;new Wolf&quot;);&#xD;
 	</body>
@@ -68,11 +86,20 @@
               <ownedParameter xmi:id="_wLJkoY0PEeSu08JHNZpjmw" type="_ww6B4IyzEeSNrtY43VTm9A" direction="return"/>
             </ownedOperation>
           </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_ZRX_4Iy0EeSNrtY43VTm9A" name="AHerbivore" isAbstract="true"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ZRX_4Iy0EeSNrtY43VTm9A" name="AHerbivore" isAbstract="true">
+            <ownedOperation xmi:id="_Nc134I0iEeSr8tgZwu4ibQ" name="AHerbivore">
+              <eAnnotations xmi:id="_Nc3GAI0iEeSr8tgZwu4ibQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_Nc3GAY0iEeSr8tgZwu4ibQ" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_Nc3GAo0iEeSr8tgZwu4ibQ" type="_ZRX_4Iy0EeSNrtY43VTm9A" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_d8WhQIy0EeSNrtY43VTm9A" name="Rabbit">
             <generalization xmi:id="_kSdHsIy0EeSNrtY43VTm9A" general="_ZRX_4Iy0EeSNrtY43VTm9A"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_rA5tVI0PEeSu08JHNZpjmw" name="Rabbit" specification="_rA5tUI0PEeSu08JHNZpjmw">
-              <ownedParameter xmi:id="_rA5tVY0PEeSu08JHNZpjmw" type="_d8WhQIy0EeSNrtY43VTm9A" direction="return"/>
+              <ownedParameter xmi:id="_rA5tVY0PEeSu08JHNZpjmw" type="_d8WhQIy0EeSNrtY43VTm9A" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>System.out.println(&quot;new Rabbit&quot;);&#xD;
 	</body>
@@ -87,7 +114,9 @@
           <packagedElement xmi:type="uml:Class" xmi:id="_hH_94Iy0EeSNrtY43VTm9A" name="Antelope">
             <generalization xmi:id="_kkWwAIy0EeSNrtY43VTm9A" general="_ZRX_4Iy0EeSNrtY43VTm9A"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Znr-wo0PEeSu08JHNZpjmw" name="Antelope" specification="_ZniNwI0PEeSu08JHNZpjmw">
-              <ownedParameter xmi:id="_Znr-w40PEeSu08JHNZpjmw" type="_hH_94Iy0EeSNrtY43VTm9A" direction="return"/>
+              <ownedParameter xmi:id="_Znr-w40PEeSu08JHNZpjmw" type="_hH_94Iy0EeSNrtY43VTm9A" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>System.out.println(&quot;new Antelope&quot;);&#xD;
 	</body>
@@ -99,11 +128,20 @@
               <ownedParameter xmi:id="_ZniNwY0PEeSu08JHNZpjmw" type="_hH_94Iy0EeSNrtY43VTm9A" direction="return"/>
             </ownedOperation>
           </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_Rrm40IzqEeScxsKS8t0j_w" name="APlant" isAbstract="true"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Rrm40IzqEeScxsKS8t0j_w" name="APlant" isAbstract="true">
+            <ownedOperation xmi:id="_Nc6wYI0iEeSr8tgZwu4ibQ" name="APlant">
+              <eAnnotations xmi:id="_Nc7XcI0iEeSr8tgZwu4ibQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_Nc7XcY0iEeSr8tgZwu4ibQ" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_Nc7-gI0iEeSr8tgZwu4ibQ" type="_Rrm40IzqEeScxsKS8t0j_w" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_SrY60IzqEeScxsKS8t0j_w" name="Willow">
             <generalization xmi:id="_TzEUkIzqEeScxsKS8t0j_w" general="_Rrm40IzqEeScxsKS8t0j_w"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_to3OFI0PEeSu08JHNZpjmw" name="Willow" specification="_to3OEI0PEeSu08JHNZpjmw">
-              <ownedParameter xmi:id="_to3OFY0PEeSu08JHNZpjmw" type="_SrY60IzqEeScxsKS8t0j_w" direction="return"/>
+              <ownedParameter xmi:id="_to3OFY0PEeSu08JHNZpjmw" type="_SrY60IzqEeScxsKS8t0j_w" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>System.out.println(&quot;new Willow&quot;);&#xD;
 	</body>
@@ -118,7 +156,9 @@
           <packagedElement xmi:type="uml:Class" xmi:id="_TCCgQIzqEeScxsKS8t0j_w" name="Grass">
             <generalization xmi:id="_UB-TQIzqEeScxsKS8t0j_w" general="_Rrm40IzqEeScxsKS8t0j_w"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_fSHK9I0PEeSu08JHNZpjmw" name="Grass" specification="_fSHK8I0PEeSu08JHNZpjmw">
-              <ownedParameter xmi:id="_fSHK9Y0PEeSu08JHNZpjmw" type="_TCCgQIzqEeScxsKS8t0j_w" direction="return"/>
+              <ownedParameter xmi:id="_fSHK9Y0PEeSu08JHNZpjmw" type="_TCCgQIzqEeScxsKS8t0j_w" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>System.out.println(&quot;new Grass&quot;);&#xD;
 	</body>
@@ -202,16 +242,19 @@
               <ownedParameter xmi:id="_znPl94zsEeScxsKS8t0j_w" type="_Rrm40IzqEeScxsKS8t0j_w" direction="return"/>
             </ownedOperation>
           </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_eBtS0IzqEeScxsKS8t0j_w" name="AEcosystem" isAbstract="true">
+          <packagedElement xmi:type="uml:Class" xmi:id="_eBtS0IzqEeScxsKS8t0j_w" name="AEcosystem">
             <ownedAttribute xmi:id="_UTqcAozxEeScxsKS8t0j_w" name="herbivore" visibility="private" type="_ZRX_4Iy0EeSNrtY43VTm9A" association="_UTqcCYzxEeScxsKS8t0j_w"/>
             <ownedAttribute xmi:id="_UTqcBIzxEeScxsKS8t0j_w" name="plant" visibility="private" type="_Rrm40IzqEeScxsKS8t0j_w" association="_UT0NAYzxEeScxsKS8t0j_w"/>
-            <ownedAttribute xmi:id="_IFREIIz_EeSENYOerBqPMA" name="canivore" visibility="private" type="_XEVWAIyzEeSNrtY43VTm9A" association="_IFREIoz_EeSENYOerBqPMA"/>
-            <ownedAttribute xmi:id="_zQoQMI0BEeSENYOerBqPMA" name="factory" visibility="private" type="_awyUoIzqEeScxsKS8t0j_w" association="_zQoQMo0BEeSENYOerBqPMA"/>
+            <ownedAttribute xmi:id="_IFREIIz_EeSENYOerBqPMA" name="carnivore" visibility="private" type="_XEVWAIyzEeSNrtY43VTm9A" association="_NdPggI0iEeSr8tgZwu4ibQ"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8RfMsI0BEeSENYOerBqPMA" name="AEcosystem" specification="_8RVbsI0BEeSENYOerBqPMA">
               <ownedParameter xmi:id="_8RfMsY0BEeSENYOerBqPMA" name="fact" type="_awyUoIzqEeScxsKS8t0j_w"/>
-              <ownedParameter xmi:id="_8RfMso0BEeSENYOerBqPMA" type="_eBtS0IzqEeScxsKS8t0j_w" direction="return"/>
+              <ownedParameter xmi:id="_8RfMso0BEeSENYOerBqPMA" type="_eBtS0IzqEeScxsKS8t0j_w" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
-              <body>this.factory = fact;&#xD;
+              <body>carnivore = fact.createCarnivore();&#xD;
+		herbivore = fact.createHerbivore();&#xD;
+		plant = fact.createPlant();&#xD;
 	</body>
             </ownedBehavior>
             <ownedOperation xmi:id="_8RVbsI0BEeSENYOerBqPMA" name="AEcosystem" method="_8RfMsI0BEeSENYOerBqPMA">
@@ -245,47 +288,8 @@
           <packagedElement xmi:type="uml:Dependency" xmi:id="_nGuSYIzxEeScxsKS8t0j_w" client="_znPl8ozsEeScxsKS8t0j_w" supplier="_ww6B4IyzEeSNrtY43VTm9A"/>
           <packagedElement xmi:type="uml:Dependency" xmi:id="_nf6OcIzxEeScxsKS8t0j_w" client="_znPl9ozsEeScxsKS8t0j_w" supplier="_d8WhQIy0EeSNrtY43VTm9A"/>
           <packagedElement xmi:type="uml:Dependency" xmi:id="_n6vJQIzxEeScxsKS8t0j_w" client="_btSZIIzqEeScxsKS8t0j_w" supplier="_SrY60IzqEeScxsKS8t0j_w"/>
-          <packagedElement xmi:type="uml:Association" xmi:id="_IFREIoz_EeSENYOerBqPMA" name="" memberEnd="_IFREI4z_EeSENYOerBqPMA _IFREIIz_EeSENYOerBqPMA">
-            <ownedEnd xmi:id="_IFREI4z_EeSENYOerBqPMA" name="" type="_eBtS0IzqEeScxsKS8t0j_w" association="_IFREIoz_EeSENYOerBqPMA"/>
-          </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_1DyFUI0AEeSENYOerBqPMA" name="Africa">
-            <generalization xmi:id="_4zG2wI0AEeSENYOerBqPMA" general="_eBtS0IzqEeScxsKS8t0j_w"/>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_brofZY0CEeSENYOerBqPMA" name="Africa" specification="_brofYI0CEeSENYOerBqPMA">
-              <ownedParameter xmi:id="_brofZo0CEeSENYOerBqPMA" name="fact" type="_awyUoIzqEeScxsKS8t0j_w"/>
-              <ownedParameter xmi:id="_brofZ40CEeSENYOerBqPMA" type="_1DyFUI0AEeSENYOerBqPMA" direction="return"/>
-              <language>java</language>
-              <body>super(fact);&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedOperation xmi:id="_brofYI0CEeSENYOerBqPMA" name="Africa" method="_brofZY0CEeSENYOerBqPMA">
-              <eAnnotations xmi:id="_brofY40CEeSENYOerBqPMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_brofZI0CEeSENYOerBqPMA" key="create"/>
-              </eAnnotations>
-              <ownedParameter xmi:id="_brofYY0CEeSENYOerBqPMA" name="fact" type="_awyUoIzqEeScxsKS8t0j_w"/>
-              <ownedParameter xmi:id="_brofYo0CEeSENYOerBqPMA" type="_1DyFUI0AEeSENYOerBqPMA" direction="return"/>
-            </ownedOperation>
-          </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_1DyFUY0AEeSENYOerBqPMA" name="Finnish">
-            <generalization xmi:id="_5NCZsI0AEeSENYOerBqPMA" general="_eBtS0IzqEeScxsKS8t0j_w"/>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mY0QQo0BEeSENYOerBqPMA" name="Finnish" specification="_mYqfQI0BEeSENYOerBqPMA">
-              <ownedParameter xmi:id="_mY0QQ40BEeSENYOerBqPMA" name="fact" type="_awyUoIzqEeScxsKS8t0j_w"/>
-              <ownedParameter xmi:id="_mY0QRI0BEeSENYOerBqPMA" type="_1DyFUY0AEeSENYOerBqPMA" direction="return">
-                <name xsi:nil="true"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>super(fact);&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedOperation xmi:id="_mYqfQI0BEeSENYOerBqPMA" name="Finnish" method="_mY0QQo0BEeSENYOerBqPMA">
-              <eAnnotations xmi:id="_mYqfQ40BEeSENYOerBqPMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_mYqfRI0BEeSENYOerBqPMA" key="create"/>
-              </eAnnotations>
-              <ownedParameter xmi:id="_mYqfQY0BEeSENYOerBqPMA" name="fact" type="_awyUoIzqEeScxsKS8t0j_w"/>
-              <ownedParameter xmi:id="_mYqfQo0BEeSENYOerBqPMA" type="_1DyFUY0AEeSENYOerBqPMA" direction="return"/>
-            </ownedOperation>
-          </packagedElement>
-          <packagedElement xmi:type="uml:Association" xmi:id="_zQoQMo0BEeSENYOerBqPMA" name="" memberEnd="_zQoQM40BEeSENYOerBqPMA _zQoQMI0BEeSENYOerBqPMA">
-            <ownedEnd xmi:id="_zQoQM40BEeSENYOerBqPMA" name="" type="_eBtS0IzqEeScxsKS8t0j_w" association="_zQoQMo0BEeSENYOerBqPMA"/>
+          <packagedElement xmi:type="uml:Association" xmi:id="_NdPggI0iEeSr8tgZwu4ibQ" name="" memberEnd="_NdPggY0iEeSr8tgZwu4ibQ _IFREIIz_EeSENYOerBqPMA">
+            <ownedEnd xmi:id="_NdPggY0iEeSr8tgZwu4ibQ" name="" type="_eBtS0IzqEeScxsKS8t0j_w" association="_NdPggI0iEeSr8tgZwu4ibQ"/>
           </packagedElement>
         </packagedElement>
       </packagedElement>
@@ -329,7 +333,8 @@
   <UMLLabProfile:Reference xmi:id="_UT0NAIzxEeScxsKS8t0j_w" base_Element="_UTqcCYzxEeScxsKS8t0j_w"/>
   <UMLLabProfile:Reference xmi:id="_UT0NA4zxEeScxsKS8t0j_w" base_Element="_UT0NAYzxEeScxsKS8t0j_w"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_IFREIYz_EeSENYOerBqPMA" base_Element="_IFREIIz_EeSENYOerBqPMA"/>
-  <UMLLabProfile:Reference xmi:id="_IFREJIz_EeSENYOerBqPMA" base_Element="_IFREIoz_EeSENYOerBqPMA"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_zQoQMY0BEeSENYOerBqPMA" base_Element="_zQoQMI0BEeSENYOerBqPMA"/>
-  <UMLLabProfile:Reference xmi:id="_zQxaII0BEeSENYOerBqPMA" base_Element="_zQoQMo0BEeSENYOerBqPMA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Nc-awI0iEeSr8tgZwu4ibQ" base_Element="_NcpqoI0iEeSr8tgZwu4ibQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_NdCFII0iEeSr8tgZwu4ibQ" base_Element="_Nc134I0iEeSr8tgZwu4ibQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_NdD6UI0iEeSr8tgZwu4ibQ" base_Element="_Nc6wYI0iEeSr8tgZwu4ibQ"/>
+  <UMLLabProfile:Reference xmi:id="_NdTx8I0iEeSr8tgZwu4ibQ" base_Element="_NdPggI0iEeSr8tgZwu4ibQ"/>
 </xmi:XMI>

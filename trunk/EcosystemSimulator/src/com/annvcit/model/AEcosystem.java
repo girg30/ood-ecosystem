@@ -1,15 +1,16 @@
 package com.annvcit.model;
 
 
-public abstract class AEcosystem {
+public class AEcosystem {
 	
-	private ICreatureFactory factory;
-	private ACarnivore canivore;
+	private ACarnivore carnivore;
 	private AHerbivore herbivore;
 	private APlant plant;
 	
 	public AEcosystem(ICreatureFactory fact) {
-		this.factory = fact;
+		carnivore = fact.createCarnivore();
+		herbivore = fact.createHerbivore();
+		plant = fact.createPlant();
 	}
 
 }
