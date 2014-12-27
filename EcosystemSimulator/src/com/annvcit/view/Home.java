@@ -23,6 +23,7 @@ public class Home extends JFrame {
 		initComponents();
 		// lập group cho radio button
 		ButtonGroup group = new ButtonGroup();
+		this.rbtnAfrican.setSelected(true);
 		group.add(rbtnAfrican);
 		group.add(rbtnFinnish);
 		this.setTitle("Ecosystem Simulator");

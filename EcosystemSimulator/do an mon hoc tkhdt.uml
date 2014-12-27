@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_j16nkIyyEeSNrtY43VTm9A" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_j16nkYyyEeSNrtY43VTm9A" source="codegen">
         <details xmi:id="_j16nkoyyEeSNrtY43VTm9A" key="codegenDirectory" value="/do an mon hoc tkhdt/src"/>
-        <details xmi:id="_cLW6MIyzEeSNrtY43VTm9A" key="AssociatedSourceCode" value="/do an mon hoc tkhdt/src/com/annvcit/model/Lion.java;1210866360/1;/do an mon hoc tkhdt/src/com/annvcit/model/Wolf.java;3410346923/1;/do an mon hoc tkhdt/src/com/annvcit/model/AHerbivore.java;1690151533/1;/do an mon hoc tkhdt/src/com/annvcit/model/Rabbit.java;2440320476/1;/do an mon hoc tkhdt/src/com/annvcit/model/Antelope.java;863922575/1;/do an mon hoc tkhdt/src/com/annvcit/model/APlant.java;467753992/1;/do an mon hoc tkhdt/src/com/annvcit/model/Willow.java;3983073021/1;/do an mon hoc tkhdt/src/com/annvcit/model/Grass.java;2198175179/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplAfricaFacotry.java;2585421315/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFinnishFactory.java;1575372682/1;/do an mon hoc tkhdt/src/com/annvcit/model/ICreatureFactory.java;3114331193/1;/do an mon hoc tkhdt/src/com/annvcit/model/ACarnivore.java;1095393989/1;/do an mon hoc tkhdt/src/com/annvcit/model/AEcosystem.java;826817353/1;"/>
+        <details xmi:id="_cLW6MIyzEeSNrtY43VTm9A" key="AssociatedSourceCode" value="/do an mon hoc tkhdt/src/com/annvcit/model/Lion.java;1210866360/1;/do an mon hoc tkhdt/src/com/annvcit/model/Wolf.java;3410346923/1;/do an mon hoc tkhdt/src/com/annvcit/model/AHerbivore.java;2000331120/1;/do an mon hoc tkhdt/src/com/annvcit/model/Rabbit.java;2440320476/1;/do an mon hoc tkhdt/src/com/annvcit/model/Antelope.java;863922575/1;/do an mon hoc tkhdt/src/com/annvcit/model/APlant.java;467753992/1;/do an mon hoc tkhdt/src/com/annvcit/model/Willow.java;3983073021/1;/do an mon hoc tkhdt/src/com/annvcit/model/Grass.java;2198175179/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplAfricaFacotry.java;2585421315/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFinnishFactory.java;1575372682/1;/do an mon hoc tkhdt/src/com/annvcit/model/ICreatureFactory.java;3114331193/1;/do an mon hoc tkhdt/src/com/annvcit/model/ACarnivore.java;1388890210/1;/do an mon hoc tkhdt/src/com/annvcit/model/Ecosystem.java;990269116/1;/do an mon hoc tkhdt/src/com/annvcit/model/IAnimal.java;2538731360/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplStarvedState.java;3591969259/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplHungryState.java;286970185/1;/do an mon hoc tkhdt/src/com/annvcit/model/IAnimalState.java;2071742796/1;"/>
       </contents>
       <contents xmi:type="ecore:EAnnotation" xmi:id="_M_lUII0iEeSr8tgZwu4ibQ" source="preferences">
         <contents xmi:type="ecore:EAnnotation" xmi:id="_M_lUIY0iEeSr8tgZwu4ibQ" source="com.yattasolutions.codegen.reverse">
@@ -45,6 +45,7 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_gM3AwIyzEeSNrtY43VTm9A" name="annvcit">
         <packagedElement xmi:type="uml:Package" xmi:id="_gM3AwYyzEeSNrtY43VTm9A" name="model">
           <packagedElement xmi:type="uml:Class" xmi:id="_XEVWAIyzEeSNrtY43VTm9A" name="ACarnivore" isAbstract="true">
+            <interfaceRealization xmi:id="_otAVoI2fEeSCed76TuW3eA" client="_XEVWAIyzEeSNrtY43VTm9A" supplier="_mY3IwI2fEeSCed76TuW3eA" contract="_mY3IwI2fEeSCed76TuW3eA"/>
             <ownedOperation xmi:id="_NcpqoI0iEeSr8tgZwu4ibQ" name="ACarnivore">
               <eAnnotations xmi:id="_NcqRsI0iEeSr8tgZwu4ibQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
                 <details xmi:id="_NcqRsY0iEeSr8tgZwu4ibQ" key="create"/>
@@ -87,6 +88,7 @@
             </ownedOperation>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_ZRX_4Iy0EeSNrtY43VTm9A" name="AHerbivore" isAbstract="true">
+            <interfaceRealization xmi:id="_pAvJ8I2fEeSCed76TuW3eA" client="_ZRX_4Iy0EeSNrtY43VTm9A" supplier="_mY3IwI2fEeSCed76TuW3eA" contract="_mY3IwI2fEeSCed76TuW3eA"/>
             <ownedOperation xmi:id="_Nc134I0iEeSr8tgZwu4ibQ" name="AHerbivore">
               <eAnnotations xmi:id="_Nc3GAI0iEeSr8tgZwu4ibQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
                 <details xmi:id="_Nc3GAY0iEeSr8tgZwu4ibQ" key="create"/>
@@ -242,27 +244,24 @@
               <ownedParameter xmi:id="_znPl94zsEeScxsKS8t0j_w" type="_Rrm40IzqEeScxsKS8t0j_w" direction="return"/>
             </ownedOperation>
           </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_eBtS0IzqEeScxsKS8t0j_w" name="AEcosystem">
+          <packagedElement xmi:type="uml:Class" xmi:id="_eBtS0IzqEeScxsKS8t0j_w" name="Ecosystem">
             <ownedAttribute xmi:id="_UTqcAozxEeScxsKS8t0j_w" name="herbivore" visibility="private" type="_ZRX_4Iy0EeSNrtY43VTm9A" association="_UTqcCYzxEeScxsKS8t0j_w"/>
             <ownedAttribute xmi:id="_UTqcBIzxEeScxsKS8t0j_w" name="plant" visibility="private" type="_Rrm40IzqEeScxsKS8t0j_w" association="_UT0NAYzxEeScxsKS8t0j_w"/>
             <ownedAttribute xmi:id="_IFREIIz_EeSENYOerBqPMA" name="carnivore" visibility="private" type="_XEVWAIyzEeSNrtY43VTm9A" association="_NdPggI0iEeSr8tgZwu4ibQ"/>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8RfMsI0BEeSENYOerBqPMA" name="AEcosystem" specification="_8RVbsI0BEeSENYOerBqPMA">
-              <ownedParameter xmi:id="_8RfMsY0BEeSENYOerBqPMA" name="fact" type="_awyUoIzqEeScxsKS8t0j_w"/>
-              <ownedParameter xmi:id="_8RfMso0BEeSENYOerBqPMA" type="_eBtS0IzqEeScxsKS8t0j_w" direction="return">
-                <name xsi:nil="true"/>
-              </ownedParameter>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8RfMsI0BEeSENYOerBqPMA" name="Ecosystem" specification="_8RVbsI0BEeSENYOerBqPMA">
+              <ownedParameter xmi:id="_Nrq2QI2fEeSCed76TuW3eA" type="_eBtS0IzqEeScxsKS8t0j_w" direction="return"/>
               <language>java</language>
               <body>carnivore = fact.createCarnivore();&#xD;
-		herbivore = fact.createHerbivore();&#xD;
-		plant = fact.createPlant();&#xD;
-	</body>
+   		herbivore = fact.createHerbivore();&#xD;
+   		plant = fact.createPlant();&#xD;
+   	</body>
             </ownedBehavior>
-            <ownedOperation xmi:id="_8RVbsI0BEeSENYOerBqPMA" name="AEcosystem" method="_8RfMsI0BEeSENYOerBqPMA">
+            <ownedOperation xmi:id="_8RVbsI0BEeSENYOerBqPMA" name="Ecosystem" method="_8RfMsI0BEeSENYOerBqPMA">
               <eAnnotations xmi:id="_8RVbs40BEeSENYOerBqPMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
                 <details xmi:id="_8RVbtI0BEeSENYOerBqPMA" key="create"/>
               </eAnnotations>
-              <ownedParameter xmi:id="_8RVbsY0BEeSENYOerBqPMA" name="fact" type="_awyUoIzqEeScxsKS8t0j_w"/>
-              <ownedParameter xmi:id="_8RVbso0BEeSENYOerBqPMA" type="_eBtS0IzqEeScxsKS8t0j_w" direction="return"/>
+              <ownedParameter xmi:id="_NraXkI2fEeSCed76TuW3eA" type="_eBtS0IzqEeScxsKS8t0j_w" direction="return"/>
+              <ownedParameter xmi:id="_8RfMsY0BEeSENYOerBqPMA" name="fact" type="_awyUoIzqEeScxsKS8t0j_w"/>
             </ownedOperation>
           </packagedElement>
           <packagedElement xmi:type="uml:Interface" xmi:id="_awyUoIzqEeScxsKS8t0j_w" name="ICreatureFactory">
@@ -291,9 +290,18 @@
           <packagedElement xmi:type="uml:Association" xmi:id="_NdPggI0iEeSr8tgZwu4ibQ" name="" memberEnd="_NdPggY0iEeSr8tgZwu4ibQ _IFREIIz_EeSENYOerBqPMA">
             <ownedEnd xmi:id="_NdPggY0iEeSr8tgZwu4ibQ" name="" type="_eBtS0IzqEeScxsKS8t0j_w" association="_NdPggI0iEeSr8tgZwu4ibQ"/>
           </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_mY3IwI2fEeSCed76TuW3eA" name="IAnimal"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_k-AUUI2fEeSCed76TuW3eA" name="ImplStarvedState">
+            <interfaceRealization xmi:id="_CLkasI2gEeSCed76TuW3eA" client="_k-AUUI2fEeSCed76TuW3eA" supplier="_q5NHcI2fEeSCed76TuW3eA" contract="_q5NHcI2fEeSCed76TuW3eA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_laeN4I2fEeSCed76TuW3eA" name="ImplHungryState">
+            <interfaceRealization xmi:id="_ClkPEI2gEeSCed76TuW3eA" client="_laeN4I2fEeSCed76TuW3eA" supplier="_q5NHcI2fEeSCed76TuW3eA" contract="_q5NHcI2fEeSCed76TuW3eA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_q5NHcI2fEeSCed76TuW3eA" name="IAnimalState"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lIEdAI2kEeSCed76TuW3eA" name="AInteraction"/>
     <profileApplication xmi:id="_j16nk4yyEeSNrtY43VTm9A">
       <eAnnotations xmi:id="_j16nlIyyEeSNrtY43VTm9A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
