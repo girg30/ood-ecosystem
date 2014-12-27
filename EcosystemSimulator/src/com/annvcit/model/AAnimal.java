@@ -9,4 +9,7 @@ public abstract class AAnimal {
 	protected IAnimalState breedingState;
 	protected IAnimalState normalState;
 	
+	
+	
+	
 }
