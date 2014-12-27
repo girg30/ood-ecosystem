@@ -5,6 +5,12 @@ package com.annvcit.model;
  * */
 public class ImplHungryState implements IAnimalState {
 
+	private AAnimal animal;
+	
+	public ImplHungryState(AAnimal a) {
+		animal = a;
+	}
+	
 	@Override
 	public void fight(AAnimal... animals) {
 		// TODO Auto-generated method stub
