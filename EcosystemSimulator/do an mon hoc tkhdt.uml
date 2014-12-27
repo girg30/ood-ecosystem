@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_j16nkIyyEeSNrtY43VTm9A" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_j16nkYyyEeSNrtY43VTm9A" source="codegen">
         <details xmi:id="_j16nkoyyEeSNrtY43VTm9A" key="codegenDirectory" value="/do an mon hoc tkhdt/src"/>
-        <details xmi:id="_cLW6MIyzEeSNrtY43VTm9A" key="AssociatedSourceCode" value="/do an mon hoc tkhdt/src/com/annvcit/model/Lion.java;1210866360/1;/do an mon hoc tkhdt/src/com/annvcit/model/Wolf.java;3410346923/1;/do an mon hoc tkhdt/src/com/annvcit/model/AHerbivore.java;2000331120/1;/do an mon hoc tkhdt/src/com/annvcit/model/Rabbit.java;2440320476/1;/do an mon hoc tkhdt/src/com/annvcit/model/Antelope.java;863922575/1;/do an mon hoc tkhdt/src/com/annvcit/model/APlant.java;467753992/1;/do an mon hoc tkhdt/src/com/annvcit/model/Willow.java;3983073021/1;/do an mon hoc tkhdt/src/com/annvcit/model/Grass.java;2198175179/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplAfricaFacotry.java;2585421315/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFinnishFactory.java;1575372682/1;/do an mon hoc tkhdt/src/com/annvcit/model/ICreatureFactory.java;3114331193/1;/do an mon hoc tkhdt/src/com/annvcit/model/ACarnivore.java;1388890210/1;/do an mon hoc tkhdt/src/com/annvcit/model/Ecosystem.java;990269116/1;/do an mon hoc tkhdt/src/com/annvcit/model/IAnimal.java;2538731360/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplStarvedState.java;3591969259/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplHungryState.java;286970185/1;/do an mon hoc tkhdt/src/com/annvcit/model/IAnimalState.java;2071742796/1;/do an mon hoc tkhdt/src/com/annvcit/model/AInteraction.java;45925326/1;/do an mon hoc tkhdt/src/com/annvcit/model/Breed.java;4272516267/1;/do an mon hoc tkhdt/src/com/annvcit/model/Chase.java;2951063458/1;/do an mon hoc tkhdt/src/com/annvcit/model/Eat.java;89804485/1;/do an mon hoc tkhdt/src/com/annvcit/model/Fight.java;2091077867/1;/do an mon hoc tkhdt/src/com/annvcit/model/IInteractionFactory.java;127674584/1;"/>
+        <details xmi:id="_cLW6MIyzEeSNrtY43VTm9A" key="AssociatedSourceCode" value="/do an mon hoc tkhdt/src/com/annvcit/model/Lion.java;1210866360/1;/do an mon hoc tkhdt/src/com/annvcit/model/Wolf.java;3410346923/1;/do an mon hoc tkhdt/src/com/annvcit/model/AHerbivore.java;2000331120/1;/do an mon hoc tkhdt/src/com/annvcit/model/Rabbit.java;2440320476/1;/do an mon hoc tkhdt/src/com/annvcit/model/Antelope.java;863922575/1;/do an mon hoc tkhdt/src/com/annvcit/model/APlant.java;467753992/1;/do an mon hoc tkhdt/src/com/annvcit/model/Willow.java;3983073021/1;/do an mon hoc tkhdt/src/com/annvcit/model/Grass.java;2198175179/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplAfricaFacotry.java;2585421315/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFinnishFactory.java;1575372682/1;/do an mon hoc tkhdt/src/com/annvcit/model/ICreatureFactory.java;3114331193/1;/do an mon hoc tkhdt/src/com/annvcit/model/ACarnivore.java;3144675917/1;/do an mon hoc tkhdt/src/com/annvcit/model/Ecosystem.java;990269116/1;/do an mon hoc tkhdt/src/com/annvcit/model/IAnimal.java;3706744722/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplStarvedState.java;3591969259/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplHungryState.java;286970185/1;/do an mon hoc tkhdt/src/com/annvcit/model/IAnimalState.java;2071742796/1;/do an mon hoc tkhdt/src/com/annvcit/model/IInteraction.java;186506827/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplBreed.java;3522209864/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplChase.java;2159829825/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplEat.java;1371919988/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFight.java;1408930824/1;/do an mon hoc tkhdt/src/com/annvcit/model/InteractionFactory.java;1993332280/1;"/>
       </contents>
       <contents xmi:type="ecore:EAnnotation" xmi:id="_M_lUII0iEeSr8tgZwu4ibQ" source="preferences">
         <contents xmi:type="ecore:EAnnotation" xmi:id="_M_lUIY0iEeSr8tgZwu4ibQ" source="com.yattasolutions.codegen.reverse">
@@ -249,7 +249,10 @@
             <ownedAttribute xmi:id="_UTqcBIzxEeScxsKS8t0j_w" name="plant" visibility="private" type="_Rrm40IzqEeScxsKS8t0j_w" association="_UT0NAYzxEeScxsKS8t0j_w"/>
             <ownedAttribute xmi:id="_IFREIIz_EeSENYOerBqPMA" name="carnivore" visibility="private" type="_XEVWAIyzEeSNrtY43VTm9A" association="_NdPggI0iEeSr8tgZwu4ibQ"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8RfMsI0BEeSENYOerBqPMA" name="Ecosystem" specification="_8RVbsI0BEeSENYOerBqPMA">
-              <ownedParameter xmi:id="_Nrq2QI2fEeSCed76TuW3eA" type="_eBtS0IzqEeScxsKS8t0j_w" direction="return"/>
+              <ownedParameter xmi:id="_YBcdoI2nEeSDmb6ZzY3kXg" type="_eBtS0IzqEeScxsKS8t0j_w" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_YBcdoY2nEeSDmb6ZzY3kXg" name="fact" type="_awyUoIzqEeScxsKS8t0j_w"/>
               <language>java</language>
               <body>carnivore = fact.createCarnivore();&#xD;
    		herbivore = fact.createHerbivore();&#xD;
@@ -298,20 +301,56 @@
             <interfaceRealization xmi:id="_ClkPEI2gEeSCed76TuW3eA" client="_laeN4I2fEeSCed76TuW3eA" supplier="_q5NHcI2fEeSCed76TuW3eA" contract="_q5NHcI2fEeSCed76TuW3eA"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Interface" xmi:id="_q5NHcI2fEeSCed76TuW3eA" name="IAnimalState"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_lIEdAI2kEeSCed76TuW3eA" name="AInteraction"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_TO94AI2lEeSCed76TuW3eA" name="Breed">
-            <generalization xmi:id="_XdIhkI2lEeSCed76TuW3eA" general="_lIEdAI2kEeSCed76TuW3eA"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_lIEdAI2kEeSCed76TuW3eA" name="IInteraction"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_TO94AI2lEeSCed76TuW3eA" name="ImplBreed">
+            <generalization xmi:id="_NuX_cI20EeSDmb6ZzY3kXg" general="_lIEdAI2kEeSCed76TuW3eA"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_VMSgUI2lEeSCed76TuW3eA" name="Chase">
-            <generalization xmi:id="_YaY0AI2lEeSCed76TuW3eA" general="_lIEdAI2kEeSCed76TuW3eA"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_VMSgUI2lEeSCed76TuW3eA" name="ImplChase">
+            <generalization xmi:id="_ORi98I20EeSDmb6ZzY3kXg" general="_lIEdAI2kEeSCed76TuW3eA"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_ULBQkI2lEeSCed76TuW3eA" name="Eat">
-            <generalization xmi:id="_X68e8I2lEeSCed76TuW3eA" general="_lIEdAI2kEeSCed76TuW3eA"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ULBQkI2lEeSCed76TuW3eA" name="ImplEat">
+            <generalization xmi:id="_OHtFcI20EeSDmb6ZzY3kXg" general="_lIEdAI2kEeSCed76TuW3eA"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_R4FkoI2lEeSCed76TuW3eA" name="Fight">
-            <generalization xmi:id="_XLZ4YI2lEeSCed76TuW3eA" general="_lIEdAI2kEeSCed76TuW3eA"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_R4FkoI2lEeSCed76TuW3eA" name="ImplFight">
+            <generalization xmi:id="_NdFbII20EeSDmb6ZzY3kXg" general="_lIEdAI2kEeSCed76TuW3eA"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_fK3pUI2lEeSCed76TuW3eA" name="IInteractionFactory"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_bACVsI2nEeSDmb6ZzY3kXg" name="public"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_coUZwI21EeSDmb6ZzY3kXg" name="InteractionFactory">
+            <ownedOperation xmi:id="_mbOX4I2tEeSDmb6ZzY3kXg" name="cchhInteraction">
+              <ownedParameter xmi:id="_VQDlAI2wEeSDmb6ZzY3kXg" name="animals" type="_mY3IwI2fEeSCed76TuW3eA">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VQDlAY2wEeSDmb6ZzY3kXg" value="*"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_VxnAoI21EeSDmb6ZzY3kXg" type="_lIEdAI2kEeSCed76TuW3eA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mbOX4Y2tEeSDmb6ZzY3kXg" name="chInteraction">
+              <ownedParameter xmi:id="_0F0_UI2wEeSDmb6ZzY3kXg" name="aCarnivore" type="_XEVWAIyzEeSNrtY43VTm9A"/>
+              <ownedParameter xmi:id="_0F-wUI2wEeSDmb6ZzY3kXg" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
+              <ownedParameter xmi:id="_VxnAoY21EeSDmb6ZzY3kXg" type="_lIEdAI2kEeSCed76TuW3eA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mbOX4o2tEeSDmb6ZzY3kXg" name="hpInteraction">
+              <ownedParameter xmi:id="_0F-wUY2wEeSDmb6ZzY3kXg" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
+              <ownedParameter xmi:id="_0F-wUo2wEeSDmb6ZzY3kXg" name="aPlant" type="_Rrm40IzqEeScxsKS8t0j_w"/>
+              <ownedParameter xmi:id="_VxnAoo21EeSDmb6ZzY3kXg" type="_lIEdAI2kEeSCed76TuW3eA" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mVlwUI21EeSDmb6ZzY3kXg" name="InteractionFactory">
+            <ownedOperation xmi:id="_mVlwUY21EeSDmb6ZzY3kXg" name="cchhInteraction">
+              <ownedParameter xmi:id="_mVlwUo21EeSDmb6ZzY3kXg" name="animals" type="_mY3IwI2fEeSCed76TuW3eA">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mVlwVI21EeSDmb6ZzY3kXg" value="*"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mVlwU421EeSDmb6ZzY3kXg" type="_lIEdAI2kEeSCed76TuW3eA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mVvhUI21EeSDmb6ZzY3kXg" name="chInteraction">
+              <ownedParameter xmi:id="_mVvhUY21EeSDmb6ZzY3kXg" name="aCarnivore" type="_XEVWAIyzEeSNrtY43VTm9A"/>
+              <ownedParameter xmi:id="_mVvhUo21EeSDmb6ZzY3kXg" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
+              <ownedParameter xmi:id="_mVvhU421EeSDmb6ZzY3kXg" type="_lIEdAI2kEeSCed76TuW3eA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mVvhVI21EeSDmb6ZzY3kXg" name="hpInteraction">
+              <ownedParameter xmi:id="_mVvhVY21EeSDmb6ZzY3kXg" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
+              <ownedParameter xmi:id="_mVvhVo21EeSDmb6ZzY3kXg" name="aPlant" type="_Rrm40IzqEeScxsKS8t0j_w"/>
+              <ownedParameter xmi:id="_mVvhV421EeSDmb6ZzY3kXg" type="_lIEdAI2kEeSCed76TuW3eA" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -358,4 +397,5 @@
   <UMLLabProfile:LegacyStyledElement xmi:id="_NdCFII0iEeSr8tgZwu4ibQ" base_Element="_Nc134I0iEeSr8tgZwu4ibQ"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_NdD6UI0iEeSr8tgZwu4ibQ" base_Element="_Nc6wYI0iEeSr8tgZwu4ibQ"/>
   <UMLLabProfile:Reference xmi:id="_NdTx8I0iEeSr8tgZwu4ibQ" base_Element="_NdPggI0iEeSr8tgZwu4ibQ"/>
+  <UMLLabProfile:Reference xmi:id="_bACVsY2nEeSDmb6ZzY3kXg" base_Element="_bACVsI2nEeSDmb6ZzY3kXg"/>
 </xmi:XMI>
