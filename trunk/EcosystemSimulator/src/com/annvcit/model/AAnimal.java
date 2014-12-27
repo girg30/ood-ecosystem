@@ -9,7 +9,10 @@ public abstract class AAnimal {
 	protected IAnimalState breedingState;
 	protected IAnimalState normalState;
 	
+	protected IAnimalState currentState = normalState;
 	
-	
-	
+	public AAnimal() {
+		
+	}
+
 }

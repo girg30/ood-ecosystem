@@ -6,7 +6,7 @@ public class EcosystemTest {
 
 	@SuppressWarnings("unused")
 	@Test
-	public void testEcosystem() {
+	public void testEcosystem_changableInRunTime() {
 		// ban đầu là africa
 		Ecosystem africa = new Ecosystem(new ImplAfricaFacotry());
 		// chuyển qua finnish at runtime
