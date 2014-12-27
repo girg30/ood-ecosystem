@@ -1,5 +1,5 @@
 package com.annvcit.model;
 
 
-public class AInteraction {
+public class IInteraction {
 }
