@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+encoding//src/com/annvcit/model/Lion.java=UTF-8
+encoding//src/com/annvcit/model/Rabbit.java=UTF-8
+encoding//src/com/annvcit/model/Willow.java=UTF-8
+encoding//src/com/annvcit/model/Wolf.java=UTF-8
 encoding//test/com/annvcit/model/EcosystemTest.java=UTF-8
