@@ -1,6 +1,9 @@
 package com.annvcit.model;
 
-public abstract class ACarnivore implements IAnimal {
+/**
+ * lớp cha của các loài đv ăn thịt
+ * */
+public abstract class ACarnivore extends AAnimal {
 
 	public ACarnivore() {}
 	

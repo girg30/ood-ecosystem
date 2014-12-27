@@ -1,9 +1,9 @@
 package com.annvcit.model;
 
 /**
- * trạng thái đói của sinh vật (đói bình thường)
+ * trạng thái bình thường của sinh vật
  * */
-public class ImplHungryState implements IAnimalState {
+public class ImplNormalState implements IAnimalState {
 
 	@Override
 	public void fight(AAnimal... animals) {
@@ -23,5 +23,4 @@ public class ImplHungryState implements IAnimalState {
 		
 	}
 
-	
 }

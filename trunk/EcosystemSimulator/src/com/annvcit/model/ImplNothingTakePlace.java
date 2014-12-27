@@ -1,5 +1,7 @@
 package com.annvcit.model;
 
-
-public class ImplNothingTakePlace extends IInteraction {
+/**
+ * nothing take place behavior của sinh vật
+ * */
+public class ImplNothingTakePlace implements IInteraction {
 }

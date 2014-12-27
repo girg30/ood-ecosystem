@@ -1,5 +1,8 @@
 package com.annvcit.model;
 
-
-public class ImplBreed extends IInteraction {
+/**
+ * hành động sinh sản giữa 2 sinh vật
+ * */
+public class ImplBreed implements IInteraction {
+	
 }

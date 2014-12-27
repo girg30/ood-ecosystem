@@ -1,6 +1,8 @@
 package com.annvcit.model;
 
-
+/**
+ * nhà máy tạo sinh vật cho môi trường ở Finnish
+ * */
 public class ImplFinnishFactory implements ICreatureFactory {
 
 	@Override

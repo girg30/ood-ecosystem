@@ -1,5 +1,8 @@
 package com.annvcit.model;
 
+/**
+ * nhà máy tạo sinh vật cho Africa
+ * */
 
 public class ImplAfricaFacotry implements ICreatureFactory {
 

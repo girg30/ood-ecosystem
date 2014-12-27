@@ -1,9 +1,12 @@
 package com.annvcit.model;
 
-/**
- * trạng thái đói của sinh vật (đói bình thường)
- * */
-public class ImplHungryState implements IAnimalState {
+public class ImplBreedingState implements IAnimalState {
+
+	private AAnimal animal;
+	
+	public ImplBreedingState(AAnimal animal) {
+		this.animal = animal;
+	}
 
 	@Override
 	public void fight(AAnimal... animals) {
@@ -22,6 +25,6 @@ public class ImplHungryState implements IAnimalState {
 		// TODO Auto-generated method stub
 		
 	}
-
+	
 	
 }

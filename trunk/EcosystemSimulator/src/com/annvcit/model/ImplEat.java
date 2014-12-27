@@ -1,5 +1,7 @@
 package com.annvcit.model;
 
-
-public class ImplEat extends IInteraction {
+/**
+ * eat behaviour xảy ra khi đv ăn cỏ gặp thực vật
+ * */
+public class ImplEat implements IInteraction {
 }

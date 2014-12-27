@@ -1,6 +1,8 @@
 package com.annvcit.model;
 
-
+/**
+ * hệ sinh thái :)
+ * */
 public class Ecosystem {
    private AHerbivore herbivore;
    private APlant plant;
