@@ -3,7 +3,7 @@ package com.annvcit.controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import com.annvcit.model.AEcosystem;
+import com.annvcit.model.Ecosystem;
 import com.annvcit.model.ImplAfricaFacotry;
 import com.annvcit.model.ImplFinnishFactory;
 import com.annvcit.view.Home;
@@ -28,12 +28,12 @@ public class HomeEvent implements ActionListener{
 	
 	// chuyển môi trường qua african
 	private void changeToAfrican(ActionEvent e) {
-		AEcosystem african = new AEcosystem(new ImplAfricaFacotry());
+		Ecosystem african = new Ecosystem(new ImplAfricaFacotry());
 	}
 	
 	// chuyển môi trường qua finnish
 	private void changeToFinnish(ActionEvent e) {
-		AEcosystem finnish = new AEcosystem(new ImplFinnishFactory());
+		Ecosystem finnish = new Ecosystem(new ImplFinnishFactory());
 	}
 	
 }
