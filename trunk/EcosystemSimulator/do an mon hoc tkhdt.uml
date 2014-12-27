@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_j16nkIyyEeSNrtY43VTm9A" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_j16nkYyyEeSNrtY43VTm9A" source="codegen">
         <details xmi:id="_j16nkoyyEeSNrtY43VTm9A" key="codegenDirectory" value="/do an mon hoc tkhdt/src"/>
-        <details xmi:id="_cLW6MIyzEeSNrtY43VTm9A" key="AssociatedSourceCode" value="/do an mon hoc tkhdt/src/com/annvcit/model/Lion.java;1210866360/1;/do an mon hoc tkhdt/src/com/annvcit/model/Wolf.java;3410346923/1;/do an mon hoc tkhdt/src/com/annvcit/model/AHerbivore.java;2000331120/1;/do an mon hoc tkhdt/src/com/annvcit/model/Rabbit.java;2440320476/1;/do an mon hoc tkhdt/src/com/annvcit/model/Antelope.java;863922575/1;/do an mon hoc tkhdt/src/com/annvcit/model/APlant.java;467753992/1;/do an mon hoc tkhdt/src/com/annvcit/model/Willow.java;3983073021/1;/do an mon hoc tkhdt/src/com/annvcit/model/Grass.java;2198175179/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplAfricaFacotry.java;2585421315/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFinnishFactory.java;1575372682/1;/do an mon hoc tkhdt/src/com/annvcit/model/ICreatureFactory.java;3114331193/1;/do an mon hoc tkhdt/src/com/annvcit/model/ACarnivore.java;3144675917/1;/do an mon hoc tkhdt/src/com/annvcit/model/Ecosystem.java;990269116/1;/do an mon hoc tkhdt/src/com/annvcit/model/IAnimal.java;3706744722/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplStarvedState.java;3591969259/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplHungryState.java;286970185/1;/do an mon hoc tkhdt/src/com/annvcit/model/IAnimalState.java;2071742796/1;/do an mon hoc tkhdt/src/com/annvcit/model/IInteraction.java;186506827/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplBreed.java;3522209864/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplChase.java;2159829825/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplEat.java;1371919988/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFight.java;1408930824/1;/do an mon hoc tkhdt/src/com/annvcit/model/InteractionFactory.java;1993332280/1;"/>
+        <details xmi:id="_cLW6MIyzEeSNrtY43VTm9A" key="AssociatedSourceCode" value="/do an mon hoc tkhdt/src/com/annvcit/model/Lion.java;1210866360/1;/do an mon hoc tkhdt/src/com/annvcit/model/Wolf.java;3410346923/1;/do an mon hoc tkhdt/src/com/annvcit/model/AHerbivore.java;2000331120/1;/do an mon hoc tkhdt/src/com/annvcit/model/Rabbit.java;2440320476/1;/do an mon hoc tkhdt/src/com/annvcit/model/Antelope.java;863922575/1;/do an mon hoc tkhdt/src/com/annvcit/model/APlant.java;467753992/1;/do an mon hoc tkhdt/src/com/annvcit/model/Willow.java;3983073021/1;/do an mon hoc tkhdt/src/com/annvcit/model/Grass.java;2198175179/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplAfricaFacotry.java;2585421315/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFinnishFactory.java;1575372682/1;/do an mon hoc tkhdt/src/com/annvcit/model/ICreatureFactory.java;3114331193/1;/do an mon hoc tkhdt/src/com/annvcit/model/ACarnivore.java;3144675917/1;/do an mon hoc tkhdt/src/com/annvcit/model/Ecosystem.java;990269116/1;/do an mon hoc tkhdt/src/com/annvcit/model/IAnimal.java;3706744722/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplStarvedState.java;3591969259/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplHungryState.java;286970185/1;/do an mon hoc tkhdt/src/com/annvcit/model/IAnimalState.java;2071742796/1;/do an mon hoc tkhdt/src/com/annvcit/model/IInteraction.java;186506827/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplBreed.java;3522209864/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplChase.java;2159829825/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplEat.java;1371919988/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFight.java;1408930824/1;/do an mon hoc tkhdt/src/com/annvcit/model/InteractionFactory.java;1993332280/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplNothingTakePlace.java;3434860603/1;/do an mon hoc tkhdt/src/ImplNotHungryAnymore.java;3916221306/1;"/>
       </contents>
       <contents xmi:type="ecore:EAnnotation" xmi:id="_M_lUII0iEeSr8tgZwu4ibQ" source="preferences">
         <contents xmi:type="ecore:EAnnotation" xmi:id="_M_lUIY0iEeSr8tgZwu4ibQ" source="com.yattasolutions.codegen.reverse">
@@ -315,24 +315,6 @@
             <generalization xmi:id="_NdFbII20EeSDmb6ZzY3kXg" general="_lIEdAI2kEeSCed76TuW3eA"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_bACVsI2nEeSDmb6ZzY3kXg" name="public"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_coUZwI21EeSDmb6ZzY3kXg" name="InteractionFactory">
-            <ownedOperation xmi:id="_mbOX4I2tEeSDmb6ZzY3kXg" name="cchhInteraction">
-              <ownedParameter xmi:id="_VQDlAI2wEeSDmb6ZzY3kXg" name="animals" type="_mY3IwI2fEeSCed76TuW3eA">
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VQDlAY2wEeSDmb6ZzY3kXg" value="*"/>
-              </ownedParameter>
-              <ownedParameter xmi:id="_VxnAoI21EeSDmb6ZzY3kXg" type="_lIEdAI2kEeSCed76TuW3eA" direction="return"/>
-            </ownedOperation>
-            <ownedOperation xmi:id="_mbOX4Y2tEeSDmb6ZzY3kXg" name="chInteraction">
-              <ownedParameter xmi:id="_0F0_UI2wEeSDmb6ZzY3kXg" name="aCarnivore" type="_XEVWAIyzEeSNrtY43VTm9A"/>
-              <ownedParameter xmi:id="_0F-wUI2wEeSDmb6ZzY3kXg" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
-              <ownedParameter xmi:id="_VxnAoY21EeSDmb6ZzY3kXg" type="_lIEdAI2kEeSCed76TuW3eA" direction="return"/>
-            </ownedOperation>
-            <ownedOperation xmi:id="_mbOX4o2tEeSDmb6ZzY3kXg" name="hpInteraction">
-              <ownedParameter xmi:id="_0F-wUY2wEeSDmb6ZzY3kXg" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
-              <ownedParameter xmi:id="_0F-wUo2wEeSDmb6ZzY3kXg" name="aPlant" type="_Rrm40IzqEeScxsKS8t0j_w"/>
-              <ownedParameter xmi:id="_VxnAoo21EeSDmb6ZzY3kXg" type="_lIEdAI2kEeSCed76TuW3eA" direction="return"/>
-            </ownedOperation>
-          </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_mVlwUI21EeSDmb6ZzY3kXg" name="InteractionFactory">
             <ownedOperation xmi:id="_mVlwUY21EeSDmb6ZzY3kXg" name="cchhInteraction">
               <ownedParameter xmi:id="_mVlwUo21EeSDmb6ZzY3kXg" name="animals" type="_mY3IwI2fEeSCed76TuW3eA">
@@ -351,8 +333,15 @@
               <ownedParameter xmi:id="_mVvhV421EeSDmb6ZzY3kXg" type="_lIEdAI2kEeSCed76TuW3eA" direction="return"/>
             </ownedOperation>
           </packagedElement>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_EA-lsI23EeSDmb6ZzY3kXg" client="_mVlwUI21EeSDmb6ZzY3kXg" supplier="_lIEdAI2kEeSCed76TuW3eA"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_qlWqcI23EeSDmb6ZzY3kXg" name="ImplNothingTakePlace">
+            <generalization xmi:id="_uzYKEI23EeSDmb6ZzY3kXg" general="_lIEdAI2kEeSCed76TuW3eA"/>
+          </packagedElement>
         </packagedElement>
       </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_evdlEI24EeSDmb6ZzY3kXg" name="ImplNotHungryAnymore">
+      <interfaceRealization xmi:id="_gzggcI24EeSDmb6ZzY3kXg" client="_evdlEI24EeSDmb6ZzY3kXg" supplier="_q5NHcI2fEeSCed76TuW3eA" contract="_q5NHcI2fEeSCed76TuW3eA"/>
     </packagedElement>
     <profileApplication xmi:id="_j16nk4yyEeSNrtY43VTm9A">
       <eAnnotations xmi:id="_j16nlIyyEeSNrtY43VTm9A" source="http://www.eclipse.org/uml2/2.0.0/UML">
