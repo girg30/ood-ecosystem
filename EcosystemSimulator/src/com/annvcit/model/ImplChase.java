@@ -1,5 +1,8 @@
 package com.annvcit.model;
 
-
-public class ImplChase extends IInteraction {
+/**
+ * chase behavior của sinh vật
+ * xảy ra khi đv ăn thịt gặp đv ăn cỏ
+ * */
+public class ImplChase implements IInteraction {
 }

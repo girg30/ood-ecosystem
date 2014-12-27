@@ -8,6 +8,9 @@ import com.annvcit.model.ImplAfricaFacotry;
 import com.annvcit.model.ImplFinnishFactory;
 import com.annvcit.view.Home;
 
+/**
+ * nối bên Home (view) và bên model
+ * */
 public class HomeEvent implements ActionListener{
 
 	private Home home;
@@ -26,12 +29,12 @@ public class HomeEvent implements ActionListener{
 		
 	}
 	
-	// chuyển môi trường qua african
+	/** chuyển môi trường qua african*/
 	private void changeToAfrican(ActionEvent e) {
 		Ecosystem african = new Ecosystem(new ImplAfricaFacotry());
 	}
 	
-	// chuyển môi trường qua finnish
+	/** chuyển môi trường qua finnish*/
 	private void changeToFinnish(ActionEvent e) {
 		Ecosystem finnish = new Ecosystem(new ImplFinnishFactory());
 	}

@@ -13,6 +13,8 @@ import com.annvcit.controller.HomeEvent;
 
 /**
  * @author Chuc An Nguyen Van
+ * 
+ * màn hình khởi chạy của simulator
  */
 public class Home extends JFrame {
 
