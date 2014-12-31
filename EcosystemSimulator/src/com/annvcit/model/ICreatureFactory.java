@@ -1,11 +1,15 @@
 package com.annvcit.model;
 
+
 /**
- * tạo các sinh vật thành phần cho Ecosystem
- * */
+ * t?o c�c sinh v?t th�nh ph?n cho Ecosystem
+ *  *
+ */
 public interface ICreatureFactory {
-	
-	ACarnivore createCarnivore();
-	AHerbivore createHerbivore();
-	APlant createPlant();
-}
+   public ACarnivore createCarnivore();
+   
+   public AHerbivore createHerbivore();
+   
+   public APlant createPlant();
+   
+   }

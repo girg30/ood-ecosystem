@@ -1,7 +1,9 @@
 package com.annvcit.model;
 
+
 /**
- * trạng thái đói của sinh vật (đói bình thường)
- * */
+ * tr?ng th�i ?�i c?a sinh v?t (?�i b�nh th??ng)
+ *  *
+ */
 public class ImplHungryState implements IAnimalState {
 }
