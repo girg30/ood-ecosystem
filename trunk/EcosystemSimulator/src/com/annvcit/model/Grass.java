@@ -1,11 +1,13 @@
 package com.annvcit.model;
 
+
 /**
- * thực vật ở Africa
- * */
+ * th?c v?t ? Africa
+ *  *
+ */
 public class Grass extends APlant {
-	
-	public Grass() {
-		System.out.println("new Grass");
-	}
-}
+   public Grass () {
+      System.out.println("new Grass");
+      	}
+   
+   }

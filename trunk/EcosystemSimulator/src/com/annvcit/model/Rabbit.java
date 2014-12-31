@@ -1,11 +1,13 @@
 package com.annvcit.model;
 
+
 /**
- * động vật ăn cỏ ở Finnish
- * */
+ * ??ng v?t ?n c? ? Finnish
+ *  *
+ */
 public class Rabbit extends AHerbivore {
-	
-	public Rabbit() {
-		System.out.println("new Rabbit");
-	}
-}
+   public Rabbit () {
+      System.out.println("new Rabbit");
+      	}
+   
+   }

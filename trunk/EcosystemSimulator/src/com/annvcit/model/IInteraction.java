@@ -1,8 +1,9 @@
 package com.annvcit.model;
 
+
 /**
- * interface định nghĩa các tương tác của sinh vật
- * */
+ * interface ??nh ngh?a c�c t??ng t�c c?a sinh v?t
+ *  *
+ */
 public interface IInteraction {
-	
 }

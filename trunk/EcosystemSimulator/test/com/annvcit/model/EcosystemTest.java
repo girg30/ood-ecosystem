@@ -12,5 +12,5 @@ public class EcosystemTest {
 		// chuyển qua finnish at runtime
 		Ecosystem finnish = new Ecosystem(new ImplFinnishFactory());
 	}
-
+	
 }

@@ -7,7 +7,7 @@
     <contents xsi:type="ecore:EAnnotation" xmi:id="_hRMM8IzyEeScxsKS8t0j_w" source="visual-filters/hideStaticFeatures">
       <details xmi:id="_hRMM8YzyEeScxsKS8t0j_w" key="isActive" value="false"/>
     </contents>
-    <contents xsi:type="ecore:EAnnotation" xmi:id="_h5uMkIzyEeScxsKS8t0j_w" source="visual-filters/hideNonPublicElements" references="_98mTZozwEeScxsKS8t0j_w _UU2u1ozxEeScxsKS8t0j_w _UWMypozxEeScxsKS8t0j_w _UXiPZozxEeScxsKS8t0j_w _IF3hFoz_EeSENYOerBqPMA _zQ7LJo0BEeSENYOerBqPMA _5lqbco0IEeSu08JHNZpjmw _NrKAto0iEeSr8tgZwu4ibQ _lcIvE43REeSDmb6ZzY3kXg _lcIvF43REeSDmb6ZzY3kXg _lcIvG43REeSDmb6ZzY3kXg _lcIvH43REeSDmb6ZzY3kXg _vgdBxo3TEeSDmb6ZzY3kXg">
+    <contents xsi:type="ecore:EAnnotation" xmi:id="_h5uMkIzyEeScxsKS8t0j_w" source="visual-filters/hideNonPublicElements" references="_98mTZozwEeScxsKS8t0j_w _UU2u1ozxEeScxsKS8t0j_w _UWMypozxEeScxsKS8t0j_w _UXiPZozxEeScxsKS8t0j_w _IF3hFoz_EeSENYOerBqPMA _zQ7LJo0BEeSENYOerBqPMA _5lqbco0IEeSu08JHNZpjmw _NrKAto0iEeSr8tgZwu4ibQ _lcIvE43REeSDmb6ZzY3kXg _lcIvF43REeSDmb6ZzY3kXg _lcIvG43REeSDmb6ZzY3kXg _lcIvH43REeSDmb6ZzY3kXg _vgdBxo3TEeSDmb6ZzY3kXg _lcIvOI3REeSDmb6ZzY3kXg _lcIvPY3REeSDmb6ZzY3kXg _lcIvQo3REeSDmb6ZzY3kXg _lcIvR43REeSDmb6ZzY3kXg _Fw5VSY3lEeSDmb6ZzY3kXg">
       <details xmi:id="_h5uMkYzyEeScxsKS8t0j_w" key="isActive" value="true"/>
     </contents>
     <contents xsi:type="ecore:EAnnotation" xmi:id="_ihNqYIzyEeScxsKS8t0j_w" source="visual-filters/commenticons">
@@ -20,44 +20,53 @@
       <contents xsi:type="com.yattasolutions.uml.diagrams.classifier:RoleVisual" xmi:id="_IF3hFoz_EeSENYOerBqPMA"/>
       <contents xsi:type="com.yattasolutions.uml.diagrams.classifier:RoleVisual" xmi:id="_zQ7LJo0BEeSENYOerBqPMA"/>
       <contents xsi:type="com.yattasolutions.uml.diagrams.classifier:RoleVisual" xmi:id="_vgdBxo3TEeSDmb6ZzY3kXg"/>
+      <contents xsi:type="com.yattasolutions.uml.diagrams.classifier:RoleVisual" xmi:id="_lcIvE43REeSDmb6ZzY3kXg"/>
+      <contents xsi:type="com.yattasolutions.uml.diagrams.classifier:RoleVisual" xmi:id="_lcIvF43REeSDmb6ZzY3kXg"/>
+      <contents xsi:type="com.yattasolutions.uml.diagrams.classifier:RoleVisual" xmi:id="_lcIvG43REeSDmb6ZzY3kXg"/>
+      <contents xsi:type="com.yattasolutions.uml.diagrams.classifier:RoleVisual" xmi:id="_lcIvH43REeSDmb6ZzY3kXg"/>
+      <contents xsi:type="com.yattasolutions.uml.diagrams.classifier:AttributeVisual" xmi:id="_lcIvOI3REeSDmb6ZzY3kXg"/>
+      <contents xsi:type="com.yattasolutions.uml.diagrams.classifier:AttributeVisual" xmi:id="_lcIvPY3REeSDmb6ZzY3kXg"/>
+      <contents xsi:type="com.yattasolutions.uml.diagrams.classifier:AttributeVisual" xmi:id="_lcIvQo3REeSDmb6ZzY3kXg"/>
+      <contents xsi:type="com.yattasolutions.uml.diagrams.classifier:AttributeVisual" xmi:id="_lcIvR43REeSDmb6ZzY3kXg"/>
+      <contents xsi:type="com.yattasolutions.uml.diagrams.classifier:AttributeVisual" xmi:id="_Fw5VSY3lEeSDmb6ZzY3kXg"/>
     </contents>
   </eAnnotations>
   <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j1BPsIyyEeSNrtY43VTm9A"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_5kxEMIyzEeSNrtY43VTm9A" sourceAnchor="65.0,0.0" targetAnchor="99.0,54.0" superClass="_XEoQ8IyzEeSNrtY43VTm9A" subClass="_ww6B4YyzEeSNrtY43VTm9A">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_5kdiMIyzEeSNrtY43VTm9A"/>
     <visualProperties xmi:id="_5kxEMYyzEeSNrtY43VTm9A"/>
-    <bendpoints xmi:id="_za5Y4I3lEeSDmb6ZzY3kXg" sourceY="-30" targetX="-209" targetY="126"/>
-    <bendpoints xmi:id="_za5Y4Y3lEeSDmb6ZzY3kXg" sourceX="209" sourceY="-30" targetY="126"/>
+    <bendpoints xmi:id="_pU4CUJDeEeSh79dQXpRhHA" sourceY="-30" targetX="-209" targetY="126"/>
+    <bendpoints xmi:id="_pU4CUZDeEeSh79dQXpRhHA" sourceX="209" sourceY="-30" targetY="126"/>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_6Sz18YyzEeSNrtY43VTm9A" sourceAnchor="63.0,0.0" targetAnchor="99.0,54.0" superClass="_XEoQ8IyzEeSNrtY43VTm9A" subClass="_nXQK4YyzEeSNrtY43VTm9A">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_6Sz18IyzEeSNrtY43VTm9A"/>
     <visualProperties xmi:id="_6Sz18oyzEeSNrtY43VTm9A"/>
-    <bendpoints xmi:id="_za1ugY3lEeSDmb6ZzY3kXg" sourceY="-55" targetX="256" targetY="126"/>
-    <bendpoints xmi:id="_za1ugo3lEeSDmb6ZzY3kXg" sourceX="-256" sourceY="-55" targetY="126"/>
+    <bendpoints xmi:id="_pU1mEZDeEeSh79dQXpRhHA" sourceY="-55" targetX="256" targetY="126"/>
+    <bendpoints xmi:id="_pU1mEpDeEeSh79dQXpRhHA" sourceX="-256" sourceY="-55" targetY="126"/>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_kSdHsYy0EeSNrtY43VTm9A" sourceAnchor="74.0,0.0" targetAnchor="100.0,54.0" superClass="_ZRX_4Yy0EeSNrtY43VTm9A" subClass="_d8WhQYy0EeSNrtY43VTm9A">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_kSdHsIy0EeSNrtY43VTm9A"/>
     <visualProperties xmi:id="_kSdHsoy0EeSNrtY43VTm9A"/>
-    <bendpoints xmi:id="_zaz5Uo3lEeSDmb6ZzY3kXg" sourceY="-30" targetX="-236" targetY="66"/>
-    <bendpoints xmi:id="_zaz5U43lEeSDmb6ZzY3kXg" sourceX="236" sourceY="-30" targetY="66"/>
+    <bendpoints xmi:id="_pUzw4JDeEeSh79dQXpRhHA" sourceY="-30" targetX="-236" targetY="66"/>
+    <bendpoints xmi:id="_pUzw4ZDeEeSh79dQXpRhHA" sourceX="236" sourceY="-30" targetY="66"/>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_kkWwAYy0EeSNrtY43VTm9A" sourceAnchor="88.0,0.0" targetAnchor="100.0,54.0" superClass="_ZRX_4Yy0EeSNrtY43VTm9A" subClass="_hH_94Yy0EeSNrtY43VTm9A">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_kkWwAIy0EeSNrtY43VTm9A"/>
     <visualProperties xmi:id="_kkWwAoy0EeSNrtY43VTm9A"/>
-    <bendpoints xmi:id="_za1Hco3lEeSDmb6ZzY3kXg" sourceY="-36" targetX="217" targetY="66"/>
-    <bendpoints xmi:id="_za1ugI3lEeSDmb6ZzY3kXg" sourceX="-217" sourceY="-36" targetY="66"/>
+    <bendpoints xmi:id="_pU0_ApDeEeSh79dQXpRhHA" sourceY="-36" targetX="217" targetY="66"/>
+    <bendpoints xmi:id="_pU1mEJDeEeSh79dQXpRhHA" sourceX="-217" sourceY="-36" targetY="66"/>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_TzEUkYzqEeScxsKS8t0j_w" sourceAnchor="76.0,0.0" targetAnchor="75.0,54.0" superClass="_Rrwp0IzqEeScxsKS8t0j_w" subClass="_SrY60YzqEeScxsKS8t0j_w">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_TzEUkIzqEeScxsKS8t0j_w"/>
     <visualProperties xmi:id="_TzEUkozqEeScxsKS8t0j_w"/>
-    <bendpoints xmi:id="_za0gYI3lEeSDmb6ZzY3kXg" sourceY="-30" targetX="-221" targetY="61"/>
-    <bendpoints xmi:id="_za0gYY3lEeSDmb6ZzY3kXg" sourceX="221" sourceY="-30" targetY="61"/>
+    <bendpoints xmi:id="_pUzw4pDeEeSh79dQXpRhHA" sourceY="-30" targetX="-221" targetY="61"/>
+    <bendpoints xmi:id="_pU0X8JDeEeSh79dQXpRhHA" sourceX="221" sourceY="-30" targetY="61"/>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_UB-TQYzqEeScxsKS8t0j_w" sourceAnchor="68.0,0.0" targetAnchor="75.0,54.0" superClass="_Rrwp0IzqEeScxsKS8t0j_w" subClass="_TCCgQYzqEeScxsKS8t0j_w">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UB-TQIzqEeScxsKS8t0j_w"/>
     <visualProperties xmi:id="_UB-TQozqEeScxsKS8t0j_w"/>
-    <bendpoints xmi:id="_za1HcI3lEeSDmb6ZzY3kXg" sourceY="-51" targetX="226" targetY="61"/>
-    <bendpoints xmi:id="_za1HcY3lEeSDmb6ZzY3kXg" sourceX="-226" sourceY="-51" targetY="61"/>
+    <bendpoints xmi:id="_pU0_AJDeEeSh79dQXpRhHA" sourceY="-51" targetX="226" targetY="61"/>
+    <bendpoints xmi:id="_pU0_AZDeEeSh79dQXpRhHA" sourceX="-226" sourceY="-51" targetY="61"/>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_cusy0YzqEeScxsKS8t0j_w" sourceAnchor="88.0,92.0" targetAnchor="112.0,0.0" dashed="true" superClass="_awyUoYzqEeScxsKS8t0j_w" subClass="_bT8sEIzqEeScxsKS8t0j_w">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_cusy0IzqEeScxsKS8t0j_w"/>
@@ -66,17 +75,17 @@
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_c8HjwYzqEeScxsKS8t0j_w" sourceAnchor="112.0,92.0" targetAnchor="112.0,109.0" dashed="true" superClass="_awyUoYzqEeScxsKS8t0j_w" subClass="_btSZIYzqEeScxsKS8t0j_w">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_c8HjwIzqEeScxsKS8t0j_w"/>
     <visualProperties xmi:id="_c8HjwozqEeScxsKS8t0j_w"/>
-    <bendpoints xmi:id="_zaz5UI3lEeSDmb6ZzY3kXg" sourceY="15" targetX="-917" targetY="89"/>
-    <bendpoints xmi:id="_zaz5UY3lEeSDmb6ZzY3kXg" sourceX="917" sourceY="15" targetY="89"/>
+    <bendpoints xmi:id="_pUzJ0JDeEeSh79dQXpRhHA" sourceY="64" targetX="-917" targetY="138"/>
+    <bendpoints xmi:id="_pUzJ0ZDeEeSh79dQXpRhHA" sourceX="917" sourceY="64" targetY="138"/>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UWMyoIzxEeScxsKS8t0j_w" sourceAnchor="84.0,54.0" targetAnchor="200.0,27.0" target="_ZRX_4Yy0EeSNrtY43VTm9A" source="_eB3D0IzqEeScxsKS8t0j_w">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UTqcCYzxEeScxsKS8t0j_w"/>
-    <bendpoints xmi:id="_zaxdEI3lEeSDmb6ZzY3kXg" sourceY="371" targetX="260"/>
+    <bendpoints xmi:id="_pUwGgJDeEeSh79dQXpRhHA" sourceY="371" targetX="260"/>
     <stereotypes xmi:id="_UWMyoYzxEeScxsKS8t0j_w" name="Reference">
       <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UT0NAIzxEeScxsKS8t0j_w"/>
     </stereotypes>
-    <nameVisual xmi:id="_UWMyoozxEeScxsKS8t0j_w" text="">
-      <visualProperties xmi:id="_Xg3X14zxEeScxsKS8t0j_w" position="0.9999999999995453,346.9999999999998" visible="false"/>
+    <nameVisual xmi:id="_Vb-4QJANEeSdZrpsc8Stlg" text="">
+      <visualProperties xmi:id="_9dozUJANEeSdZrpsc8Stlg" position="-136.0,2.0"/>
     </nameVisual>
     <sourceRole xmi:id="_UWMyo4zxEeScxsKS8t0j_w" aggregationKind="NONE" name="">
       <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UTqcCozxEeScxsKS8t0j_w"/>
@@ -96,12 +105,12 @@
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UXiPYIzxEeScxsKS8t0j_w" sourceAnchor="114.0,54.0" targetAnchor="150.0,27.0" target="_Rrwp0IzqEeScxsKS8t0j_w" source="_eB3D0IzqEeScxsKS8t0j_w">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UT0NAYzxEeScxsKS8t0j_w"/>
-    <bendpoints xmi:id="_zayEII3lEeSDmb6ZzY3kXg" sourceY="622" targetX="312"/>
+    <bendpoints xmi:id="_pUwtkJDeEeSh79dQXpRhHA" sourceY="622" targetX="312"/>
     <stereotypes xmi:id="_UXiPYYzxEeScxsKS8t0j_w" name="Reference">
       <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UT0NA4zxEeScxsKS8t0j_w"/>
     </stereotypes>
-    <nameVisual xmi:id="_UXiPYozxEeScxsKS8t0j_w" text="">
-      <visualProperties xmi:id="_Xg3X2ozxEeScxsKS8t0j_w" position="-17.0,133.0" visible="false"/>
+    <nameVisual xmi:id="_Vb_fUJANEeSdZrpsc8Stlg" text="">
+      <visualProperties xmi:id="_9dpaYJANEeSdZrpsc8Stlg" position="-52.0,-18.0"/>
     </nameVisual>
     <sourceRole xmi:id="_UXiPY4zxEeScxsKS8t0j_w" aggregationKind="NONE" name="">
       <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UT0NAozxEeScxsKS8t0j_w"/>
@@ -122,41 +131,41 @@
   <edges xsi:type="com.yattasolutions.diagrams:DependencyVisual" xmi:id="_lje-AIzxEeScxsKS8t0j_w" sourceAnchor="0.0,4.0" targetAnchor="126.0,27.0" client="_z6Kh9ozsEeScxsKS8t0j_w" supplier="_nXQK4YyzEeSNrtY43VTm9A">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_ljVNAIzxEeScxsKS8t0j_w"/>
     <visualProperties xmi:id="_lje-AYzxEeScxsKS8t0j_w" lineColor="255,128,128"/>
-    <bendpoints xmi:id="_za5Y4o3lEeSDmb6ZzY3kXg" sourceX="-10" targetX="153" targetY="183"/>
-    <bendpoints xmi:id="_za5Y443lEeSDmb6ZzY3kXg" sourceX="-10" sourceY="-183" targetX="153"/>
+    <bendpoints xmi:id="_pU860JDeEeSh79dQXpRhHA" sourceX="-153" targetX="10" targetY="183"/>
+    <bendpoints xmi:id="_pU860ZDeEeSh79dQXpRhHA" sourceX="-153" sourceY="-183" targetX="10"/>
     <nameVisual xmi:id="_lje-AozxEeScxsKS8t0j_w" text=""/>
   </edges>
   <edges xsi:type="com.yattasolutions.diagrams:DependencyVisual" xmi:id="_mDq58IzxEeScxsKS8t0j_w" sourceAnchor="0.0,8.0" targetAnchor="176.0,27.0" client="_z6Kh9ozsEeScxsKS8t0j_w" supplier="_hH_94Yy0EeSNrtY43VTm9A">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_mDhI8IzxEeScxsKS8t0j_w"/>
     <visualProperties xmi:id="_mDq58YzxEeScxsKS8t0j_w" lineColor="255,128,128"/>
-    <bendpoints xmi:id="_za5_8I3lEeSDmb6ZzY3kXg" sourceX="-120" targetX="10" targetY="-101"/>
-    <bendpoints xmi:id="_za5_8Y3lEeSDmb6ZzY3kXg" sourceX="-120" sourceY="101" targetX="10"/>
+    <bendpoints xmi:id="_pU9h4JDeEeSh79dQXpRhHA" sourceX="-120" targetX="10" targetY="-101"/>
+    <bendpoints xmi:id="_pU9h4ZDeEeSh79dQXpRhHA" sourceX="-120" sourceY="101" targetX="10"/>
     <nameVisual xmi:id="_mDq58ozxEeScxsKS8t0j_w" text=""/>
   </edges>
   <edges xsi:type="com.yattasolutions.diagrams:DependencyVisual" xmi:id="_mXWD4YzxEeScxsKS8t0j_w" sourceAnchor="0.0,12.0" targetAnchor="136.0,27.0" client="_z6Kh9ozsEeScxsKS8t0j_w" supplier="_TCCgQYzqEeScxsKS8t0j_w">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_mXWD4IzxEeScxsKS8t0j_w"/>
     <visualProperties xmi:id="_mXWD4ozxEeScxsKS8t0j_w" lineColor="255,128,128"/>
-    <bendpoints xmi:id="_za6nAI3lEeSDmb6ZzY3kXg" sourceX="-10" targetX="128" targetY="-358"/>
-    <bendpoints xmi:id="_za6nAY3lEeSDmb6ZzY3kXg" sourceX="-10" sourceY="358" targetX="128"/>
+    <bendpoints xmi:id="_pU8TwJDeEeSh79dQXpRhHA" sourceX="-10" targetX="128" targetY="-358"/>
+    <bendpoints xmi:id="_pU8TwZDeEeSh79dQXpRhHA" sourceX="-10" sourceY="358" targetX="128"/>
     <nameVisual xmi:id="_mXWD44zxEeScxsKS8t0j_w" text=""/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:DependencyVisual" xmi:id="_nGuSYYzxEeScxsKS8t0j_w" sourceAnchor="224.0,76.0" targetAnchor="55.0,54.0" client="_btSZIYzqEeScxsKS8t0j_w" supplier="_ww6B4YyzEeSNrtY43VTm9A">
+  <edges xsi:type="com.yattasolutions.diagrams:DependencyVisual" xmi:id="_nGuSYYzxEeScxsKS8t0j_w" sourceAnchor="82.0,0.0" targetAnchor="0.0,27.0" client="_btSZIYzqEeScxsKS8t0j_w" supplier="_ww6B4YyzEeSNrtY43VTm9A">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_nGuSYIzxEeScxsKS8t0j_w"/>
     <visualProperties xmi:id="_nGuSYozxEeScxsKS8t0j_w" lineColor="0,128,255"/>
-    <bendpoints xmi:id="_zayrMY3lEeSDmb6ZzY3kXg" sourceX="608" targetX="586" targetY="765"/>
-    <bendpoints xmi:id="_zayrMo3lEeSDmb6ZzY3kXg" sourceX="608" sourceY="-593" targetX="586" targetY="172"/>
-    <bendpoints xmi:id="_zayrM43lEeSDmb6ZzY3kXg" sourceX="22" sourceY="-593" targetY="172"/>
+    <bendpoints xmi:id="_pUx7sJDeEeSh79dQXpRhHA" sourceY="-716" targetX="-109"/>
     <nameVisual xmi:id="_nGuSY4zxEeScxsKS8t0j_w" text=""/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:DependencyVisual" xmi:id="_ngD_cIzxEeScxsKS8t0j_w" sourceAnchor="203.0,0.0" targetAnchor="1.0,54.0" client="_btSZIYzqEeScxsKS8t0j_w" supplier="_d8WhQYy0EeSNrtY43VTm9A">
+  <edges xsi:type="com.yattasolutions.diagrams:DependencyVisual" xmi:id="_ngD_cIzxEeScxsKS8t0j_w" sourceAnchor="224.0,46.0" targetAnchor="148.0,27.0" client="_btSZIYzqEeScxsKS8t0j_w" supplier="_d8WhQYy0EeSNrtY43VTm9A">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_nf6OcIzxEeScxsKS8t0j_w"/>
     <visualProperties xmi:id="_ngD_cYzxEeScxsKS8t0j_w" lineColor="0,128,255"/>
+    <bendpoints xmi:id="_pUyiwJDeEeSh79dQXpRhHA" sourceX="381" targetX="255" targetY="455"/>
+    <bendpoints xmi:id="_pUyiwZDeEeSh79dQXpRhHA" sourceX="381" sourceY="-455" targetX="255"/>
     <nameVisual xmi:id="_ngD_cozxEeScxsKS8t0j_w" text=""/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:DependencyVisual" xmi:id="_n6vJQYzxEeScxsKS8t0j_w" sourceAnchor="224.0,46.0" targetAnchor="76.0,54.0" client="_btSZIYzqEeScxsKS8t0j_w" supplier="_SrY60YzqEeScxsKS8t0j_w">
+  <edges xsi:type="com.yattasolutions.diagrams:DependencyVisual" xmi:id="_n6vJQYzxEeScxsKS8t0j_w" sourceAnchor="112.0,0.0" targetAnchor="0.0,27.0" client="_btSZIYzqEeScxsKS8t0j_w" supplier="_SrY60YzqEeScxsKS8t0j_w">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_n6vJQIzxEeScxsKS8t0j_w"/>
     <visualProperties xmi:id="_n6vJQozxEeScxsKS8t0j_w" lineColor="0,128,255"/>
-    <bendpoints xmi:id="_zayrMI3lEeSDmb6ZzY3kXg" sourceX="70" targetY="182"/>
+    <bendpoints xmi:id="_pUxUoJDeEeSh79dQXpRhHA" sourceY="-163" targetX="-106"/>
     <nameVisual xmi:id="_n6vJQ4zxEeScxsKS8t0j_w" text=""/>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_NrKAsI0iEeSr8tgZwu4ibQ" sourceAnchor="0.0,39.0" targetAnchor="198.0,8.0" target="_XEoQ8IyzEeSNrtY43VTm9A" source="_eB3D0IzqEeScxsKS8t0j_w">
@@ -164,8 +173,8 @@
     <stereotypes xmi:id="_NrKAsY0iEeSr8tgZwu4ibQ" name="Reference">
       <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_NdTx8I0iEeSr8tgZwu4ibQ"/>
     </stereotypes>
-    <nameVisual xmi:id="_NrKAso0iEeSr8tgZwu4ibQ" text="">
-      <visualProperties xmi:id="_bpe8wI0iEeSr8tgZwu4ibQ" position="2.0,-8.0" visible="false"/>
+    <nameVisual xmi:id="_VcBUgJANEeSdZrpsc8Stlg" text="">
+      <visualProperties xmi:id="_9dqBcJANEeSdZrpsc8Stlg" position="-1.0,2.0"/>
     </nameVisual>
     <sourceRole xmi:id="_NrKAs40iEeSr8tgZwu4ibQ" aggregationKind="NONE" name="">
       <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_NdPggY0iEeSr8tgZwu4ibQ"/>
@@ -183,181 +192,72 @@
       <cardinality xmi:id="_NrKAuI0iEeSr8tgZwu4ibQ" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CLneAI2gEeSCed76TuW3eA" sourceAnchor="160.0,0.0" targetAnchor="156.0,109.0" dashed="true" superClass="_q5NugI2fEeSCed76TuW3eA" subClass="_k-CJgI2fEeSCed76TuW3eA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_CLneAI2gEeSCed76TuW3eA" sourceAnchor="63.0,0.0" targetAnchor="43.0,44.0" dashed="true" superClass="_q5NugI2fEeSCed76TuW3eA" subClass="_k-CJgI2fEeSCed76TuW3eA">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_CLkasI2gEeSCed76TuW3eA"/>
     <visualProperties xmi:id="_CLneAY2gEeSCed76TuW3eA" lineColor="0,255,0"/>
-    <bendpoints xmi:id="_za2VkY3lEeSDmb6ZzY3kXg" sourceY="-65" targetX="-344" targetY="72"/>
-    <bendpoints xmi:id="_za2Vko3lEeSDmb6ZzY3kXg" sourceX="344" sourceY="-65" targetY="72"/>
+    <bendpoints xmi:id="_pU4pYJDeEeSh79dQXpRhHA" sourceY="-65" targetX="-328" targetY="137"/>
+    <bendpoints xmi:id="_pU4pYZDeEeSh79dQXpRhHA" sourceX="328" sourceY="-65" targetY="137"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ClldMI2gEeSCed76TuW3eA" sourceAnchor="171.0,0.0" targetAnchor="156.0,109.0" dashed="true" superClass="_q5NugI2fEeSCed76TuW3eA" subClass="_lae08I2fEeSCed76TuW3eA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ClldMI2gEeSCed76TuW3eA" sourceAnchor="61.0,0.0" targetAnchor="43.0,44.0" dashed="true" superClass="_q5NugI2fEeSCed76TuW3eA" subClass="_lae08I2fEeSCed76TuW3eA">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_ClkPEI2gEeSCed76TuW3eA"/>
     <visualProperties xmi:id="_ClldMY2gEeSCed76TuW3eA" lineColor="0,255,0"/>
-    <bendpoints xmi:id="_za4KwI3lEeSDmb6ZzY3kXg" sourceY="-30" targetX="171" targetY="72"/>
-    <bendpoints xmi:id="_za4KwY3lEeSDmb6ZzY3kXg" sourceX="-171" sourceY="-30" targetY="72"/>
+    <bendpoints xmi:id="_pU20MJDeEeSh79dQXpRhHA" sourceY="-30" targetX="174" targetY="137"/>
+    <bendpoints xmi:id="_pU20MZDeEeSh79dQXpRhHA" sourceX="-174" sourceY="-30" targetY="137"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_4p4dsY3OEeSDmb6ZzY3kXg" sourceAnchor="39.0,0.0" targetAnchor="46.0,44.0" dashed="true" superClass="_lz2y4I3OEeSDmb6ZzY3kXg" subClass="_R4FkoY2lEeSCed76TuW3eA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_4p4dsY3OEeSDmb6ZzY3kXg" sourceAnchor="148.0,0.0" targetAnchor="46.0,44.0" dashed="true" superClass="_lz2y4I3OEeSDmb6ZzY3kXg" subClass="_R4FkoY2lEeSCed76TuW3eA">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_4p4dsI3OEeSDmb6ZzY3kXg"/>
     <visualProperties xmi:id="_4p4dso3OEeSDmb6ZzY3kXg"/>
-    <bendpoints xmi:id="_zauZwI3lEeSDmb6ZzY3kXg" sourceY="-30" targetX="-222" targetY="87"/>
-    <bendpoints xmi:id="_zauZwY3lEeSDmb6ZzY3kXg" sourceX="222" sourceY="-30" targetY="87"/>
+    <bendpoints xmi:id="_pU53gJDeEeSh79dQXpRhHA" sourceY="-30" targetX="-195" targetY="88"/>
+    <bendpoints xmi:id="_pU53gZDeEeSh79dQXpRhHA" sourceX="195" sourceY="-30" targetY="88"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_46a0EY3OEeSDmb6ZzY3kXg" sourceAnchor="42.0,0.0" targetAnchor="46.0,44.0" dashed="true" superClass="_lz2y4I3OEeSDmb6ZzY3kXg" subClass="_TO94AY2lEeSCed76TuW3eA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_46a0EY3OEeSDmb6ZzY3kXg" sourceAnchor="257.0,0.0" targetAnchor="46.0,44.0" dashed="true" superClass="_lz2y4I3OEeSDmb6ZzY3kXg" subClass="_TO94AY2lEeSCed76TuW3eA">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_46a0EI3OEeSDmb6ZzY3kXg"/>
     <visualProperties xmi:id="_46a0Eo3OEeSDmb6ZzY3kXg"/>
-    <bendpoints xmi:id="_zavA0I3lEeSDmb6ZzY3kXg" sourceY="-39" targetX="-121" targetY="87"/>
-    <bendpoints xmi:id="_zavA0Y3lEeSDmb6ZzY3kXg" sourceX="121" sourceY="-39" targetY="87"/>
+    <bendpoints xmi:id="_pU7FoJDeEeSh79dQXpRhHA" sourceY="-155" targetX="-11" targetY="88"/>
+    <bendpoints xmi:id="_pU7FoZDeEeSh79dQXpRhHA" sourceX="11" sourceY="-155" targetY="88"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_5NWXIY3OEeSDmb6ZzY3kXg" sourceAnchor="28.0,0.0" targetAnchor="46.0,44.0" dashed="true" superClass="_lz2y4I3OEeSDmb6ZzY3kXg" subClass="_ULBQkY2lEeSCed76TuW3eA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_5NWXIY3OEeSDmb6ZzY3kXg" sourceAnchor="137.0,0.0" targetAnchor="46.0,44.0" dashed="true" superClass="_lz2y4I3OEeSDmb6ZzY3kXg" subClass="_ULBQkY2lEeSCed76TuW3eA">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_5NWXII3OEeSDmb6ZzY3kXg"/>
     <visualProperties xmi:id="_5NWXIo3OEeSDmb6ZzY3kXg"/>
-    <bendpoints xmi:id="_zavn4o3lEeSDmb6ZzY3kXg" sourceY="-49" targetX="32" targetY="87"/>
-    <bendpoints xmi:id="_zavn443lEeSDmb6ZzY3kXg" sourceX="-32" sourceY="-49" targetY="87"/>
+    <bendpoints xmi:id="_pU5QcJDeEeSh79dQXpRhHA" sourceY="-48" targetX="141" targetY="88"/>
+    <bendpoints xmi:id="_pU5QcZDeEeSh79dQXpRhHA" sourceX="-141" sourceY="-48" targetY="88"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_5X7PcY3OEeSDmb6ZzY3kXg" sourceAnchor="41.0,0.0" targetAnchor="46.0,44.0" dashed="true" superClass="_lz2y4I3OEeSDmb6ZzY3kXg" subClass="_VMSgUY2lEeSCed76TuW3eA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_5X7PcY3OEeSDmb6ZzY3kXg" sourceAnchor="177.0,0.0" targetAnchor="46.0,44.0" dashed="true" superClass="_lz2y4I3OEeSDmb6ZzY3kXg" subClass="_VMSgUY2lEeSCed76TuW3eA">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_5X7PcI3OEeSDmb6ZzY3kXg"/>
     <visualProperties xmi:id="_5X7Pco3OEeSDmb6ZzY3kXg"/>
-    <bendpoints xmi:id="_zawO8I3lEeSDmb6ZzY3kXg" sourceY="-43" targetX="161" targetY="87"/>
-    <bendpoints xmi:id="_zawO8Y3lEeSDmb6ZzY3kXg" sourceX="-161" sourceY="-43" targetY="87"/>
+    <bendpoints xmi:id="_pU6ekJDeEeSh79dQXpRhHA" sourceY="-115" targetX="293" targetY="88"/>
+    <bendpoints xmi:id="_pU6ekZDeEeSh79dQXpRhHA" sourceX="-293" sourceY="-115" targetY="88"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_5zDFMI3OEeSDmb6ZzY3kXg" sourceAnchor="65.0,0.0" targetAnchor="46.0,44.0" dashed="true" superClass="_lz2y4I3OEeSDmb6ZzY3kXg" subClass="_qlWqcY23EeSDmb6ZzY3kXg">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_5zDFMI3OEeSDmb6ZzY3kXg" sourceAnchor="213.0,15.0" targetAnchor="46.0,44.0" dashed="true" superClass="_lz2y4I3OEeSDmb6ZzY3kXg" subClass="_qlWqcY23EeSDmb6ZzY3kXg">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_5y57QI3OEeSDmb6ZzY3kXg"/>
     <visualProperties xmi:id="_5zDFMY3OEeSDmb6ZzY3kXg"/>
-    <bendpoints xmi:id="_zavn4I3lEeSDmb6ZzY3kXg" sourceY="-166" targetX="-61" targetY="87"/>
-    <bendpoints xmi:id="_zavn4Y3lEeSDmb6ZzY3kXg" sourceX="61" sourceY="-166" targetY="87"/>
+    <bendpoints xmi:id="_pU7ssJDeEeSh79dQXpRhHA" sourceX="132" targetX="437" targetY="311"/>
+    <bendpoints xmi:id="_pU7ssZDeEeSh79dQXpRhHA" sourceX="132" sourceY="-223" targetX="437" targetY="88"/>
+    <bendpoints xmi:id="_pU7sspDeEeSh79dQXpRhHA" sourceX="-305" sourceY="-223" targetY="88"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_O8dH4Y3PEeSDmb6ZzY3kXg" sourceAnchor="277.0,0.0" targetAnchor="156.0,109.0" dashed="true" superClass="_q5NugI2fEeSCed76TuW3eA" subClass="__vywcY3OEeSDmb6ZzY3kXg">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_O8dH4Y3PEeSDmb6ZzY3kXg" sourceAnchor="61.0,0.0" targetAnchor="43.0,44.0" dashed="true" superClass="_q5NugI2fEeSCed76TuW3eA" subClass="__vywcY3OEeSDmb6ZzY3kXg">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_O8dH4I3PEeSDmb6ZzY3kXg"/>
     <visualProperties xmi:id="_O8dH4o3PEeSDmb6ZzY3kXg" lineColor="0,255,0"/>
-    <bendpoints xmi:id="_za3jsI3lEeSDmb6ZzY3kXg" sourceY="-212" targetX="-141" targetY="72"/>
-    <bendpoints xmi:id="_za3jsY3lEeSDmb6ZzY3kXg" sourceX="141" sourceY="-212" targetY="72"/>
+    <bendpoints xmi:id="_pU2NIJDeEeSh79dQXpRhHA" sourceY="-212" targetX="-244" targetY="137"/>
+    <bendpoints xmi:id="_pU2NIZDeEeSh79dQXpRhHA" sourceX="244" sourceY="-212" targetY="137"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_GW-DUY3QEeSDmb6ZzY3kXg" sourceAnchor="51.0,0.0" targetAnchor="156.0,109.0" dashed="true" superClass="_q5NugI2fEeSCed76TuW3eA" subClass="_DoUEsY3QEeSDmb6ZzY3kXg">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_GW-DUY3QEeSDmb6ZzY3kXg" sourceAnchor="59.0,0.0" targetAnchor="43.0,44.0" dashed="true" superClass="_q5NugI2fEeSCed76TuW3eA" subClass="_DoUEsY3QEeSDmb6ZzY3kXg">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_GW-DUI3QEeSDmb6ZzY3kXg"/>
     <visualProperties xmi:id="_GW-DUo3QEeSDmb6ZzY3kXg" lineColor="0,255,0"/>
-    <bendpoints xmi:id="_za4x0Y3lEeSDmb6ZzY3kXg" sourceY="-243" targetX="-30" targetY="72"/>
-    <bendpoints xmi:id="_za4x0o3lEeSDmb6ZzY3kXg" sourceX="30" sourceY="-243" targetY="72"/>
+    <bendpoints xmi:id="_pU3bQJDeEeSh79dQXpRhHA" sourceY="-243" targetX="91" targetY="137"/>
+    <bendpoints xmi:id="_pU3bQZDeEeSh79dQXpRhHA" sourceX="-91" sourceY="-243" targetY="137"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_lb--EI3REeSDmb6ZzY3kXg" sourceAnchor="37.0,0.0" targetAnchor="156.0,0.0" target="_q5NugI2fEeSCed76TuW3eA" source="_lcIvNY3REeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlyI3REeSDmb6ZzY3kXg"/>
-    <visualProperties xmi:id="_vwOXkI3dEeSDmb6ZzY3kXg" visible="false"/>
-    <bendpoints xmi:id="_dxC1MY3dEeSDmb6ZzY3kXg" sourceY="-223" targetX="368" targetY="-242">
-      <visualProperties xmi:id="_qsjpYI3dEeSDmb6ZzY3kXg"/>
-    </bendpoints>
-    <bendpoints xmi:id="_dxC1Mo3dEeSDmb6ZzY3kXg" sourceX="-368" sourceY="-223" targetY="-242">
-      <visualProperties xmi:id="_qsjpYY3dEeSDmb6ZzY3kXg"/>
-    </bendpoints>
-    <stereotypes xmi:id="_lcIvFI3REeSDmb6ZzY3kXg" name="Reference">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlyo3REeSDmb6ZzY3kXg"/>
-      <visualProperties xmi:id="_qsjpYo3dEeSDmb6ZzY3kXg"/>
-    </stereotypes>
-    <nameVisual xmi:id="_lcIvEY3REeSDmb6ZzY3kXg" text="">
-      <visualProperties xmi:id="_lgTdfo3REeSDmb6ZzY3kXg" position="10.909090909090764,2.0000000000000284"/>
-    </nameVisual>
-    <sourceRole xmi:id="_lcIvEo3REeSDmb6ZzY3kXg" aggregationKind="NONE" name="">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlyY3REeSDmb6ZzY3kXg"/>
-      <visualProperties xmi:id="_lgTdfY3REeSDmb6ZzY3kXg" position="-16.5,-81.19999999999999"/>
-      <visibility xmi:id="_lcIvIo3REeSDmb6ZzY3kXg" label="+"/>
-      <cardinality xmi:id="_lcIvIY3REeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-    </sourceRole>
-    <targetRole xmi:id="_lcIvE43REeSDmb6ZzY3kXg" aggregationKind="NONE" name="starvedState" navigable="true">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlwI3REeSDmb6ZzY3kXg"/>
-      <visualProperties xmi:id="_lgTdf43REeSDmb6ZzY3kXg" position="52.0,1.9999999999999432"/>
-      <stereotypes xmi:id="_w0ws0I3UEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlwY3REeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <visibility xmi:id="_lcIvJI3REeSDmb6ZzY3kXg" label="#"/>
-      <cardinality xmi:id="_lcIvI43REeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-    </targetRole>
-  </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_lb--EY3REeSDmb6ZzY3kXg" sourceAnchor="67.0,0.0" targetAnchor="126.0,0.0" target="_q5NugI2fEeSCed76TuW3eA" source="_lcIvNY3REeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zly43REeSDmb6ZzY3kXg"/>
-    <visualProperties xmi:id="_wXRJcI3dEeSDmb6ZzY3kXg" visible="false"/>
-    <bendpoints xmi:id="_dxC1M43dEeSDmb6ZzY3kXg" sourceY="-253" targetX="428" targetY="-272"/>
-    <bendpoints xmi:id="_dxC1NI3dEeSDmb6ZzY3kXg" sourceX="-428" sourceY="-253" targetY="-272"/>
-    <stereotypes xmi:id="_lcIvGI3REeSDmb6ZzY3kXg" name="Reference">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlzY3REeSDmb6ZzY3kXg"/>
-    </stereotypes>
-    <nameVisual xmi:id="_lcIvFY3REeSDmb6ZzY3kXg" text="">
-      <visualProperties xmi:id="_lgdOYI3REeSDmb6ZzY3kXg" position="13.636363636363626,1.9999999999999432"/>
-    </nameVisual>
-    <sourceRole xmi:id="_lcIvFo3REeSDmb6ZzY3kXg" aggregationKind="NONE" name="">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlzI3REeSDmb6ZzY3kXg"/>
-      <visualProperties xmi:id="_lgTdgI3REeSDmb6ZzY3kXg" position="2.5,-80.33333333333331"/>
-      <visibility xmi:id="_lcIvJ43REeSDmb6ZzY3kXg" label="+"/>
-      <cardinality xmi:id="_lcIvJo3REeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-    </sourceRole>
-    <targetRole xmi:id="_lcIvF43REeSDmb6ZzY3kXg" aggregationKind="NONE" name="hungryState" navigable="true">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlwo3REeSDmb6ZzY3kXg"/>
-      <visualProperties xmi:id="_lgdOYY3REeSDmb6ZzY3kXg" position="-81.0,-58.0" visible="false"/>
-      <stereotypes xmi:id="_w0ws0Y3UEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlw43REeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <visibility xmi:id="_lcIvKY3REeSDmb6ZzY3kXg" label="#"/>
-      <cardinality xmi:id="_lcIvKI3REeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-    </targetRole>
-  </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_lb--Eo3REeSDmb6ZzY3kXg" sourceAnchor="0.0,26.0" targetAnchor="312.0,7.0" target="_q5NugI2fEeSCed76TuW3eA" source="_lcIvNY3REeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlzo3REeSDmb6ZzY3kXg"/>
-    <visualProperties xmi:id="_jKoJAI3dEeSDmb6ZzY3kXg" visible="false"/>
-    <stereotypes xmi:id="_lcIvHI3REeSDmb6ZzY3kXg" name="Reference">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-jWwI3REeSDmb6ZzY3kXg"/>
-    </stereotypes>
-    <nameVisual xmi:id="_lcIvGY3REeSDmb6ZzY3kXg" text="">
-      <visualProperties xmi:id="_lgdOY43REeSDmb6ZzY3kXg" position="-5.0,2.0"/>
-    </nameVisual>
-    <sourceRole xmi:id="_lcIvGo3REeSDmb6ZzY3kXg" aggregationKind="NONE" name="">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlz43REeSDmb6ZzY3kXg"/>
-      <visualProperties xmi:id="_lgdOYo3REeSDmb6ZzY3kXg" position="-29.16666666666663,2.0"/>
-      <visibility xmi:id="_lcIvLI3REeSDmb6ZzY3kXg" label="+"/>
-      <cardinality xmi:id="_lcIvK43REeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-    </sourceRole>
-    <targetRole xmi:id="_lcIvG43REeSDmb6ZzY3kXg" aggregationKind="NONE" name="breedingState" navigable="true">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlxI3REeSDmb6ZzY3kXg"/>
-      <visualProperties xmi:id="_lgdOZI3REeSDmb6ZzY3kXg" position="41.0,-51.999999999999986" visible="false"/>
-      <stereotypes xmi:id="_w0ws0o3UEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlxY3REeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <visibility xmi:id="_lcIvLo3REeSDmb6ZzY3kXg" label="#"/>
-      <cardinality xmi:id="_lcIvLY3REeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-    </targetRole>
-  </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_lcIvEI3REeSDmb6ZzY3kXg" sourceAnchor="0.0,7.0" targetAnchor="178.0,0.0" target="_q5NugI2fEeSCed76TuW3eA" source="_lcIvNY3REeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-jWwY3REeSDmb6ZzY3kXg"/>
-    <visualProperties xmi:id="_iPxDQI3dEeSDmb6ZzY3kXg" visible="false"/>
-    <bendpoints xmi:id="_dxC1NY3dEeSDmb6ZzY3kXg" sourceX="-309" targetY="-12"/>
-    <stereotypes xmi:id="_lcIvII3REeSDmb6ZzY3kXg" name="Reference">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-jWw43REeSDmb6ZzY3kXg"/>
-    </stereotypes>
-    <nameVisual xmi:id="_lcIvHY3REeSDmb6ZzY3kXg" text="">
-      <visualProperties xmi:id="_lgdOZo3REeSDmb6ZzY3kXg" position="19.1875,-18.5"/>
-    </nameVisual>
-    <sourceRole xmi:id="_lcIvHo3REeSDmb6ZzY3kXg" aggregationKind="NONE" name="">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-jWwo3REeSDmb6ZzY3kXg"/>
-      <visualProperties xmi:id="_lgdOZY3REeSDmb6ZzY3kXg" position="-34.25,-46.5"/>
-      <visibility xmi:id="_lcIvMY3REeSDmb6ZzY3kXg" label="+"/>
-      <cardinality xmi:id="_lcIvMI3REeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-    </sourceRole>
-    <targetRole xmi:id="_lcIvH43REeSDmb6ZzY3kXg" aggregationKind="NONE" name="normalState" navigable="true">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlxo3REeSDmb6ZzY3kXg"/>
-      <visualProperties xmi:id="_lgdOZ43REeSDmb6ZzY3kXg" position="-126.0,1.9999999999999716" visible="false"/>
-      <stereotypes xmi:id="_w0ws043UEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlx43REeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <visibility xmi:id="_lcIvM43REeSDmb6ZzY3kXg" label="#"/>
-      <cardinality xmi:id="_lcIvMo3REeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-    </targetRole>
-  </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_KwfWYY3SEeSDmb6ZzY3kXg" sourceAnchor="0.0,27.0" targetAnchor="308.0,173.0" superClass="_lcIvNY3REeSDmb6ZzY3kXg" subClass="_XEoQ8IyzEeSNrtY43VTm9A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_KwfWYY3SEeSDmb6ZzY3kXg" sourceAnchor="0.0,27.0" targetAnchor="172.0,27.0" superClass="_lcIvNY3REeSDmb6ZzY3kXg" subClass="_XEoQ8IyzEeSNrtY43VTm9A">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_KwfWYI3SEeSDmb6ZzY3kXg"/>
     <visualProperties xmi:id="_KwfWYo3SEeSDmb6ZzY3kXg" lineWidth="2.0" lineColor="64,128,128"/>
-    <bendpoints xmi:id="_zaw2Ao3lEeSDmb6ZzY3kXg" sourceX="-30" targetX="368" targetY="-273"/>
-    <bendpoints xmi:id="_zaw2A43lEeSDmb6ZzY3kXg" sourceX="-30" sourceY="273" targetX="368"/>
+    <bendpoints xmi:id="_pUvfcJDeEeSh79dQXpRhHA" sourceX="-30" targetX="504" targetY="-127"/>
+    <bendpoints xmi:id="_pUvfcZDeEeSh79dQXpRhHA" sourceX="-30" sourceY="127" targetX="504"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_LfIlEY3SEeSDmb6ZzY3kXg" sourceAnchor="0.0,27.0" targetAnchor="308.0,173.0" superClass="_lcIvNY3REeSDmb6ZzY3kXg" subClass="_ZRX_4Yy0EeSNrtY43VTm9A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_LfIlEY3SEeSDmb6ZzY3kXg" sourceAnchor="0.0,11.0" targetAnchor="172.0,27.0" superClass="_lcIvNY3REeSDmb6ZzY3kXg" subClass="_ZRX_4Yy0EeSNrtY43VTm9A">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_LfIlEI3SEeSDmb6ZzY3kXg"/>
     <visualProperties xmi:id="_LfIlEo3SEeSDmb6ZzY3kXg" lineWidth="2.0" lineColor="64,128,128"/>
-    <bendpoints xmi:id="_zaw2AI3lEeSDmb6ZzY3kXg" sourceX="-76" targetX="368" targetY="94"/>
-    <bendpoints xmi:id="_zaw2AY3lEeSDmb6ZzY3kXg" sourceX="-76" sourceY="-94" targetX="368"/>
+    <bendpoints xmi:id="_pUu4YJDeEeSh79dQXpRhHA" sourceX="-76" targetX="504" targetY="224"/>
+    <bendpoints xmi:id="_pUu4YZDeEeSh79dQXpRhHA" sourceX="-76" sourceY="-224" targetX="504"/>
   </edges>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_w06d0Y3UEeSDmb6ZzY3kXg" targetItem="_ww6B4YyzEeSNrtY43VTm9A" sourceItem="_w06d0I3UEeSDmb6ZzY3kXg"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_w06d043UEeSDmb6ZzY3kXg" targetItem="_d8WhQYy0EeSNrtY43VTm9A" sourceItem="_w06d0o3UEeSDmb6ZzY3kXg"/>
@@ -374,36 +274,10 @@
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_we2xcY3YEeSDmb6ZzY3kXg" targetItem="_XEoQ8IyzEeSNrtY43VTm9A" sourceItem="_we2xcI3YEeSDmb6ZzY3kXg"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_we3YgY3YEeSDmb6ZzY3kXg" targetItem="_lae08I2fEeSCed76TuW3eA" sourceItem="_we3YgI3YEeSDmb6ZzY3kXg"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_we3_kY3YEeSDmb6ZzY3kXg" targetItem="__vywcY3OEeSDmb6ZzY3kXg" sourceItem="_we3_kI3YEeSDmb6ZzY3kXg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_we5NsY3YEeSDmb6ZzY3kXg" targetItem="_k-CJgI2fEeSCed76TuW3eA" sourceItem="_we5NsI3YEeSDmb6ZzY3kXg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_we7C4I3YEeSDmb6ZzY3kXg" targetItem="_lcIvNY3REeSDmb6ZzY3kXg" sourceItem="_we6b0I3YEeSDmb6ZzY3kXg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_we9fII3YEeSDmb6ZzY3kXg" targetItem="_qlWqcY23EeSDmb6ZzY3kXg" sourceItem="_we84EI3YEeSDmb6ZzY3kXg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_we-GMY3YEeSDmb6ZzY3kXg" targetItem="_VMSgUY2lEeSCed76TuW3eA" sourceItem="_we-GMI3YEeSDmb6ZzY3kXg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_we-tQY3YEeSDmb6ZzY3kXg" targetItem="_ULBQkY2lEeSCed76TuW3eA" sourceItem="_we-tQI3YEeSDmb6ZzY3kXg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_we_UUY3YEeSDmb6ZzY3kXg" targetItem="_TO94AY2lEeSCed76TuW3eA" sourceItem="_we_UUI3YEeSDmb6ZzY3kXg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_we_7YY3YEeSDmb6ZzY3kXg" targetItem="_R4FkoY2lEeSCed76TuW3eA" sourceItem="_we_7YI3YEeSDmb6ZzY3kXg"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_wfAicY3YEeSDmb6ZzY3kXg" targetItem="_lz2y4I3OEeSDmb6ZzY3kXg" sourceItem="_wfAicI3YEeSDmb6ZzY3kXg"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_wfC-sI3YEeSDmb6ZzY3kXg" targetItem="_BJYtgI23EeSDmb6ZzY3kXg" sourceItem="_wfCXoI3YEeSDmb6ZzY3kXg"/>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Fw5VQI3lEeSDmb6ZzY3kXg" target="_q5NugI2fEeSCed76TuW3eA" source="_lcIvNY3REeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_FwwLU43lEeSDmb6ZzY3kXg"/>
-    <visualProperties xmi:id="_qFbeUI3lEeSDmb6ZzY3kXg" visible="false"/>
-    <stereotypes xmi:id="_Fw5VQY3lEeSDmb6ZzY3kXg" name="Reference">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_FwwLVY3lEeSDmb6ZzY3kXg"/>
-    </stereotypes>
-    <nameVisual xmi:id="_Fw5VQo3lEeSDmb6ZzY3kXg" text=""/>
-    <sourceRole xmi:id="_Fw5VQ43lEeSDmb6ZzY3kXg" aggregationKind="NONE" name="">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_FwwLVI3lEeSDmb6ZzY3kXg"/>
-      <visibility xmi:id="_Fw5VRI3lEeSDmb6ZzY3kXg" label="+"/>
-      <cardinality xmi:id="_Fw5VRY3lEeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-    </sourceRole>
-    <targetRole xmi:id="_Fw5VRo3lEeSDmb6ZzY3kXg" aggregationKind="NONE" name="currentState" navigable="true">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_FwwLUI3lEeSDmb6ZzY3kXg"/>
-      <stereotypes xmi:id="_FxDGQI3lEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_FwwLUo3lEeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <visibility xmi:id="_Fw5VR43lEeSDmb6ZzY3kXg" label="#"/>
-      <cardinality xmi:id="_Fw5VSI3lEeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-    </targetRole>
-  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UrBmQJDaEeSh79dQXpRhHA" targetItem="_lcIvNY3REeSDmb6ZzY3kXg" sourceItem="_Uq31QJDaEeSh79dQXpRhHA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_bWTLcZDaEeSh79dQXpRhHA" targetItem="_k-CJgI2fEeSCed76TuW3eA" sourceItem="_bWTLcJDaEeSh79dQXpRhHA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KCggsJDgEeSh79dQXpRhHA" targetItem="_BJYtgI23EeSDmb6ZzY3kXg" sourceItem="_KCfSkJDgEeSh79dQXpRhHA"/>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_w06d0I3UEeSDmb6ZzY3kXg" sourceConnectionVisual="_w06d0Y3UEeSDmb6ZzY3kXg" text="Lớp Woft là một động vật ăn thịt ở Finnish&#xD;&#xA; *" item="_ww6B4YyzEeSNrtY43VTm9A">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_E_0GUI3UEeSDmb6ZzY3kXg"/>
   </nodes>
@@ -449,62 +323,13 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_we3_kI3YEeSDmb6ZzY3kXg" sourceConnectionVisual="_we3_kY3YEeSDmb6ZzY3kXg" text="trạng thái bình thường của sinh vật&#xD;&#xA; *" item="__vywcY3OEeSDmb6ZzY3kXg">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_JDfFMI3WEeSDmb6ZzY3kXg"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_we5NsI3YEeSDmb6ZzY3kXg" sourceConnectionVisual="_we5NsY3YEeSDmb6ZzY3kXg" text="Trạng thái chết đói (đói muốn chết) của sinh vật&#xD;&#xA; *" item="_k-CJgI2fEeSCed76TuW3eA">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_i0GjkI3WEeSDmb6ZzY3kXg"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_we6b0I3YEeSDmb6ZzY3kXg" sourceConnectionVisual="_we7C4I3YEeSDmb6ZzY3kXg" text="lớp cha của đv ăn thịt và ăn cỏ => động vật =]]&#xD;&#xA; *" item="_lcIvNY3REeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_veVvoI3YEeSDmb6ZzY3kXg"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_we84EI3YEeSDmb6ZzY3kXg" sourceConnectionVisual="_we9fII3YEeSDmb6ZzY3kXg" text="nothing take place behavior của sinh vật&#xD;&#xA; *" item="_qlWqcY23EeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_Rga1QI3WEeSDmb6ZzY3kXg"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_we-GMI3YEeSDmb6ZzY3kXg" sourceConnectionVisual="_we-GMY3YEeSDmb6ZzY3kXg" text="chase behavior của sinh vật&#xD;&#xA;xảy ra khi đv ăn thịt gặp đv ăn cỏ&#xD;&#xA; *" item="_VMSgUY2lEeSCed76TuW3eA">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UH7DAI3WEeSDmb6ZzY3kXg"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_we-tQI3YEeSDmb6ZzY3kXg" sourceConnectionVisual="_we-tQY3YEeSDmb6ZzY3kXg" text="eat behaviour xảy ra khi đv ăn cỏ gặp thực vật&#xD;&#xA; *" item="_ULBQkY2lEeSCed76TuW3eA">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_VozKcI3XEeSDmb6ZzY3kXg"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_we_UUI3YEeSDmb6ZzY3kXg" sourceConnectionVisual="_we_UUY3YEeSDmb6ZzY3kXg" text="hành động sinh sản giữa 2 sinh vật&#xD;&#xA; *" item="_TO94AY2lEeSCed76TuW3eA">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_DCwm8I3YEeSDmb6ZzY3kXg"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_we_7YI3YEeSDmb6ZzY3kXg" sourceConnectionVisual="_we_7YY3YEeSDmb6ZzY3kXg" text="behavior fight của sinh vật&#xD;&#xA;xảy ra khi 2 sv cùng là đv ăn thịt&#xD;&#xA;hoặc&#xD;&#xA;cả 2 cùng là đv ăn cỏ&#xD;&#xA; *" item="_R4FkoY2lEeSCed76TuW3eA">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_OOTu0I3XEeSDmb6ZzY3kXg"/>
-  </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_wfAicI3YEeSDmb6ZzY3kXg" sourceConnectionVisual="_wfAicY3YEeSDmb6ZzY3kXg" text="interface định nghĩa các tương tác của sinh vật&#xD;&#xA; *" item="_lz2y4I3OEeSDmb6ZzY3kXg">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_LA5iMI3YEeSDmb6ZzY3kXg"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_wfCXoI3YEeSDmb6ZzY3kXg" sourceConnectionVisual="_wfC-sI3YEeSDmb6ZzY3kXg" text="Lớp quản lý tương tác của các sinh vật&#xD;&#xA; *" item="_BJYtgI23EeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_IYe10I3VEeSDmb6ZzY3kXg"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_lz2y4I3OEeSDmb6ZzY3kXg" comments="_wfAicI3YEeSDmb6ZzY3kXg" targetConnectionVisual="_wfAicY3YEeSDmb6ZzY3kXg" name="IInteraction" subclassedBy="_4p4dsY3OEeSDmb6ZzY3kXg _46a0EY3OEeSDmb6ZzY3kXg _5NWXIY3OEeSDmb6ZzY3kXg _5X7PcY3OEeSDmb6ZzY3kXg _5zDFMI3OEeSDmb6ZzY3kXg">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_h0JcEI3OEeSDmb6ZzY3kXg"/>
     <visualProperties xmi:id="_lz2y4Y3OEeSDmb6ZzY3kXg" position="1982.0,472.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_lz2y4o3OEeSDmb6ZzY3kXg" label="+"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_R4FkoY2lEeSCed76TuW3eA" comments="_we_7YI3YEeSDmb6ZzY3kXg" targetConnectionVisual="_we_7YY3YEeSDmb6ZzY3kXg" name="ImplFight" generalizations="_4p4dsY3OEeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_R4FkoI2lEeSCed76TuW3eA"/>
-    <visualProperties xmi:id="_R4Fkoo2lEeSCed76TuW3eA" position="1767.0,633.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_R4Fko42lEeSCed76TuW3eA" label="+"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_TO94AY2lEeSCed76TuW3eA" comments="_we_UUI3YEeSDmb6ZzY3kXg" targetConnectionVisual="_we_UUY3YEeSDmb6ZzY3kXg" name="ImplBreed" generalizations="_46a0EY3OEeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_TO94AI2lEeSCed76TuW3eA"/>
-    <visualProperties xmi:id="_TO94Ao2lEeSCed76TuW3eA" position="1865.0,642.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_TO94A42lEeSCed76TuW3eA" label="+"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qlWqcY23EeSDmb6ZzY3kXg" comments="_we84EI3YEeSDmb6ZzY3kXg" targetConnectionVisual="_we9fII3YEeSDmb6ZzY3kXg" name="ImplNothingTakePlace" generalizations="_5zDFMI3OEeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_qlWqcI23EeSDmb6ZzY3kXg"/>
-    <visualProperties xmi:id="_qlWqco23EeSDmb6ZzY3kXg" position="1902.0,769.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_qlWqc423EeSDmb6ZzY3kXg" label="+"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ULBQkY2lEeSCed76TuW3eA" comments="_we-tQI3YEeSDmb6ZzY3kXg" targetConnectionVisual="_we-tQY3YEeSDmb6ZzY3kXg" name="ImplEat" generalizations="_5NWXIY3OEeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_ULBQkI2lEeSCed76TuW3eA"/>
-    <visualProperties xmi:id="_ULBQko2lEeSCed76TuW3eA" position="2032.0,652.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_ULBQk42lEeSCed76TuW3eA" label="+"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VMSgUY2lEeSCed76TuW3eA" comments="_we-GMI3YEeSDmb6ZzY3kXg" targetConnectionVisual="_we-GMY3YEeSDmb6ZzY3kXg" name="ImplChase" generalizations="_5X7PcY3OEeSDmb6ZzY3kXg">
-    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_VMSgUI2lEeSCed76TuW3eA"/>
-    <visualProperties xmi:id="_VMSgUo2lEeSCed76TuW3eA" position="2148.0,646.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_VMSgU42lEeSCed76TuW3eA" label="+"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_awyUoYzqEeScxsKS8t0j_w" comments="_wezHEI3YEeSDmb6ZzY3kXg" targetConnectionVisual="_wezuII3YEeSDmb6ZzY3kXg" name="ICreatureFactory" subclassedBy="_cusy0YzqEeScxsKS8t0j_w _c8HjwYzqEeScxsKS8t0j_w">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_awyUoIzqEeScxsKS8t0j_w"/>
@@ -604,7 +429,7 @@
     <visibility xmi:id="_eB3D0ozqEeScxsKS8t0j_w" label="+"/>
     <attributes xmi:id="_UXsAZozxEeScxsKS8t0j_w" name="herbivore">
       <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UTqcAozxEeScxsKS8t0j_w"/>
-      <stereotypes xmi:id="_wfJFUI3YEeSDmb6ZzY3kXg" name="LegacyStyledElement">
+      <stereotypes xmi:id="_jm7BMJEDEeSkGJ7Dn9_Mog" name="LegacyStyledElement">
         <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UTqcA4zxEeScxsKS8t0j_w"/>
       </stereotypes>
       <visibility xmi:id="_UXsAaYzxEeScxsKS8t0j_w" label="-"/>
@@ -615,7 +440,7 @@
     </attributes>
     <attributes xmi:id="_UXsAbIzxEeScxsKS8t0j_w" name="plant">
       <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UTqcBIzxEeScxsKS8t0j_w"/>
-      <stereotypes xmi:id="_wfK6gI3YEeSDmb6ZzY3kXg" name="LegacyStyledElement">
+      <stereotypes xmi:id="_jm7BMZEDEeSkGJ7Dn9_Mog" name="LegacyStyledElement">
         <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UTqcBYzxEeScxsKS8t0j_w"/>
       </stereotypes>
       <visibility xmi:id="_UXsAb4zxEeScxsKS8t0j_w" label="-"/>
@@ -626,7 +451,7 @@
     </attributes>
     <attributes xmi:id="_IF3hGYz_EeSENYOerBqPMA" name="carnivore">
       <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_IFREIIz_EeSENYOerBqPMA"/>
-      <stereotypes xmi:id="_wfMIoI3YEeSDmb6ZzY3kXg" name="LegacyStyledElement">
+      <stereotypes xmi:id="_jnEyMJEDEeSkGJ7Dn9_Mog" name="LegacyStyledElement">
         <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_IFREIYz_EeSENYOerBqPMA"/>
       </stereotypes>
       <visibility xmi:id="_IF3hHIz_EeSENYOerBqPMA" label="-"/>
@@ -842,7 +667,7 @@
       </outParameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BJYtgI23EeSDmb6ZzY3kXg" comments="_wfCXoI3YEeSDmb6ZzY3kXg" targetConnectionVisual="_wfC-sI3YEeSDmb6ZzY3kXg" name="InteractionFactory">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BJYtgI23EeSDmb6ZzY3kXg" comments="_KCfSkJDgEeSh79dQXpRhHA" targetConnectionVisual="_KCggsJDgEeSh79dQXpRhHA" name="InteractionFactory">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_mVlwUI21EeSDmb6ZzY3kXg"/>
     <visualProperties xmi:id="_BJYtgY23EeSDmb6ZzY3kXg" position="-96.0,1117.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_BJYtgo23EeSDmb6ZzY3kXg" label="+"/>
@@ -928,7 +753,7 @@
     <visualProperties xmi:id="_DoUEso3QEeSDmb6ZzY3kXg" position="-315.0,745.0" size="-1.0,-1.0" lineColor="0,255,0"/>
     <visibility xmi:id="_DoUEs43QEeSDmb6ZzY3kXg" label="+"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_q5NugI2fEeSCed76TuW3eA" name="IAnimalState" associationsIn="_lb--EI3REeSDmb6ZzY3kXg _lb--EY3REeSDmb6ZzY3kXg _lb--Eo3REeSDmb6ZzY3kXg _lcIvEI3REeSDmb6ZzY3kXg _Fw5VQI3lEeSDmb6ZzY3kXg" subclassedBy="_CLneAI2gEeSCed76TuW3eA _ClldMI2gEeSCed76TuW3eA _O8dH4Y3PEeSDmb6ZzY3kXg _GW-DUY3QEeSDmb6ZzY3kXg">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_q5NugI2fEeSCed76TuW3eA" name="IAnimalState" subclassedBy="_CLneAI2gEeSCed76TuW3eA _ClldMI2gEeSCed76TuW3eA _O8dH4Y3PEeSDmb6ZzY3kXg _GW-DUY3QEeSDmb6ZzY3kXg">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_q5NHcI2fEeSCed76TuW3eA"/>
     <visualProperties xmi:id="_q5NugY2fEeSCed76TuW3eA" position="-390.0,321.0" size="-1.0,-1.0" lineColor="0,255,0"/>
     <visibility xmi:id="_q5Nugo2fEeSCed76TuW3eA" label="+"/>
@@ -949,77 +774,10 @@
       </outParameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_lcIvNY3REeSDmb6ZzY3kXg" comments="_we6b0I3YEeSDmb6ZzY3kXg" targetConnectionVisual="_we7C4I3YEeSDmb6ZzY3kXg" name="AAnimal" abstractClass="true" associationsOut="_lb--EI3REeSDmb6ZzY3kXg _lb--EY3REeSDmb6ZzY3kXg _lb--Eo3REeSDmb6ZzY3kXg _lcIvEI3REeSDmb6ZzY3kXg _Fw5VQI3lEeSDmb6ZzY3kXg" subclassedBy="_KwfWYY3SEeSDmb6ZzY3kXg _LfIlEY3SEeSDmb6ZzY3kXg">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_lcIvNY3REeSDmb6ZzY3kXg" comments="_Uq31QJDaEeSh79dQXpRhHA" targetConnectionVisual="_UrBmQJDaEeSh79dQXpRhHA" name="AAnimal" abstractClass="true" subclassedBy="_KwfWYY3SEeSDmb6ZzY3kXg _LfIlEY3SEeSDmb6ZzY3kXg">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_HstRwI3REeSDmb6ZzY3kXg"/>
     <visualProperties xmi:id="_lcIvNo3REeSDmb6ZzY3kXg" position="170.0,293.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_lcIvN43REeSDmb6ZzY3kXg" label="+"/>
-    <attributes xmi:id="_lcIvOI3REeSDmb6ZzY3kXg" name="starvedState">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlwI3REeSDmb6ZzY3kXg"/>
-      <stereotypes xmi:id="_w1NYw43UEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlwY3REeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <stereotypes xmi:id="_wfOk4I3YEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlwY3REeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <visibility xmi:id="_lcIvOo3REeSDmb6ZzY3kXg" label="#"/>
-      <cardinality xmi:id="_lcIvO43REeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-      <type xmi:id="_lcIvPI3REeSDmb6ZzY3kXg" name="IAnimalState">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_q5NHcI2fEeSCed76TuW3eA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_lcIvPY3REeSDmb6ZzY3kXg" name="hungryState">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlwo3REeSDmb6ZzY3kXg"/>
-      <stereotypes xmi:id="_w1NYxI3UEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlw43REeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <stereotypes xmi:id="_wfRBII3YEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlw43REeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <visibility xmi:id="_lcIvP43REeSDmb6ZzY3kXg" label="#"/>
-      <cardinality xmi:id="_lcIvQI3REeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-      <type xmi:id="_lcIvQY3REeSDmb6ZzY3kXg" name="IAnimalState">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_q5NHcI2fEeSCed76TuW3eA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_lcIvQo3REeSDmb6ZzY3kXg" name="breedingState">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlxI3REeSDmb6ZzY3kXg"/>
-      <stereotypes xmi:id="_w1NYxY3UEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlxY3REeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <stereotypes xmi:id="_wfTdYI3YEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-ZlxY3REeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <visibility xmi:id="_lcIvRI3REeSDmb6ZzY3kXg" label="#"/>
-      <cardinality xmi:id="_lcIvRY3REeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-      <type xmi:id="_lcIvRo3REeSDmb6ZzY3kXg" name="IAnimalState">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_q5NHcI2fEeSCed76TuW3eA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_lcIvR43REeSDmb6ZzY3kXg" name="normalState">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlxo3REeSDmb6ZzY3kXg"/>
-      <stereotypes xmi:id="_w1NYxo3UEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlx43REeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <stereotypes xmi:id="_wfVSkI3YEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_j-Zlx43REeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <visibility xmi:id="_lcIvSY3REeSDmb6ZzY3kXg" label="#"/>
-      <cardinality xmi:id="_lcIvSo3REeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-      <type xmi:id="_lcIvS43REeSDmb6ZzY3kXg" name="IAnimalState">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_q5NHcI2fEeSCed76TuW3eA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_Fw5VSY3lEeSDmb6ZzY3kXg" defaultValue="normalState" name="currentState">
-      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_FwwLUI3lEeSDmb6ZzY3kXg"/>
-      <stereotypes xmi:id="_Fw5VSo3lEeSDmb6ZzY3kXg" name="LegacyStyledElement">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_FwwLUo3lEeSDmb6ZzY3kXg"/>
-      </stereotypes>
-      <visibility xmi:id="_Fw5VTI3lEeSDmb6ZzY3kXg" label="#"/>
-      <cardinality xmi:id="_Fw5VTY3lEeSDmb6ZzY3kXg" label="1" max="1" min="1"/>
-      <type xmi:id="_Fw5VTo3lEeSDmb6ZzY3kXg" name="IAnimalState">
-        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_q5NHcI2fEeSCed76TuW3eA"/>
-      </type>
-    </attributes>
     <operations xmi:id="_VAOmMo3lEeSDmb6ZzY3kXg" name="AAnimal">
       <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_VAE1MI3lEeSDmb6ZzY3kXg"/>
       <keywords xmi:id="_VAOmM43lEeSDmb6ZzY3kXg" keyword="create"/>
@@ -1035,9 +793,102 @@
       </outParameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_k-CJgI2fEeSCed76TuW3eA" comments="_we5NsI3YEeSDmb6ZzY3kXg" targetConnectionVisual="_we5NsY3YEeSDmb6ZzY3kXg" name="ImplStarvedState" generalizations="_CLneAI2gEeSCed76TuW3eA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_k-CJgI2fEeSCed76TuW3eA" comments="_bWTLcJDaEeSh79dQXpRhHA" targetConnectionVisual="_bWTLcZDaEeSh79dQXpRhHA" name="ImplStarvedState" generalizations="_CLneAI2gEeSCed76TuW3eA">
     <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_k-AUUI2fEeSCed76TuW3eA"/>
     <visualProperties xmi:id="_k-CJgY2fEeSCed76TuW3eA" position="-738.0,567.0" size="-1.0,-1.0" lineColor="0,255,0"/>
     <visibility xmi:id="_k-CJgo2fEeSCed76TuW3eA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Uq31QJDaEeSh79dQXpRhHA" sourceConnectionVisual="_UrBmQJDaEeSh79dQXpRhHA" text="&#xD;&#xA; *" item="_lcIvNY3REeSDmb6ZzY3kXg">
+    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_UqurUJDaEeSh79dQXpRhHA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_XF34EJDaEeSh79dQXpRhHA" name="com">
+    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_gMkF0IyzEeSNrtY43VTm9A"/>
+    <visualProperties xmi:id="_XF34EZDaEeSh79dQXpRhHA" position="2028.0,1202.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_bWTLcJDaEeSh79dQXpRhHA" sourceConnectionVisual="_bWTLcZDaEeSh79dQXpRhHA" text="&#xD;&#xA; *" item="_k-CJgI2fEeSCed76TuW3eA">
+    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_bWJacJDaEeSh79dQXpRhHA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ULBQkY2lEeSCed76TuW3eA" name="ImplEatInteraction" generalizations="_5NWXIY3OEeSDmb6ZzY3kXg">
+    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_ULBQkI2lEeSCed76TuW3eA"/>
+    <visualProperties xmi:id="_ULBQko2lEeSCed76TuW3eA" position="2032.0,652.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ULBQk42lEeSCed76TuW3eA" label="+"/>
+    <operations xmi:id="_HElB4JDeEeSh79dQXpRhHA" name="ImplEatInteraction">
+      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_HEgwcJDeEeSh79dQXpRhHA"/>
+      <keywords xmi:id="_HElB4ZDeEeSh79dQXpRhHA" keyword="create"/>
+      <visibility xmi:id="_HElB4pDeEeSh79dQXpRhHA" label="+"/>
+      <outParameters xmi:id="_HElB45DeEeSh79dQXpRhHA">
+        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_HEhXgJDeEeSh79dQXpRhHA"/>
+        <type xmi:id="_HElB5JDeEeSh79dQXpRhHA" name="ImplEatInteraction">
+          <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_ULBQkI2lEeSCed76TuW3eA"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_R4FkoY2lEeSCed76TuW3eA" name="ImplFightInteraction" generalizations="_4p4dsY3OEeSDmb6ZzY3kXg">
+    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_R4FkoI2lEeSCed76TuW3eA"/>
+    <visualProperties xmi:id="_R4Fkoo2lEeSCed76TuW3eA" position="1685.0,634.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_R4Fko42lEeSCed76TuW3eA" label="+"/>
+    <operations xmi:id="_NueuEJDeEeSh79dQXpRhHA" name="ImplFightInteraction">
+      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_NubqwJDeEeSh79dQXpRhHA"/>
+      <keywords xmi:id="_NueuEZDeEeSh79dQXpRhHA" keyword="create"/>
+      <visibility xmi:id="_NueuEpDeEeSh79dQXpRhHA" label="+"/>
+      <outParameters xmi:id="_NueuE5DeEeSh79dQXpRhHA">
+        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_NubqwZDeEeSh79dQXpRhHA"/>
+        <type xmi:id="_NueuFJDeEeSh79dQXpRhHA" name="ImplFightInteraction">
+          <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_R4FkoI2lEeSCed76TuW3eA"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VMSgUY2lEeSCed76TuW3eA" name="ImplChaseInteraction" generalizations="_5X7PcY3OEeSDmb6ZzY3kXg">
+    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_VMSgUI2lEeSCed76TuW3eA"/>
+    <visualProperties xmi:id="_VMSgUo2lEeSCed76TuW3eA" position="2144.0,719.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_VMSgU42lEeSCed76TuW3eA" label="+"/>
+    <operations xmi:id="_cch24JDeEeSh79dQXpRhHA" name="ImplChaseInteraction">
+      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_ccaiIJDeEeSh79dQXpRhHA"/>
+      <keywords xmi:id="_cch24ZDeEeSh79dQXpRhHA" keyword="create"/>
+      <visibility xmi:id="_cch24pDeEeSh79dQXpRhHA" label="+"/>
+      <outParameters xmi:id="_cch245DeEeSh79dQXpRhHA">
+        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_ccbJMJDeEeSh79dQXpRhHA"/>
+        <type xmi:id="_cch25JDeEeSh79dQXpRhHA" name="ImplChaseInteraction">
+          <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_VMSgUI2lEeSCed76TuW3eA"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_TO94AY2lEeSCed76TuW3eA" name="ImplBreedInteraction" generalizations="_46a0EY3OEeSDmb6ZzY3kXg">
+    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_TO94AI2lEeSCed76TuW3eA"/>
+    <visualProperties xmi:id="_TO94Ao2lEeSCed76TuW3eA" position="1760.0,759.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_TO94A42lEeSCed76TuW3eA" label="+"/>
+    <operations xmi:id="_XZrBAJDeEeSh79dQXpRhHA" name="ImplBreedInteraction">
+      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_XZk6YJDeEeSh79dQXpRhHA"/>
+      <keywords xmi:id="_XZrBAZDeEeSh79dQXpRhHA" keyword="create"/>
+      <visibility xmi:id="_XZrBApDeEeSh79dQXpRhHA" label="+"/>
+      <outParameters xmi:id="_XZrBA5DeEeSh79dQXpRhHA">
+        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_XZk6YZDeEeSh79dQXpRhHA"/>
+        <type xmi:id="_XZrBBJDeEeSh79dQXpRhHA" name="ImplBreedInteraction">
+          <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_TO94AI2lEeSCed76TuW3eA"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qlWqcY23EeSDmb6ZzY3kXg" name="ImplNothingTakePlaceInteraction" generalizations="_5zDFMI3OEeSDmb6ZzY3kXg">
+    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_qlWqcI23EeSDmb6ZzY3kXg"/>
+    <visualProperties xmi:id="_qlWqco23EeSDmb6ZzY3kXg" position="2120.0,812.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_qlWqc423EeSDmb6ZzY3kXg" label="+"/>
+    <operations xmi:id="_wlS78JDeEeSh79dQXpRhHA" name="ImplNothingTakePlaceInteraction">
+      <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_wlKZEJDeEeSh79dQXpRhHA"/>
+      <keywords xmi:id="_wlS78ZDeEeSh79dQXpRhHA" keyword="create"/>
+      <visibility xmi:id="_wlS78pDeEeSh79dQXpRhHA" label="+"/>
+      <outParameters xmi:id="_wlS785DeEeSh79dQXpRhHA">
+        <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_wlKZEZDeEeSh79dQXpRhHA"/>
+        <type xmi:id="_wlS79JDeEeSh79dQXpRhHA" name="ImplNothingTakePlaceInteraction">
+          <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_qlWqcI23EeSDmb6ZzY3kXg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KCfSkJDgEeSh79dQXpRhHA" sourceConnectionVisual="_KCggsJDgEeSh79dQXpRhHA" text="Lớp tạo ra các Interaction phù hợp&#xD;&#xA; *" item="_BJYtgI23EeSDmb6ZzY3kXg">
+    <modelElement href="do%20an%20mon%20hoc%20tkhdt.uml#_KCeEcJDgEeSh79dQXpRhHA"/>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

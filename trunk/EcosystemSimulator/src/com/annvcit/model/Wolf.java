@@ -1,11 +1,13 @@
 package com.annvcit.model;
 
+
 /**
- * Lớp Woft là một động vật ăn thịt ở Finnish
- * */
+ * L?p Woft l� m?t ??ng v?t ?n th?t ? Finnish
+ *  *
+ */
 public class Wolf extends ACarnivore {
-	
-	public Wolf() {
-		System.out.println("new Wolf");
-	}
-}
+   public Wolf () {
+      System.out.println("new Wolf");
+      	}
+   
+   }
