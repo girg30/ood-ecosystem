@@ -87,5 +87,59 @@ public class InteractionFactoryTest {
         /*The same for herbivorous*/
     }
     
+    @Test
+    public void testChInteraction_chaseBehavior() {
+        System.out.println("**chase");
+        
+        InteractionFactory factory = new InteractionFactory();
+        
+        ACarnivore wolf = new Wolf();
+        wolf.setCurrentState(wolf.getHungryState());
+        
+        AHerbivore rabbit = new Rabbit();
+        
+        factory.chInteraction(wolf, rabbit);
+    }
+    
+    @Test
+    public void testChInteraction_nothingTakePlaceBehavior(){
+        System.out.println("**nothing");
+        
+        InteractionFactory factory = new InteractionFactory();
+        
+        ACarnivore lion = new Lion();
+        lion.setCurrentState(lion.getNormalState());
+        
+        AHerbivore antelope = new Antelope();
+        
+        factory.chInteraction(lion, antelope);
+    }
+    
+    @Test
+    public void testHpInteraction_eatBehavior(){
+        System.out.println("**eat");
+        
+        InteractionFactory factory = new InteractionFactory();
+        
+        AHerbivore rabbit = new Rabbit();
+        rabbit.setCurrentState(rabbit.getHungryState());
+        
+        APlant willow = new Willow();
+        
+        factory.hpInteraction(rabbit, willow);
+    }
+    
+    @Test
+    public void testHpInteraction_nothingTakePlaceBehavior() {
+        System.out.println("**nothing");
+        
+        InteractionFactory factory = new InteractionFactory();
+        
+        AHerbivore rabbit = new Rabbit();
+        
+        APlant willow = new Willow();
+        
+        factory.hpInteraction(rabbit, willow);
+    }
     
 }
