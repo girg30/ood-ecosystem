@@ -1,13 +1,10 @@
 package com.annvcit.model;
 
-
 /**
- * th?c v?t ? Africa
- *  *
+ * Grass (bãi cỏ) là một loài thực vật ở Africa
  */
 public class Grass extends APlant {
-   public Grass () {
-      System.out.println("new Grass");
-      	}
-   
-   }
+    public Grass() {
+        System.out.println("Create new Grass");
+    }
+}

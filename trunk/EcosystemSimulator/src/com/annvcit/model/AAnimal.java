@@ -1,15 +1,7 @@
 package com.annvcit.model;
 
-
 /**
- * 
- *  *
- */
-public abstract class AAnimal {
-   /*protected IAnimalState starvedState;
-   protected IAnimalState hungryState;
-   protected IAnimalState breedingState;
-   protected IAnimalState normalState;
-   protected IAnimalState currentState = normalState;*/
-   public AAnimal () { }
-   }
+ * Lớp trừu tượng. Lớp cha của các loài động vật.
+ * Ở đây định nghĩa các thuộc tính, hành vi chung của động vật.
+ * */
+public abstract class AAnimal {}

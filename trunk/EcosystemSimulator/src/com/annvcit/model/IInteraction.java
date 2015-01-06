@@ -1,9 +1,7 @@
 package com.annvcit.model;
 
-
 /**
- * interface ??nh ngh?a c�c t??ng t�c c?a sinh v?t
- *  *
+ * Lớp trừu tượng. Định nghĩa các tương tác (interaction) khác nhau dựa vào các tình huống khác nhau
+ * của động vật.
  */
-public interface IInteraction {
-}
+public interface IInteraction {}

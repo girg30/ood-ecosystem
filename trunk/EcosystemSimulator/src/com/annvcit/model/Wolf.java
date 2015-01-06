@@ -1,13 +1,10 @@
 package com.annvcit.model;
 
-
 /**
- * L?p Woft l� m?t ??ng v?t ?n th?t ? Finnish
- *  *
+ * Woft (Chó sói) là một động vật ăn thịt ở Finnish
  */
 public class Wolf extends ACarnivore {
-   public Wolf () {
-      System.out.println("new Wolf");
-      	}
-   
-   }
+	public Wolf() {
+		System.out.println("Create new Wolf");
+	}
+}

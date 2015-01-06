@@ -1,6 +1,6 @@
 package com.annvcit.model;
 
-
-public class ImplBreedingState implements IAnimalState {
-	
-}
+/**
+ * sinh sản: 2 động vật opposite sex
+ * */
+public class ImplBreedingState implements IAnimalState {}

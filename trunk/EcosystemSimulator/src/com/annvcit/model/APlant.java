@@ -1,12 +1,6 @@
 package com.annvcit.model;
 
-
 /**
- * l?p cha c?a c�c l�a th?c v?t
- *  *
+ * lớp cha của các lòa thực vật
  */
-public abstract class APlant {
-   public APlant () 
-   {
-   }
-   }
+public abstract class APlant {}
