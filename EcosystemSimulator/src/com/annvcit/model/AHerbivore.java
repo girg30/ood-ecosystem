@@ -1,12 +1,6 @@
 package com.annvcit.model;
 
-
 /**
- * l?p cha c?a c�c lo�i th?c v?t
- *  *
+ * lớp cha của các loài thực vật
  */
-public abstract class AHerbivore extends AAnimal {
-   public AHerbivore () 
-   {
-   }
-   }
+public abstract class AHerbivore extends AAnimal {}

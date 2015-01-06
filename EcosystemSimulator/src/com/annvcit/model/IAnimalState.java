@@ -1,6 +1,6 @@
 package com.annvcit.model;
 
-
-public interface IAnimalState {
-	
-}
+/**
+ * Lớp trừu tượng. Lớp cha của các trạng thái của động vật.
+ * */
+public interface IAnimalState {}

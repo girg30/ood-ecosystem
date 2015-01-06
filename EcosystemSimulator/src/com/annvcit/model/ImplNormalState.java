@@ -1,9 +1,6 @@
 package com.annvcit.model;
 
-
 /**
- * trạng thái bình thường của sinh vật
- *  *
+ * Trạng thái bình thường của sinh vật
  */
-public class ImplNormalState implements IAnimalState {
-}
+public class ImplNormalState implements IAnimalState {}

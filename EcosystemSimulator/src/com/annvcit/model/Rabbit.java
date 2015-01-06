@@ -1,13 +1,11 @@
 package com.annvcit.model;
 
-
 /**
- * ??ng v?t ?n c? ? Finnish
- *  *
+ * Rabbit (Thỏ) là một loài động vật ăn cỏ ở Finnish
  */
 public class Rabbit extends AHerbivore {
-   public Rabbit () {
-      System.out.println("new Rabbit");
-      	}
-   
-   }
+    public Rabbit() {
+        System.out.println("new Rabbit");
+    }
+
+}

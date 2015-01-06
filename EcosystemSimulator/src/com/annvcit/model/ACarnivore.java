@@ -1,12 +1,6 @@
 package com.annvcit.model;
 
-
 /**
- * l?p cha c?a c�c lo�i ?v ?n th?t
- *  *
+ * lớp cha của các loài đv ăn thịt
  */
-public abstract class ACarnivore extends AAnimal {
-   public ACarnivore () 
-   {
-   }
-   }
+public abstract class ACarnivore extends AAnimal {}

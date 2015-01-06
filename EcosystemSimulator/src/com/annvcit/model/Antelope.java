@@ -1,13 +1,11 @@
 package com.annvcit.model;
 
-
 /**
- * 1 lo�i ?v ?n c? ? Africa
- *  *
+ * Antelope (Linh Dương) là một loài động vật ăn cỏ ở Africa (Châu Phi)
  */
 public class Antelope extends AHerbivore {
-   public Antelope () {
-      System.out.println("new Antelope");
-      	}
-   
-   }
+    public Antelope() {
+        System.out.println("Create new Antelope");
+    }
+
+}

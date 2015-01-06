@@ -1,13 +1,11 @@
 package com.annvcit.model;
 
-
 /**
- * L?p th?c v?t ? Finnish
- *  *
+ * Willow (cây Liễu) là một loài thực vật ở Finnish
  */
 public class Willow extends APlant {
-   public Willow () {
-      System.out.println("new Willow");
-      	}
-   
-   }
+    public Willow() {
+        System.out.println("Crate new Willow");
+    }
+
+}
