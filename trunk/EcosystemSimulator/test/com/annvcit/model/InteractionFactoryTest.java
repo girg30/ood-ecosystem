@@ -6,26 +6,86 @@ public class InteractionFactoryTest {
 
     @Test
     public void testCchhInteraction_fightBehavior() {
-        // test trường hợp đúng: chỉ có carnivore vs carnivore hoặc
-        // herbivore vs herbivore, không có trường hợp khác
-        ACarnivore c1 = new Lion();
-        ACarnivore c2 = new Lion();
-        
+        System.out.println("**fight");
         InteractionFactory factory = new InteractionFactory();
-        factory.cchhInteraction(c1, c2);
         
-        AHerbivore a1 = new Antelope();
-        AHerbivore a2 = new Antelope();
-        factory.cchhInteraction(a1, a2);
+        /*Carnivorous*/
+        AAnimal lion1 = new Lion();
+        lion1.setCurrentState(lion1.getStarvedState());
+        
+        AAnimal lion2 = new Lion();
+        lion2.setCurrentState(lion2.getStarvedState());
+        
+        factory.cchhInteraction(lion1, lion2);
+        
+        /*Herbivore*/
+        AAnimal antelope1 = new Antelope();
+        antelope1.setCurrentState(antelope1.getStarvedState());
+        
+        AAnimal antelope2 = new Antelope();
+        antelope2.setCurrentState(antelope2.getStarvedState());
+        
+        factory.cchhInteraction(antelope1, antelope2);
     }
     
     @Test
     public void testCchhInteraction_breedBehavior() {
-        // TODO not yet
+        System.out.println("**breed");
+        InteractionFactory factory = new InteractionFactory();
+        
+        /*Carnivorous*/
+        AAnimal lion1 = new Lion();
+        lion1.setSex('f');
+        
+        AAnimal lion2 = new Lion();
+        lion2.setSex('m');
+        
+        factory.cchhInteraction(lion1, lion2);
+        
+        /*Herbivore*/
+        AAnimal rabbit1 = new Rabbit();
+        rabbit1.setSex('m');
+        
+        AAnimal rabbit2 = new Rabbit();
+        rabbit2.setSex('f');
+        
+        factory.cchhInteraction(rabbit1, rabbit2);
+        
     }
     
     @Test
     public void testCchhInteraction_nothingTakePlaceBehavior() {
-        // TODO not yet
+        System.out.println("**nothing");
+        InteractionFactory factory = new InteractionFactory();
+        
+        AAnimal wolf = new Wolf();
+        AAnimal rabbit = new Rabbit();
+        
+        factory.cchhInteraction(wolf, rabbit);
     }
+    
+    /*
+     * What happend if carnivore has starved state and meet another
+     * animal has mormal state, but they're opposite sex
+     * */
+    @Test
+    public void testCchhInteraction_extend1() {
+        System.out.println("**extend 1");
+        InteractionFactory factory = new InteractionFactory();
+        
+        AAnimal lion1 = new Lion();
+        lion1.setCurrentState(lion1.getStarvedState());
+        lion1.setSex('m');
+        
+        AAnimal lion2 = new Lion();
+        lion2.setStarvedState(lion2.getNormalState());
+        lion2.setSex('f');
+        
+        factory.cchhInteraction(lion1, lion2);
+        
+        /*The answer is breeding... */
+        /*The same for herbivorous*/
+    }
+    
+    
 }
