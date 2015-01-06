@@ -35,12 +35,22 @@ public class InteractionFactory {
         return new ImplNothingTakePlaceInteraction();
     }
 
+    /**
+     * If carnivore meets an herbivore, a chase or nothing will take place again 
+     * depending on the state of the animals (hungry or not…). 
+     * */
     public IInteraction chInteraction(ACarnivore aCarnivore,
             AHerbivore aHerbivore) {
+        if (aCarnivore.getCurrentState() instanceof ImplHungryState) {
+            return new ImplChaseInteraction();
+        }
         return new ImplNothingTakePlaceInteraction();
     }
 
     public IInteraction hpInteraction(AHerbivore aHerbivore, APlant aPlant) {
+        if (aHerbivore.getCurrentState() instanceof ImplHungryState) {
+            return new ImplEatInteraction();
+        }
         return new ImplNothingTakePlaceInteraction();
     }
 
