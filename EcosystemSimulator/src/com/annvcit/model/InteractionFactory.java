@@ -15,21 +15,17 @@ public class InteractionFactory {
     public IInteraction cchhInteraction(AAnimal... animals) {
         AAnimal a1 = animals[0];
         AAnimal a2 = animals[1];
-        
-        IAnimalState a1State = a1.getCurrentState();
-        IAnimalState a2State = a2.getCurrentState();
-        
         /*
          * Cả 2 con cùng là đv ăn thịt hoặc
          * cùng là đv ăn cỏ
          * */
         if (a1 instanceof ACarnivore && a2 instanceof ACarnivore ||
                 a1 instanceof AHerbivore && a2 instanceof AHerbivore) {
-            if (a1State instanceof ImplStarvedState &&
-                    a2State instanceof ImplStarvedState) {
-                return new ImplFightInteraction();
+            if (a1.getCurrentState() instanceof ImplStarvedState &&
+                    a2.getCurrentState() instanceof ImplStarvedState) {
+                return new ImplFightInteraction(a1, a2);
             } else if (a1.isOppositeSex(a2)) {
-                return new ImplBreedInteraction();
+                return new ImplBreedInteraction(a1, a2);
             }
         }
         return new ImplNothingTakePlaceInteraction();
@@ -42,14 +38,17 @@ public class InteractionFactory {
     public IInteraction chInteraction(ACarnivore aCarnivore,
             AHerbivore aHerbivore) {
         if (aCarnivore.getCurrentState() instanceof ImplHungryState) {
-            return new ImplChaseInteraction();
+            return new ImplChaseInteraction(aCarnivore, aHerbivore);
         }
         return new ImplNothingTakePlaceInteraction();
     }
 
+    /**
+     * If an herbivore meets a plant, eating or nothing will take place.
+     * */
     public IInteraction hpInteraction(AHerbivore aHerbivore, APlant aPlant) {
         if (aHerbivore.getCurrentState() instanceof ImplHungryState) {
-            return new ImplEatInteraction();
+            return new ImplEatInteraction(aHerbivore, aPlant);
         }
         return new ImplNothingTakePlaceInteraction();
     }

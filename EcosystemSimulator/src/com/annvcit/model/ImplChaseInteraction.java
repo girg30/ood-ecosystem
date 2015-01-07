@@ -5,8 +5,18 @@ package com.annvcit.model;
  * trạng thái đói.
  * */
 public class ImplChaseInteraction implements IInteraction {
-    public ImplChaseInteraction() {
-        System.out.println("chasing...");
+    
+    @SuppressWarnings("unused")
+    private ACarnivore carnivore;
+    private AHerbivore herbivore;
+    
+    public ImplChaseInteraction(ACarnivore c, AHerbivore h) {
+        this.carnivore = c;
+        this.herbivore = h;
     }
 
+    @Override
+    public Object interact() {
+        return herbivore;
+    }
 }
