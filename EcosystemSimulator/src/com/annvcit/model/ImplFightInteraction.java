@@ -21,8 +21,14 @@ public class ImplFightInteraction implements IInteraction {
         Random random = new Random();
         AAnimal result = null;
         int number = random.nextInt(10);
-        if (number >5) result = a1;
-        else result = a2;
+        if (number >5) {
+            a2.setCurrentState(a2.getNormalState());
+            result = a1;
+        }
+        else {
+            a1.setCurrentState(a1.getNormalState());
+            result = a2;
+        }
         return result;
     }
 }
