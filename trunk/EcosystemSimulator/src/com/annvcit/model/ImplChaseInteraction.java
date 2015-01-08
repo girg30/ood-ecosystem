@@ -6,7 +6,6 @@ package com.annvcit.model;
  * */
 public class ImplChaseInteraction implements IInteraction {
     
-    @SuppressWarnings("unused")
     private ACarnivore carnivore;
     private AHerbivore herbivore;
     
@@ -17,6 +16,7 @@ public class ImplChaseInteraction implements IInteraction {
 
     @Override
     public Object interact() {
+        carnivore.setCurrentState(carnivore.getNormalState());
         return herbivore;
     }
 }

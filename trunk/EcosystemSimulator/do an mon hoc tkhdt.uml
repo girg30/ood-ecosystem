@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_j16nkIyyEeSNrtY43VTm9A" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_j16nkYyyEeSNrtY43VTm9A" source="codegen">
         <details xmi:id="_j16nkoyyEeSNrtY43VTm9A" key="codegenDirectory" value="/do an mon hoc tkhdt/src"/>
-        <details xmi:id="_cLW6MIyzEeSNrtY43VTm9A" key="AssociatedSourceCode" value="/do an mon hoc tkhdt/src/com/annvcit/model/Lion.java;133374732/1;/do an mon hoc tkhdt/src/com/annvcit/model/Wolf.java;2298075023/1;/do an mon hoc tkhdt/src/com/annvcit/model/AHerbivore.java;106451391/1;/do an mon hoc tkhdt/src/com/annvcit/model/Rabbit.java;1324495350/1;/do an mon hoc tkhdt/src/com/annvcit/model/Antelope.java;1963457447/1;/do an mon hoc tkhdt/src/com/annvcit/model/APlant.java;134273232/1;/do an mon hoc tkhdt/src/com/annvcit/model/Willow.java;2004822502/1;/do an mon hoc tkhdt/src/com/annvcit/model/Grass.java;1962828509/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplAfricaFacotry.java;1414017744/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFinnishFactory.java;3093558887/1;/do an mon hoc tkhdt/src/com/annvcit/model/ICreatureFactory.java;1915754336/1;/do an mon hoc tkhdt/src/com/annvcit/model/ACarnivore.java;2495465866/1;/do an mon hoc tkhdt/src/com/annvcit/model/Ecosystem.java;2945928894/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplStarvedState.java;323801306/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplHungryState.java;3892733647/1;/do an mon hoc tkhdt/src/com/annvcit/model/IAnimalState.java;1912445066/1;/do an mon hoc tkhdt/src/com/annvcit/model/IInteraction.java;564388657/1;/do an mon hoc tkhdt/src/com/annvcit/model/InteractionFactory.java;1238819021/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplNormalState.java;1404531673/1;/do an mon hoc tkhdt/src/com/annvcit/model/AAnimal.java;974280901/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplBreedInteraction.java;1362728641/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplChaseInteraction.java;2339320567/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplEatInteraction.java;3826371043/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFightInteraction.java;718628582/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplNothingTakePlaceInteraction.java;3334203780/1;"/>
+        <details xmi:id="_cLW6MIyzEeSNrtY43VTm9A" key="AssociatedSourceCode" value="/do an mon hoc tkhdt/src/com/annvcit/model/Lion.java;133374732/1;/do an mon hoc tkhdt/src/com/annvcit/model/Wolf.java;1063161640/1;/do an mon hoc tkhdt/src/com/annvcit/model/AHerbivore.java;106451391/1;/do an mon hoc tkhdt/src/com/annvcit/model/Rabbit.java;1324495350/1;/do an mon hoc tkhdt/src/com/annvcit/model/Antelope.java;1963457447/1;/do an mon hoc tkhdt/src/com/annvcit/model/APlant.java;134273232/1;/do an mon hoc tkhdt/src/com/annvcit/model/Willow.java;2004822502/1;/do an mon hoc tkhdt/src/com/annvcit/model/Grass.java;1962828509/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplAfricaFacotry.java;1414017744/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFinnishFactory.java;3093558887/1;/do an mon hoc tkhdt/src/com/annvcit/model/ICreatureFactory.java;1915754336/1;/do an mon hoc tkhdt/src/com/annvcit/model/ACarnivore.java;2495465866/1;/do an mon hoc tkhdt/src/com/annvcit/model/Ecosystem.java;2945928894/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplStarvedState.java;323801306/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplHungryState.java;533170117/1;/do an mon hoc tkhdt/src/com/annvcit/model/IAnimalState.java;1912445066/1;/do an mon hoc tkhdt/src/com/annvcit/model/IInteraction.java;564388657/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplNormalState.java;1404531673/1;/do an mon hoc tkhdt/src/com/annvcit/model/AAnimal.java;974280901/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplBreedInteraction.java;1362728641/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplChaseInteraction.java;3113728863/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplEatInteraction.java;2063027158/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplFightInteraction.java;19206030/1;/do an mon hoc tkhdt/src/com/annvcit/model/ImplNothingTakePlaceInteraction.java;1307575154/1;/do an mon hoc tkhdt/src/com/annvcit/model/InteractionFactory.java;2335742465/1;"/>
       </contents>
       <contents xmi:type="ecore:EAnnotation" xmi:id="_M_lUII0iEeSr8tgZwu4ibQ" source="preferences">
         <contents xmi:type="ecore:EAnnotation" xmi:id="_M_lUIY0iEeSr8tgZwu4ibQ" source="com.yattasolutions.codegen.reverse">
@@ -409,7 +409,8 @@ trạng thái đói.
                 <name xsi:nil="true"/>
               </ownedParameter>
               <language>java</language>
-              <body>return herbivore;
+              <body>carnivore.setCurrentState(carnivore.getNormalState());
+     return herbivore;
  </body>
             </ownedBehavior>
             <ownedOperation xmi:id="_ccaiIJDeEeSh79dQXpRhHA" name="ImplChaseInteraction" method="_cccXUJDeEeSh79dQXpRhHA">
@@ -448,7 +449,8 @@ trạng thái đói.
                 <name xsi:nil="true"/>
               </ownedParameter>
               <language>java</language>
-              <body>return this.plant;
+              <body>herbivore.setCurrentState(herbivore.getNormalState());
+     return this.plant;
  </body>
             </ownedBehavior>
             <ownedOperation xmi:id="_HEgwcJDeEeSh79dQXpRhHA" name="ImplEatInteraction" method="_HEjMsJDeEeSh79dQXpRhHA">
@@ -473,7 +475,9 @@ trạng thái đói.
             <ownedAttribute xmi:id="__dpNEJW8EeSWRIzrSW8QBg" name="a2" visibility="private" type="_HstRwI3REeSDmb6ZzY3kXg" association="__dusoJW8EeSWRIzrSW8QBg"/>
             <interfaceRealization xmi:id="_4p4dsI3OEeSDmb6ZzY3kXg" client="_R4FkoI2lEeSCed76TuW3eA" supplier="_h0JcEI3OEeSDmb6ZzY3kXg" contract="_h0JcEI3OEeSDmb6ZzY3kXg"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Nuc44JDeEeSh79dQXpRhHA" name="ImplFightInteraction" specification="_NubqwJDeEeSh79dQXpRhHA">
-              <ownedParameter xmi:id="__dqbMJW8EeSWRIzrSW8QBg" type="_R4FkoI2lEeSCed76TuW3eA" direction="return"/>
+              <ownedParameter xmi:id="__dqbMJW8EeSWRIzrSW8QBg" type="_R4FkoI2lEeSCed76TuW3eA" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <ownedParameter xmi:id="__dqbMZW8EeSWRIzrSW8QBg" name="a1" type="_HstRwI3REeSDmb6ZzY3kXg"/>
               <ownedParameter xmi:id="__dqbMpW8EeSWRIzrSW8QBg" name="a2" type="_HstRwI3REeSDmb6ZzY3kXg"/>
               <language>java</language>
@@ -482,13 +486,21 @@ trạng thái đói.
  </body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__drCQJW8EeSWRIzrSW8QBg" name="interact" specification="__dYuYJW8EeSWRIzrSW8QBg">
-              <ownedParameter xmi:id="__drCQZW8EeSWRIzrSW8QBg" type="_kyscIpW2EeSWRIzrSW8QBg" direction="return"/>
+              <ownedParameter xmi:id="__drCQZW8EeSWRIzrSW8QBg" type="_kyscIpW2EeSWRIzrSW8QBg" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>Random random = new Random();
      AAnimal result = null;
      int number = random.nextInt(10);
-     if (number >5) result = a1;
-     else result = a2;
+     if (number >5) {
+         a2.setCurrentState(a2.getNormalState());
+         result = a1;
+     }
+     else {
+         a1.setCurrentState(a1.getNormalState());
+         result = a2;
+     }
      return result;
  </body>
             </ownedBehavior>
@@ -504,85 +516,7 @@ trạng thái đói.
               <ownedParameter xmi:id="__dZVcJW8EeSWRIzrSW8QBg" type="_kyscIpW2EeSWRIzrSW8QBg" direction="return"/>
             </ownedOperation>
           </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_mVlwUI21EeSDmb6ZzY3kXg" name="InteractionFactory">
-            <ownedComment xmi:id="_ubRvgJWAEeS_kLrsBLMptg">
-              <body>Nhà máy tao tương tác. Ứng với mỗi trường hợp thì sẽ có 1 phương thức tương
-ứng.</body>
-            </ownedComment>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WjQ7EJWMEeSQLrha9lkhfw" name="cchhInteraction" specification="_mVlwUY21EeSDmb6ZzY3kXg">
-              <ownedParameter xmi:id="_WjQ7EZWMEeSQLrha9lkhfw" name="animals" type="_HstRwI3REeSDmb6ZzY3kXg">
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WjQ7EpWMEeSQLrha9lkhfw" value="*"/>
-              </ownedParameter>
-              <ownedParameter xmi:id="_WjQ7E5WMEeSQLrha9lkhfw" type="_h0JcEI3OEeSDmb6ZzY3kXg" direction="return">
-                <name xsi:nil="true"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>AAnimal a1 = animals[0];
-     AAnimal a2 = animals[1];
-     
-     IAnimalState a1State = a1.getCurrentState();
-     IAnimalState a2State = a2.getCurrentState();
-     
-     /*
-      * Cả 2 con cùng là đv ăn thịt hoặc
-      * cùng là đv ăn cỏ
-      * */
-     if (a1 instanceof ACarnivore &amp;&amp; a2 instanceof ACarnivore ||
-             a1 instanceof AHerbivore &amp;&amp; a2 instanceof AHerbivore) {
-         if (a1State instanceof ImplStarvedState &amp;&amp;
-                 a2State instanceof ImplStarvedState) {
-             return new ImplFightInteraction();
-         } else if (a1.isOppositeSex(a2)) {
-             return new ImplBreedInteraction();
-         }
-     }
-     return new ImplNothingTakePlaceInteraction();
- </body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WjSwQJWMEeSQLrha9lkhfw" name="chInteraction" specification="_mVvhUI21EeSDmb6ZzY3kXg">
-              <ownedParameter xmi:id="_WjSwQZWMEeSQLrha9lkhfw" name="aCarnivore" type="_XEVWAIyzEeSNrtY43VTm9A"/>
-              <ownedParameter xmi:id="_WjSwQpWMEeSQLrha9lkhfw" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
-              <ownedParameter xmi:id="_WjSwQ5WMEeSQLrha9lkhfw" type="_h0JcEI3OEeSDmb6ZzY3kXg" direction="return">
-                <name xsi:nil="true"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>if (aCarnivore.getCurrentState() instanceof ImplHungryState) {
-         return new ImplChaseInteraction();
-     }
-     return new ImplNothingTakePlaceInteraction();
- </body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WjUlcJWMEeSQLrha9lkhfw" name="hpInteraction" specification="_mVvhVI21EeSDmb6ZzY3kXg">
-              <ownedParameter xmi:id="_WjUlcZWMEeSQLrha9lkhfw" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
-              <ownedParameter xmi:id="_WjUlcpWMEeSQLrha9lkhfw" name="aPlant" type="_Rrm40IzqEeScxsKS8t0j_w"/>
-              <ownedParameter xmi:id="_WjUlc5WMEeSQLrha9lkhfw" type="_h0JcEI3OEeSDmb6ZzY3kXg" direction="return">
-                <name xsi:nil="true"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>if (aHerbivore.getCurrentState() instanceof ImplHungryState) {
-         return new ImplEatInteraction();
-     }
-     return new ImplNothingTakePlaceInteraction();
- </body>
-            </ownedBehavior>
-            <ownedOperation xmi:id="_mVlwUY21EeSDmb6ZzY3kXg" name="cchhInteraction" method="_WjQ7EJWMEeSQLrha9lkhfw">
-              <ownedParameter xmi:id="_mVlwUo21EeSDmb6ZzY3kXg" name="animals" type="_HstRwI3REeSDmb6ZzY3kXg">
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mVlwVI21EeSDmb6ZzY3kXg" value="*"/>
-              </ownedParameter>
-              <ownedParameter xmi:id="_LjkRwI3VEeSDmb6ZzY3kXg" type="_h0JcEI3OEeSDmb6ZzY3kXg" direction="return"/>
-            </ownedOperation>
-            <ownedOperation xmi:id="_mVvhUI21EeSDmb6ZzY3kXg" name="chInteraction" method="_WjSwQJWMEeSQLrha9lkhfw">
-              <ownedParameter xmi:id="_mVvhUY21EeSDmb6ZzY3kXg" name="aCarnivore" type="_XEVWAIyzEeSNrtY43VTm9A"/>
-              <ownedParameter xmi:id="_mVvhUo21EeSDmb6ZzY3kXg" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
-              <ownedParameter xmi:id="_mVvhU421EeSDmb6ZzY3kXg" type="_h0JcEI3OEeSDmb6ZzY3kXg" direction="return"/>
-            </ownedOperation>
-            <ownedOperation xmi:id="_mVvhVI21EeSDmb6ZzY3kXg" name="hpInteraction" method="_WjUlcJWMEeSQLrha9lkhfw">
-              <ownedParameter xmi:id="_mVvhVY21EeSDmb6ZzY3kXg" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
-              <ownedParameter xmi:id="_mVvhVo21EeSDmb6ZzY3kXg" name="aPlant" type="_Rrm40IzqEeScxsKS8t0j_w"/>
-              <ownedParameter xmi:id="_mVvhV421EeSDmb6ZzY3kXg" type="_h0JcEI3OEeSDmb6ZzY3kXg" direction="return"/>
-            </ownedOperation>
-          </packagedElement>
-          <packagedElement xmi:type="uml:Dependency" xmi:id="_EA-lsI23EeSDmb6ZzY3kXg" client="_mVlwUI21EeSDmb6ZzY3kXg"/>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_EA-lsI23EeSDmb6ZzY3kXg"/>
           <packagedElement xmi:type="uml:Class" xmi:id="_qlWqcI23EeSDmb6ZzY3kXg" name="ImplNothingTakePlaceInteraction">
             <ownedComment xmi:id="_jd1KgJWAEeS_kLrsBLMptg">
               <body>Tương tác không tương tác :)
@@ -599,9 +533,11 @@ Có nghĩa là không có gì xảy ra.
  </body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KaqUQJW9EeSWRIzrSW8QBg" name="interact" specification="_Kan4AJW9EeSWRIzrSW8QBg">
-              <ownedParameter xmi:id="_KaqUQZW9EeSWRIzrSW8QBg" type="_kyscIpW2EeSWRIzrSW8QBg" direction="return"/>
+              <ownedParameter xmi:id="_KaqUQZW9EeSWRIzrSW8QBg" type="_kyscIpW2EeSWRIzrSW8QBg" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
-              <body>return null;
+              <body>return new Object(); 
  </body>
             </ownedBehavior>
             <ownedOperation xmi:id="_wlKZEJDeEeSh79dQXpRhHA" name="ImplNothingTakePlaceInteraction" method="_wlMOQJDeEeSh79dQXpRhHA">
@@ -619,6 +555,10 @@ Có nghĩa là không có gì xảy ra.
               <body>Lớp trừu tượng. Định nghĩa các tương tác (interaction) khác nhau dựa vào các tình huống khác nhau
 của động vật.</body>
             </ownedComment>
+            <ownedAttribute xmi:id="_TIthcJbZEeSMHPh5HSbW4Q" name="interactionFactory" type="_8o_MEJbYEeSMHPh5HSbW4Q" association="_TIs6YJbZEeSMHPh5HSbW4Q">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TIxL0JbZEeSMHPh5HSbW4Q"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TIxL0ZbZEeSMHPh5HSbW4Q" value="*"/>
+            </ownedAttribute>
             <ownedOperation xmi:id="_kykgUJW2EeSWRIzrSW8QBg" name="interact">
               <ownedComment xmi:id="_75dt8JW3EeSWRIzrSW8QBg">
                 <body>Hàm này định nghĩa kết quả interact của 2 creatures
@@ -718,6 +658,79 @@ của động vật.</body>
           <packagedElement xmi:type="uml:Association" xmi:id="__dusoJW8EeSWRIzrSW8QBg" name="" memberEnd="__dusoZW8EeSWRIzrSW8QBg __dpNEJW8EeSWRIzrSW8QBg">
             <ownedEnd xmi:id="__dusoZW8EeSWRIzrSW8QBg" name="" type="_R4FkoI2lEeSCed76TuW3eA" association="__dusoJW8EeSWRIzrSW8QBg"/>
           </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_8o_MEJbYEeSMHPh5HSbW4Q" name="InteractionFactory">
+            <ownedComment xmi:id="_IQHnQJbZEeSMHPh5HSbW4Q">
+              <body>Nhà máy tao tương tác. Ứng với mỗi trường hợp thì sẽ có 1 phương thức tương
+ứng.</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_TIxy4JbZEeSMHPh5HSbW4Q" name="iInteraction" type="_h0JcEI3OEeSDmb6ZzY3kXg" association="_TIs6YJbZEeSMHPh5HSbW4Q">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TIxy4ZbZEeSMHPh5HSbW4Q"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TIyZ8JbZEeSMHPh5HSbW4Q" value="*"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IQFLAJbZEeSMHPh5HSbW4Q" name="cchhInteraction" specification="_IP5k0JbZEeSMHPh5HSbW4Q">
+              <ownedParameter xmi:id="_IQFLAZbZEeSMHPh5HSbW4Q" name="animals" type="_HstRwI3REeSDmb6ZzY3kXg">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IQFLApbZEeSMHPh5HSbW4Q" value="*"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_IQFLA5bZEeSMHPh5HSbW4Q" type="_h0JcEI3OEeSDmb6ZzY3kXg" direction="return"/>
+              <language>java</language>
+              <body>AAnimal a1 = animals[0];
+     AAnimal a2 = animals[1];
+     /*
+      * Cả 2 con cùng là đv ăn thịt hoặc
+      * cùng là đv ăn cỏ
+      * */
+     if (a1 instanceof ACarnivore &amp;&amp; a2 instanceof ACarnivore ||
+             a1 instanceof AHerbivore &amp;&amp; a2 instanceof AHerbivore) {
+         if (a1.getCurrentState() instanceof ImplStarvedState &amp;&amp;
+                 a2.getCurrentState() instanceof ImplStarvedState) {
+             return new ImplFightInteraction(a1, a2);
+         } else if (a1.isOppositeSex(a2)) {
+             return new ImplBreedInteraction(a1, a2);
+         }
+     }
+     return new ImplNothingTakePlaceInteraction();
+ </body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IQFyEJbZEeSMHPh5HSbW4Q" name="chInteraction" specification="_IP8oIJbZEeSMHPh5HSbW4Q">
+              <ownedParameter xmi:id="_IQFyEZbZEeSMHPh5HSbW4Q" name="aCarnivore" type="_XEVWAIyzEeSNrtY43VTm9A"/>
+              <ownedParameter xmi:id="_IQFyEpbZEeSMHPh5HSbW4Q" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
+              <ownedParameter xmi:id="_IQFyE5bZEeSMHPh5HSbW4Q" type="_h0JcEI3OEeSDmb6ZzY3kXg" direction="return"/>
+              <language>java</language>
+              <body>if (aCarnivore.getCurrentState() instanceof ImplHungryState) {
+         return new ImplChaseInteraction(aCarnivore, aHerbivore);
+     }
+     return new ImplNothingTakePlaceInteraction();
+ </body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IQGZIJbZEeSMHPh5HSbW4Q" name="hpInteraction" specification="_IP92QJbZEeSMHPh5HSbW4Q">
+              <ownedParameter xmi:id="_IQGZIZbZEeSMHPh5HSbW4Q" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
+              <ownedParameter xmi:id="_IQGZIpbZEeSMHPh5HSbW4Q" name="aPlant" type="_Rrm40IzqEeScxsKS8t0j_w"/>
+              <ownedParameter xmi:id="_IQGZI5bZEeSMHPh5HSbW4Q" type="_h0JcEI3OEeSDmb6ZzY3kXg" direction="return"/>
+              <language>java</language>
+              <body>if (aHerbivore.getCurrentState() instanceof ImplHungryState) {
+         return new ImplEatInteraction(aHerbivore, aPlant);
+     }
+     return new ImplNothingTakePlaceInteraction();
+ </body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_IP5k0JbZEeSMHPh5HSbW4Q" name="cchhInteraction" method="_IQFLAJbZEeSMHPh5HSbW4Q">
+              <ownedParameter xmi:id="_IP6L4JbZEeSMHPh5HSbW4Q" name="animals" type="_HstRwI3REeSDmb6ZzY3kXg">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IP6y8JbZEeSMHPh5HSbW4Q" value="*"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_IP6L4ZbZEeSMHPh5HSbW4Q" type="_h0JcEI3OEeSDmb6ZzY3kXg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_IP8oIJbZEeSMHPh5HSbW4Q" name="chInteraction" method="_IQFyEJbZEeSMHPh5HSbW4Q">
+              <ownedParameter xmi:id="_IP8oIZbZEeSMHPh5HSbW4Q" name="aCarnivore" type="_XEVWAIyzEeSNrtY43VTm9A"/>
+              <ownedParameter xmi:id="_IP9PMJbZEeSMHPh5HSbW4Q" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
+              <ownedParameter xmi:id="_IP9PMZbZEeSMHPh5HSbW4Q" type="_h0JcEI3OEeSDmb6ZzY3kXg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_IP92QJbZEeSMHPh5HSbW4Q" name="hpInteraction" method="_IQGZIJbZEeSMHPh5HSbW4Q">
+              <ownedParameter xmi:id="_IP-dUJbZEeSMHPh5HSbW4Q" name="aHerbivore" type="_ZRX_4Iy0EeSNrtY43VTm9A"/>
+              <ownedParameter xmi:id="_IP-dUZbZEeSMHPh5HSbW4Q" name="aPlant" type="_Rrm40IzqEeScxsKS8t0j_w"/>
+              <ownedParameter xmi:id="_IP_EYJbZEeSMHPh5HSbW4Q" type="_h0JcEI3OEeSDmb6ZzY3kXg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_TIs6YJbZEeSMHPh5HSbW4Q" name="" memberEnd="_TIthcJbZEeSMHPh5HSbW4Q _TIxy4JbZEeSMHPh5HSbW4Q"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -763,8 +776,6 @@ của động vật.</body>
   <UMLLabProfile:LegacyStyledElement xmi:id="_z53nAIzsEeScxsKS8t0j_w" base_Element="_z5t2AIzsEeScxsKS8t0j_w"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_z53nAYzsEeScxsKS8t0j_w" base_Element="_z5t2BIzsEeScxsKS8t0j_w"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_z53nAozsEeScxsKS8t0j_w" base_Element="_z5t2CIzsEeScxsKS8t0j_w"/>
-  <UMLLabProfile:Array xmi:id="_9mi9QI3UEeSDmb6ZzY3kXg" base_Element="_mVlwUo21EeSDmb6ZzY3kXg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_9mi9QY3UEeSDmb6ZzY3kXg" base_Element="_mVlwUY21EeSDmb6ZzY3kXg"/>
   <UMLLabProfile:Reference xmi:id="_x3e3oY3gEeSDmb6ZzY3kXg" base_Element="_x3e3oI3gEeSDmb6ZzY3kXg"/>
   <UMLLabProfile:Reference xmi:id="_kytqQJW2EeSWRIzrSW8QBg" base_Element="_kyscIpW2EeSWRIzrSW8QBg"/>
   <UMLLabProfile:Annotations xmi:id="_cEF30JW3EeSWRIzrSW8QBg" base_Element="_cEEpsJW3EeSWRIzrSW8QBg">
@@ -783,25 +794,11 @@ của động vật.</body>
   <UMLLabProfile:LegacyStyledElement xmi:id="_LnLHgJW5EeSWRIzrSW8QBg" base_Element="_LnJ5YZW5EeSWRIzrSW8QBg"/>
   <UMLLabProfile:Reference xmi:id="_LnQnEJW5EeSWRIzrSW8QBg" base_Element="_LnPY8JW5EeSWRIzrSW8QBg"/>
   <UMLLabProfile:Reference xmi:id="_LnTDUJW5EeSWRIzrSW8QBg" base_Element="_LnROIJW5EeSWRIzrSW8QBg"/>
-  <UMLLabProfile:Annotations xmi:id="_O0CFEJW5EeSWRIzrSW8QBg" base_Element="_LnIrQJW5EeSWRIzrSW8QBg">
-    <annotations xmi:id="_O0CFEZW5EeSWRIzrSW8QBg" name="SuppressWarnings">
-      <annotationParameters xmi:id="_O0EhUJW5EeSWRIzrSW8QBg" skipName="true" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_O0G9kJW5EeSWRIzrSW8QBg" value="&quot;unused&quot;"/>
-      </annotationParameters>
-    </annotations>
-  </UMLLabProfile:Annotations>
   <UMLLabProfile:Annotations xmi:id="_gPZIsJW5EeSWRIzrSW8QBg" base_Element="_gPX6kJW5EeSWRIzrSW8QBg">
     <annotations xmi:id="_gPZIsZW5EeSWRIzrSW8QBg" name="Override"/>
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_gPeoQJW5EeSWRIzrSW8QBg" base_Element="_gPX6kJW5EeSWRIzrSW8QBg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_gPkH0JW5EeSWRIzrSW8QBg" base_Element="_gPjgwJW5EeSWRIzrSW8QBg"/>
-  <UMLLabProfile:Annotations xmi:id="_gPku4JW5EeSWRIzrSW8QBg" base_Element="_gPjgwJW5EeSWRIzrSW8QBg">
-    <annotations xmi:id="_gPku4ZW5EeSWRIzrSW8QBg" name="SuppressWarnings">
-      <annotationParameters xmi:id="_gPku4pW5EeSWRIzrSW8QBg" skipName="true" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_gPqOcJW5EeSWRIzrSW8QBg" value="&quot;unused&quot;"/>
-      </annotationParameters>
-    </annotations>
-  </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_gPl9AJW5EeSWRIzrSW8QBg" base_Element="_gPlV8JW5EeSWRIzrSW8QBg"/>
   <UMLLabProfile:Reference xmi:id="_gPsqsJW5EeSWRIzrSW8QBg" base_Element="_gPrckJW5EeSWRIzrSW8QBg"/>
   <UMLLabProfile:Reference xmi:id="_gPt40JW5EeSWRIzrSW8QBg" base_Element="_gPsqsZW5EeSWRIzrSW8QBg"/>
@@ -818,4 +815,6 @@ của động vật.</body>
     <annotations xmi:id="_KaofEZW9EeSWRIzrSW8QBg" name="Override"/>
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_KapGIJW9EeSWRIzrSW8QBg" base_Element="_Kan4AJW9EeSWRIzrSW8QBg"/>
+  <UMLLabProfile:Array xmi:id="_IP7aAJbZEeSMHPh5HSbW4Q" base_Element="_IP6L4JbZEeSMHPh5HSbW4Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_IQBgoJbZEeSMHPh5HSbW4Q" base_Element="_IP5k0JbZEeSMHPh5HSbW4Q"/>
 </xmi:XMI>

@@ -5,7 +5,6 @@ package com.annvcit.model;
  * */
 public class ImplEatInteraction implements IInteraction {
     
-    @SuppressWarnings("unused")
     private AHerbivore herbivore;
     private APlant plant;
     
@@ -16,6 +15,7 @@ public class ImplEatInteraction implements IInteraction {
 
     @Override
     public Object interact() {
+        herbivore.setCurrentState(herbivore.getNormalState());
         return this.plant;
     }
     
