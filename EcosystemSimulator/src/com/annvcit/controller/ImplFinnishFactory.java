@@ -1,4 +1,11 @@
-package com.annvcit.model;
+package com.annvcit.controller;
+
+import com.annvcit.model.ACarnivore;
+import com.annvcit.model.AHerbivore;
+import com.annvcit.model.APlant;
+import com.annvcit.model.Rabbit;
+import com.annvcit.model.Willow;
+import com.annvcit.model.Wolf;
 
 /**
  * Lợp hiện thực, thực hiện công việc tạo ra các sản phẩm thành phần

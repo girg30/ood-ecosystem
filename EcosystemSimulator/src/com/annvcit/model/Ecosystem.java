@@ -1,5 +1,7 @@
 package com.annvcit.model;
 
+import com.annvcit.controller.ICreatureFactory;
+
 /**
  * Hệ sinh thái. Gồm:
  *  +Loài ăn thịt
