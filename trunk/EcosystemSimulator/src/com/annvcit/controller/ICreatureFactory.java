@@ -1,4 +1,10 @@
-package com.annvcit.model;
+package com.annvcit.controller;
+
+import com.annvcit.model.ACarnivore;
+import com.annvcit.model.AHerbivore;
+import com.annvcit.model.APlant;
+
+import java.awt.Graphics;
 
 /**
  * Lớp trừu tượng. Định nghĩa các phương thức tạo các
@@ -11,4 +17,6 @@ public interface ICreatureFactory {
 
     public APlant createPlant();
 
+    public void drawAnimals(Graphics g);
+    
 }

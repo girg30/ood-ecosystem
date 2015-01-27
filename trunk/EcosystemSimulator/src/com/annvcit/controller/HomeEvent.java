@@ -4,8 +4,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import com.annvcit.model.Ecosystem;
-import com.annvcit.model.ImplAfricaFacotry;
-import com.annvcit.model.ImplFinnishFactory;
 import com.annvcit.view.Home;
 
 /**
@@ -31,7 +29,7 @@ public class HomeEvent implements ActionListener{
 	
 	/** chuyển môi trường qua african*/
 	private void changeToAfrican(ActionEvent e) {
-		Ecosystem african = new Ecosystem(new ImplAfricaFacotry());
+		Ecosystem african = new Ecosystem(new ImplAfricaFactory());
 	}
 	
 	/** chuyển môi trường qua finnish*/
