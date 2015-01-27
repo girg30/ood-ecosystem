@@ -99,5 +99,5 @@ public abstract class AAnimal {
     protected int x, y, w, h;
     protected boolean removed = false;
     
-    protected int xd, yd; // x direction, y direction
+    protected int xd=2, yd=2; // x direction, y direction
 }

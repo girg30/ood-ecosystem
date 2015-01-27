@@ -14,7 +14,7 @@ public class Antelope extends AHerbivore {
 	public Antelope(int x, int y) {
 		super(x, y);
 		
-		w = 30; h = 30;
+		w = 16; h = 16;
 		
 		body = new Rectangle(x, y, w, h);
 	}
@@ -23,9 +23,6 @@ public class Antelope extends AHerbivore {
 	public void draw(Graphics g) {
 		g.setColor(new Color(75, 139, 219));
 		g.fillOval(body.x, body.y, body.width, body.height);
-		
-		g.setColor(Color.RED);
-		g.fillRect(body.x, body.y, body.width, body.height);
 	}
 	
 	@Override
