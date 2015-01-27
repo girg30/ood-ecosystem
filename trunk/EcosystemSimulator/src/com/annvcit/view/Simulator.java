@@ -23,7 +23,7 @@ public class Simulator extends JPanel implements KeyListener {
 		setFocusable(true);
 		addKeyListener(this);
 		
-		creatureFactory = new ImplAfricaFactory(20, 200);
+		creatureFactory = new ImplAfricaFactory(3, 200);
 	}
 	
 	public void paint(Graphics g) {
@@ -31,6 +31,7 @@ public class Simulator extends JPanel implements KeyListener {
 		g.fillRect(0, 0, getWidth(), getHeight());
 		
 		creatureFactory.drawAnimals(g);
+		creatureFactory.askCarnivoreMove();
 		
 		g.dispose(); // release resource
 		repaint();
