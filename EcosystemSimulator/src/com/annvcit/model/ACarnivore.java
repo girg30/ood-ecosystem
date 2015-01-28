@@ -12,6 +12,10 @@ public abstract class ACarnivore extends AAnimal {
 	protected Rectangle body;
 	protected Rectangle radiusBound;
 	
-	public ACarnivore(int x, int y) { super(x, y); }
+	public ACarnivore(int x, int y) { 
+		super(x, y); 
+	}
+	
+	public ACarnivore() {}
 	
 }

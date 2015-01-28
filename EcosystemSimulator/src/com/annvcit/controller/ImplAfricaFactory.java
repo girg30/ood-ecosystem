@@ -29,6 +29,8 @@ public class ImplAfricaFactory implements ICreatureFactory {
 
 	Random random = new Random();
 
+	public ImplAfricaFactory() {}
+	
 	public ImplAfricaFactory(int lions, int antelopes) {
 		this.lion = lions;
 		this.antelope = antelopes;
@@ -37,7 +39,7 @@ public class ImplAfricaFactory implements ICreatureFactory {
 		antelopeList = new ArrayList<>();
 
 		// initialize objects
-		for (int i = 0; i < lions - 2; i++) {
+		for (int i = 0; i < lions; i++) {
 			lionList.add(new Lion(random.nextInt(800), random.nextInt(600)));
 		}
 
@@ -54,7 +56,7 @@ public class ImplAfricaFactory implements ICreatureFactory {
 
 	}
 
-	public void askCarnivoreMove() {
+	public void askLionMove() {
 		for (Lion lion : lionList) {
 			if (lion.getCurrentState() instanceof ImplHungryState) {
 				lion.moveToVictim(this.antelopeList);

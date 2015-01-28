@@ -11,6 +11,8 @@ public class Antelope extends AHerbivore {
     
 	private Rectangle body;
 	
+	public Antelope() {}
+	
 	public Antelope(int x, int y) {
 		super(x, y);
 		

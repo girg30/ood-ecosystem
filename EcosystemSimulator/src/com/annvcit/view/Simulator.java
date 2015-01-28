@@ -31,7 +31,7 @@ public class Simulator extends JPanel implements KeyListener {
 		g.fillRect(0, 0, getWidth(), getHeight());
 		
 		creatureFactory.drawAnimals(g);
-		creatureFactory.askCarnivoreMove();
+		creatureFactory.askLionMove();
 		
 		g.dispose(); // release resource
 		repaint();

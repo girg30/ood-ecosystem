@@ -22,6 +22,8 @@ public abstract class AAnimal {
         this.y = y;
     }
 
+    public AAnimal() {}
+    
     //********************************
     //           METHODS             *
     //********************************
