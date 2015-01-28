@@ -19,6 +19,6 @@ public interface ICreatureFactory {
 
     public void drawAnimals(Graphics g);
     
-    public void askLionMove();
+    public void askCarnivoreMove();
     
 }
