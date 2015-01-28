@@ -22,7 +22,9 @@ public class ImplAfricaFactory implements ICreatureFactory {
 	private List<Lion> lionList;
 	private List<Antelope> antelopeList;
 
+	@SuppressWarnings("unused")
 	private int lion; // amount of lion
+	@SuppressWarnings("unused")
 	private int antelope; // amount of antelopes
 
 	Random random = new Random();

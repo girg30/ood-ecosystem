@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.Rectangle;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -19,6 +20,11 @@ public class Lion extends ACarnivore {
 	private int enemyEat;
 	private int count = 0;
 	private int loops = 20;
+	private int speed = 1;// very high
+	
+	private List<Antelope> antelopeList;
+	private Antelope antelope;
+	private List<String> moves;
 
 	public Lion(int x, int y) {
 		super(x, y);
@@ -72,6 +78,8 @@ public class Lion extends ACarnivore {
 		if (count > moves.size() - 1) {
 			Collections.shuffle(moves);
 			count = 0;
+			xd = 0;
+			yd = 0;
 		}
 
 		switch (moves.get(count)) {
@@ -116,10 +124,6 @@ public class Lion extends ACarnivore {
 		body.y += yd;
 	}
 
-	private List<Antelope> antelopeList;
-	private Antelope antelope;
-	private List<String> moves;
-
 	private List<Antelope> findVictim(List<Antelope> antelopeList) {
 
 		List<Antelope> victimList = new ArrayList<>();
@@ -149,36 +153,30 @@ public class Lion extends ACarnivore {
 		return antelope;
 	}
 
-	private int speed = 1;// very high
-
 	public void moveToVictim(List<Antelope> antelopeList) {
 		int step = 2;
 		this.antelopeList = antelopeList;
 		List<Antelope> victimList = findVictim(antelopeList);
 		Antelope victim = nearestVictim(victimList);
-
+	
 		if (victim == null)
 			return;
-
+	
 		int victimX = victim.getBody().x;
 		int victimY = victim.getBody().y;
-
+	
 		if (victimX < body.x) {
 			this.body.x -= step;
-		}
-
-		else if (victimX > body.x) {
+		}else if (victimX > body.x) {
 			this.body.x += step;
 		}
-
+	
 		if (victimY < body.y) {
 			this.body.y -= step;
-		}
-
-		else if (victimY > body.y) {
+		}else if (victimY > body.y) {
 			this.body.y += step;
 		}
-
+	
 		/*
 		 * Vòng for này tao viết bất hợp lí =]] if (victimX < body.x) { for
 		 * (float i = 0; i < body.x - victimX; i++) { this.body.x -= i; }
@@ -194,20 +192,19 @@ public class Lion extends ACarnivore {
 		 * else if (victimY > body.y) { for (float i = 0; i < victimY - body.y;
 		 * i++) { this.body.y += i; } }
 		 */
-
+	
 		if (body.intersects(victim.getBody())) {
 			this.antelopeList.remove(antelope);
 			if (enemyEat++ == 5) {
 				setCurrentState(getNormalState());
 			}
 		}
-
+	
 		try {
 			Thread.sleep(speed);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-
 	}
 
 	private double distance(Rectangle r1, Rectangle r2) {
