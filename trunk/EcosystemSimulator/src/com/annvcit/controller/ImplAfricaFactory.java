@@ -58,8 +58,9 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 		}
 
 		for (int i = 0; i < antelopes; i++) {
-			antelopeList.add(new Antelope(random.nextInt(800), random
-					.nextInt(600)));
+			Antelope antelope = new Antelope(random.nextInt(800), random
+					.nextInt(600));
+			antelopeList.add(antelope);
 		}
 
 	}
