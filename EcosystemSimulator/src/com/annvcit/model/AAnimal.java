@@ -3,6 +3,9 @@ package com.annvcit.model;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.Color;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Lớp trừu tượng. Lớp cha của các loài động vật.
@@ -22,9 +25,18 @@ public abstract class AAnimal {
         
         this.x = x;
         this.y = y;
+
         
-        // set default sex
-        sex = 'f';
+        this.moves = new ArrayList<String>();
+		
+		for (int i = 0; i < loops; i++)
+			moves.add("up");
+		for (int i = 0; i < loops; i++)
+			moves.add("down");
+		for (int i = 0; i < loops; i++)
+			moves.add("left");
+		for (int i = 0; i < loops; i++)
+			moves.add("right");
     }
 
     public AAnimal() {}
@@ -43,7 +55,57 @@ public abstract class AAnimal {
     }
     
     public abstract void draw(Graphics g);
-    protected abstract void move();
+    
+	public void move() {
+		count++;
+		if (count > moves.size() - 1) {
+			Collections.shuffle(moves);
+			count = 0;
+			/*xd = 0;
+			yd = 0;*/
+		}
+
+		switch (moves.get(count)) {
+		case "up":
+			moveUp();
+			break;
+		case "down":
+			moveDown();
+			break;
+		case "left":
+			moveLeft();
+			break;
+		case "right":
+			moveRight();
+			break;
+		}
+
+		setDelay(speed);
+	}
+	
+	protected void setDelay(int speed){
+		try {
+			Thread.sleep(speed);
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+
+	private void moveLeft() {
+		body.x -= xd;
+	}
+
+	private void moveRight() {
+		body.x += xd;
+	}
+
+	private void moveUp() {
+		body.y -= yd;
+	}
+
+	private void moveDown() {
+		body.y += yd;
+	}
     
     //********************************
     //           GETTERS             *
@@ -87,6 +149,8 @@ public abstract class AAnimal {
         this.sex = sex;
     }
     
+    public void setSpeed(int value) { this.speed = value; }
+    
     public void setXd(int value) { this.xd = value; }
     
     public void setYd(int value) { this.yd = value; }
@@ -111,4 +175,9 @@ public abstract class AAnimal {
     protected Rectangle body;
     protected Rectangle radiusBound;
     protected Color color;
+    
+    protected int count = 0;
+	protected int loops = 2;
+	protected int speed = 1;// very high
+	protected List<String> moves;
 }

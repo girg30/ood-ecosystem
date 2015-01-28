@@ -9,8 +9,6 @@ import java.awt.Color;
  */
 public class Antelope extends AHerbivore {
     
-	private Rectangle body;
-	
 	public Antelope() {}
 	
 	public Antelope(int x, int y) {
@@ -25,12 +23,7 @@ public class Antelope extends AHerbivore {
 	public void draw(Graphics g) {
 		g.setColor(new Color(75, 139, 219));
 		g.fillOval(body.x, body.y, body.width, body.height);
-	}
-	
-	@Override
-	public void move() {
-		body.x += xd;
-		body.y += yd;
+		move();
 	}
 	
 	public Rectangle getBody() { return this.body; }

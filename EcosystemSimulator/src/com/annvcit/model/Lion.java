@@ -5,7 +5,6 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import com.annvcit.util.Util;
@@ -19,12 +18,6 @@ import com.annvcit.model.Message;
  */
 public class Lion extends ACarnivore implements Observable {
 
-	private int count = 0;
-	private int loops = 20;
-	private int speed = 50;// very high
-	
-	private List<String> moves;
-
 	public Lion() {}
 	
 	public Lion(int x, int y) {
@@ -34,17 +27,7 @@ public class Lion extends ACarnivore implements Observable {
 		this.h = 16;
 		
 		this.body = new Rectangle(x, y, w, h);
-		this.moves = new ArrayList<String>();
 		
-		for (int i = 0; i < loops; i++)
-			moves.add("up");
-		for (int i = 0; i < loops; i++)
-			moves.add("down");
-		for (int i = 0; i < loops; i++)
-			moves.add("left");
-		for (int i = 0; i < loops; i++)
-			moves.add("right");
-
 		// it's radius
 		int radiusX = body.x - (radius - body.width) / 2;
 		int radiusY = body.y - (radius - body.height) / 2;
@@ -54,7 +37,7 @@ public class Lion extends ACarnivore implements Observable {
 	public void draw(Graphics g) {
 		power--;
 		
-		if (power == 100) this.setCurrentState(this.getHungryState()); 
+		if (power == 900) this.setCurrentState(this.getHungryState()); 
 		System.out.println(power);
 		
 		// lion
@@ -78,58 +61,6 @@ public class Lion extends ACarnivore implements Observable {
 
 		}
 
-	}
-
-	@Override
-	public void move() {
-		count++;
-		if (count > moves.size() - 1) {
-			Collections.shuffle(moves);
-			count = 0;
-			xd = 0;
-			yd = 0;
-		}
-
-		switch (moves.get(count)) {
-		case "up":
-			moveUp();
-			break;
-		case "down":
-			moveDown();
-			break;
-		case "left":
-			moveLeft();
-			break;
-		case "right":
-			moveRight();
-			break;
-		}
-
-		setDelay(speed);
-	}
-	
-	private void setDelay(int speed){
-		try {
-			Thread.sleep(speed);
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
-	}
-
-	private void moveLeft() {
-		body.x -= xd;
-	}
-
-	private void moveRight() {
-		body.x += xd;
-	}
-
-	private void moveUp() {
-		body.y -= yd;
-	}
-
-	private void moveDown() {
-		body.y += yd;
 	}
 
 	private List<Antelope> findVictim(List<Antelope> antelopeList) {
