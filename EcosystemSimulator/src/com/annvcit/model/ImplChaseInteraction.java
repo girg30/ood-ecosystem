@@ -17,6 +17,7 @@ public class ImplChaseInteraction implements IInteraction {
     @Override
     public Object interact() {
         carnivore.setCurrentState(carnivore.getNormalState());
+        System.out.println("lion tai ImplChaseInteraction");
         return herbivore;
     }
 }

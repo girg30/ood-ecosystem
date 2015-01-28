@@ -9,19 +9,21 @@ import java.util.Collections;
 import java.util.List;
 
 import com.annvcit.util.Util;
+import com.annvcit.util.Observable;
+import com.annvcit.util.Observer;
+
+import com.annvcit.model.Message;
 
 /**
  * Lion (Sư tử) là một loài động vật ăn thịt ở Africa
  */
-public class Lion extends ACarnivore {
+public class Lion extends ACarnivore implements Observable {
 
-	private int enemyEat;
 	private int count = 0;
 	private int loops = 20;
-	private int speed = 1;// TODO very high
+	private int speed = 1;// very high
+	private int heal = 1000000;
 	
-	private List<Antelope> antelopeList;
-	private Antelope antelope;
 	private List<String> moves;
 
 	public Lion() {}
@@ -54,6 +56,8 @@ public class Lion extends ACarnivore {
 
 		if (this.getCurrentState() instanceof ImplHungryState) {
 			move();
+		} else if (this.getCurrentState() instanceof ImplNormalState) {
+			xd = 0; yd = 0;
 		}
 
 		// lion
@@ -154,15 +158,12 @@ public class Lion extends ACarnivore {
 				antelope = antelopeList.get(i);
 			}
 		}
-		if (antelope != null) {
-			this.antelope = antelope;
-		}
 		return antelope;
 	}
-
+	
 	public void goHunt(List<Antelope> antelopeList) {
+		move();
 		int step = 2;
-		this.antelopeList = antelopeList; // TODO ? what for? làm sao nó apply lên screen được
 		List<Antelope> victimList = findVictim(antelopeList);
 		Antelope victim = nearestVictim(victimList);
 	
@@ -184,33 +185,47 @@ public class Lion extends ACarnivore {
 			this.body.y += step;
 		}
 	
-		/*
-		 * Vòng for này tao viết bất hợp lí =]] if (victimX < body.x) { for
-		 * (float i = 0; i < body.x - victimX; i++) { this.body.x -= i; }
-		 * 
-		 * }
-		 * 
-		 * else if (victimX > body.x) { for (float i = 0; i < victimX - body.x;
-		 * i++) { this.body.x += i; } }
-		 * 
-		 * if (victimY < body.y) { for (float i = 0; i < body.y - victimY; i++)
-		 * { this.body.y -= i; } }
-		 * 
-		 * else if (victimY > body.y) { for (float i = 0; i < victimY - body.y;
-		 * i++) { this.body.y += i; } }
-		 */
-	
 		if (body.intersects(victim.getBody())) {
-			this.antelopeList.remove(antelope);
-			if (enemyEat++ == 5) {
-				setCurrentState(getNormalState());
-			}
+			Message messageHunt = new Message(Message.HUNT);
+			setChanged();
+			System.out.println("victim null: " + victim == null);
+			notifyObservers(messageHunt, this, victim);
+			
 		}
 	
-		try {
-			Thread.sleep(speed); // TODO
-		} catch (Exception ex) {
-			ex.printStackTrace();
+		setDelay(speed);
+	}
+	
+	
+	
+	//***************************************************
+	//				Observable						    *
+	//***************************************************
+	
+	private Observer africa;
+	private boolean isChanged = false;
+	
+	@Override
+	public void setChanged() {
+		isChanged = true;
+	}
+	
+	@Override
+	public void addObserver(Observer observer) {
+		africa = observer;
+	}
+	
+	@Override 
+	public void removeObserver(Observer observer) {
+		africa = null;
+	}
+	
+	@Override
+	public void notifyObservers(Object... objects) {
+		if (isChanged) {
+			africa.update(objects);
 		}
 	}
+	
+	
 }
