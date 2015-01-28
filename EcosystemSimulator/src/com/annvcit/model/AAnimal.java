@@ -120,66 +120,6 @@ public abstract class AAnimal implements Observable{
 		body.y += yd;
 	}
     
-	private List<Antelope> findVictim(List<Antelope> antelopeList) {
-
-		List<Antelope> victimList = new ArrayList<>();
-
-		for (Antelope a : antelopeList) {
-			if (this.radiusBound.intersects(a.getBody())) {
-				victimList.add(a);
-			}
-		}
-		return victimList;
-	}
-
-	private Antelope nearestVictim(List<Antelope> antelopeList) {
-		double distance = 0;
-		double minDistance = Integer.MAX_VALUE;
-		Antelope antelope = null;
-		for (int i = 0; i < antelopeList.size(); i++) {
-			distance = Util.distance(this.body, antelopeList.get(i).getBody());
-			if (distance < minDistance) {
-				minDistance = distance;
-				antelope = antelopeList.get(i);
-			}
-		}
-		return antelope;
-	}
-	
-	public void goHunt(List<Antelope> antelopeList) {
-		int step = 2;
-		List<Antelope> victimList = findVictim(antelopeList);
-		Antelope victim = nearestVictim(victimList);
-	
-		if (victim == null)
-			return;
-	
-		int victimX = victim.getBody().x;
-		int victimY = victim.getBody().y;
-	
-		if (victimX < body.x) {
-			this.body.x -= step;
-		}else if (victimX > body.x) {
-			this.body.x += step;
-		}
-	
-		if (victimY < body.y) {
-			this.body.y -= step;
-		}else if (victimY > body.y) {
-			this.body.y += step;
-		}
-	
-		if (body.intersects(victim.getBody())) {
-			Message messageHunt = new Message(Message.HUNT);
-			setChanged();
-			System.out.println("victim null: " + victim == null);
-			notifyObservers(messageHunt, this, victim);
-			
-		}
-	
-		setDelay(speed);
-	}
-	
     //********************************
     //           GETTERS             *
     //********************************
@@ -195,8 +135,9 @@ public abstract class AAnimal implements Observable{
     public IAnimalState getStarvedState() { return starvedState; }
     public IAnimalState getHungryState() { return hungryState; }
     public IAnimalState getCurrentState() { return currentState; }
-	
+    public Rectangle getBody() { return this.body; }	
 	public int getPower() { return this.power; }
+	public Rectangle getRadiusBound() { return this.radiusBound; }
     
     //********************************
     //           SETTERS             *

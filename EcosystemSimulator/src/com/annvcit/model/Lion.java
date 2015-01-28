@@ -3,6 +3,10 @@ package com.annvcit.model;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.annvcit.util.Util;
 
 /**
  * Lion (Sư tử) là một loài động vật ăn thịt ở Africa
@@ -43,6 +47,67 @@ public class Lion extends ACarnivore {
 
 		}
 
+	}
+	
+	public List<AHerbivore> findVictim(List<AHerbivore> antelopeList) {
+
+		List<AHerbivore> victimList = new ArrayList<>();
+
+		for (AHerbivore a : antelopeList) {
+			if (this.radiusBound.intersects(a.getBody())) {
+				victimList.add(a);
+			}
+		}
+		return victimList;
+	}
+
+	public AHerbivore nearestVictim(List<AHerbivore> antelopeList) {
+		double distance = 0;
+		double minDistance = Integer.MAX_VALUE;
+		AHerbivore antelope = null;
+		for (int i = 0; i < antelopeList.size(); i++) {
+			distance = Util.distance(this.body, antelopeList.get(i).getBody());
+			if (distance < minDistance) {
+				minDistance = distance;
+				antelope = antelopeList.get(i);
+			}
+		}
+		return antelope;
+	}
+	
+
+	public void goHunt(List<AHerbivore> antelopeList) {
+		int step = 2;
+		List<AHerbivore> victimList = findVictim(antelopeList);
+		AHerbivore victim = nearestVictim(victimList);
+	
+		if (victim == null)
+			return;
+	
+		int victimX = victim.getBody().x;
+		int victimY = victim.getBody().y;
+	
+		if (victimX < body.x) {
+			this.body.x -= step;
+		}else if (victimX > body.x) {
+			this.body.x += step;
+		}
+	
+		if (victimY < body.y) {
+			this.body.y -= step;
+		}else if (victimY > body.y) {
+			this.body.y += step;
+		}
+	
+		if (body.intersects(victim.getBody())) {
+			Message messageHunt = new Message(Message.HUNT);
+			setChanged();
+			System.out.println("victim null: " + victim == null);
+			notifyObservers(messageHunt, this, victim);
+			
+		}
+	
+		setDelay(speed);
 	}
 
 }
