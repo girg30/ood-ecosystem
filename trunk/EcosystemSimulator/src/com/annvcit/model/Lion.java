@@ -20,12 +20,14 @@ public class Lion extends ACarnivore {
 	private int enemyEat;
 	private int count = 0;
 	private int loops = 20;
-	private int speed = 1;// very high
+	private int speed = 1;// TODO very high
 	
 	private List<Antelope> antelopeList;
 	private Antelope antelope;
 	private List<String> moves;
 
+	public Lion() {}
+	
 	public Lion(int x, int y) {
 		super(x, y);
 
@@ -50,7 +52,7 @@ public class Lion extends ACarnivore {
 
 	public void draw(Graphics g) {
 
-		if (this.getCurrentState() instanceof ImplNormalState) {
+		if (this.getCurrentState() instanceof ImplHungryState) {
 			move();
 		}
 
@@ -155,7 +157,7 @@ public class Lion extends ACarnivore {
 
 	public void moveToVictim(List<Antelope> antelopeList) {
 		int step = 2;
-		this.antelopeList = antelopeList;
+		this.antelopeList = antelopeList; // TODO ? what for? làm sao nó apply lên screen được
 		List<Antelope> victimList = findVictim(antelopeList);
 		Antelope victim = nearestVictim(victimList);
 	
@@ -201,7 +203,7 @@ public class Lion extends ACarnivore {
 		}
 	
 		try {
-			Thread.sleep(speed);
+			Thread.sleep(speed); // TODO
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
