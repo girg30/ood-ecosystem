@@ -60,6 +60,8 @@ public abstract class AAnimal {
     public IAnimalState getStarvedState() { return starvedState; }
     public IAnimalState getHungryState() { return hungryState; }
     public IAnimalState getCurrentState() { return currentState; }
+	
+	public int getPower() { return this.power; }
     
     //********************************
     //           SETTERS             *
@@ -88,6 +90,7 @@ public abstract class AAnimal {
     public void setXd(int value) { this.xd = value; }
     
     public void setYd(int value) { this.yd = value; }
+    public void setPower(int value) { this.power = value; }
     
     //********************************
     //           ATTRIBUTES          *
@@ -99,6 +102,7 @@ public abstract class AAnimal {
     protected IAnimalState currentState;
     
     protected char sex; // m (male) and f (female)
+    protected int power = 1000;
     
     /*position, width, height*/
     protected int x, y, w, h;

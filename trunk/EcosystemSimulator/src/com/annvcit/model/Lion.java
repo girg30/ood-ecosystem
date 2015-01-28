@@ -21,8 +21,7 @@ public class Lion extends ACarnivore implements Observable {
 
 	private int count = 0;
 	private int loops = 20;
-	private int speed = 1;// very high
-	private int heal = 1000000;
+	private int speed = 50;// very high
 	
 	private List<String> moves;
 
@@ -53,13 +52,11 @@ public class Lion extends ACarnivore implements Observable {
 	}
 
 	public void draw(Graphics g) {
-
-		if (this.getCurrentState() instanceof ImplHungryState) {
-			move();
-		} else if (this.getCurrentState() instanceof ImplNormalState) {
-			xd = 0; yd = 0;
-		}
-
+		power--;
+		
+		if (power == 100) this.setCurrentState(this.getHungryState()); 
+		System.out.println(power);
+		
 		// lion
 		if (sex == 'm') {
 			color = Color.ORANGE;
@@ -162,7 +159,6 @@ public class Lion extends ACarnivore implements Observable {
 	}
 	
 	public void goHunt(List<Antelope> antelopeList) {
-		move();
 		int step = 2;
 		List<Antelope> victimList = findVictim(antelopeList);
 		Antelope victim = nearestVictim(victimList);
@@ -195,8 +191,6 @@ public class Lion extends ACarnivore implements Observable {
 	
 		setDelay(speed);
 	}
-	
-	
 	
 	//***************************************************
 	//				Observable						    *
