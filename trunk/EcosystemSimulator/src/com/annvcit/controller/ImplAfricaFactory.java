@@ -27,6 +27,7 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 	private List<Lion> lionList;
 	private List<AHerbivore> antelopeList;
 	private InteractionFactory interactionFactory;
+	private List<APlant> grassList;
 
 	Random random = new Random();
 
@@ -36,6 +37,7 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 		lionList = new ArrayList<>();
 		antelopeList = new ArrayList<>();
 		interactionFactory = new InteractionFactory();
+		grassList = new ArrayList<>();
 		
 		int numSex = -1;
 		int numState = -1;
@@ -47,7 +49,6 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			numSex = random.nextInt(3);
 			numState = random.nextInt(3);
 			
-			lion.setSex('m');
 			if (numSex > 1) lion.setSex('f');
 			
 			if (numState > 1) lion.setCurrentState(lion.getHungryState());
@@ -60,19 +61,28 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 		for (int i = 0; i < antelopes; i++) {
 			Antelope antelope = new Antelope(random.nextInt(800), random
 					.nextInt(600));
+			
+			if (numSex > 1) antelope.setSex('f');
+			
+			if (numState > 1) antelope.setCurrentState(antelope.getHungryState());
+			antelope.setPower(random.nextInt(900) + 300);
+			antelope.addObserver(this);
 			antelopeList.add(antelope);
+		}
+		
+		for (int i = 0; i < 1500; i++) {
+			APlant grass = new Grass(random.nextInt(800), random.nextInt(600));
+			grass.addObserver(this);
+			grassList.add(grass);
 		}
 
 	}
 
 	@Override
 	public void drawAnimals(Graphics g) {
-		for (AHerbivore antelope : antelopeList) {
-			antelope.draw(g);
-		}
-		for (Lion lion : lionList) {
-			lion.draw(g);
-		}
+		for (APlant grass : grassList) grass.draw(g);
+		for (Lion lion : lionList) lion.draw(g);
+		for (AHerbivore antelope : antelopeList) antelope.draw(g);
 		
 		g.setColor(Color.WHITE);
 		g.drawString("amount of Antelope: " + antelopeList.size() , 20, 20);
@@ -89,16 +99,36 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 	}
 	
 	@Override
+	public void askHerbivoreMove() {
+		for (AHerbivore antelope : antelopeList) {
+			if (antelope.getCurrentState() instanceof ImplHungryState) {
+				antelope.goEat(this.grassList);
+			}
+		}
+	}
+	
+	@Override
 	public void update(Object... objects) {
 		Message message = (Message) objects[0];
-		Lion lion = (Lion) objects[1];
-		Antelope antelope = (Antelope) objects[2];
+		
+		
 		switch (message.getContent()) {
 		case Message.HUNT:
+			Lion lion = (Lion) objects[1];
+			Antelope antelope = (Antelope) objects[2];
+			
 			interactionFactory.chInteraction(lion, antelope).interact();
+			antelope.removeObserver(this);
 			antelopeList.remove(antelope);
-			System.out.println(lion.getCurrentState());
 			break;
+		case Message.EAT:
+			antelope = (Antelope) objects[1];
+			Grass grass = (Grass) objects[2];
+			interactionFactory.hpInteraction(antelope, grass).interact();
+			grass.removeObserver(this);
+			grassList.remove(grass);
+			break;
+			
 		}
 	}
 	

@@ -21,4 +21,6 @@ public interface ICreatureFactory {
     
     public void askCarnivoreMove();
     
+    public void askHerbivoreMove();
+    
 }

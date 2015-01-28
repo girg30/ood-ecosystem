@@ -16,7 +16,7 @@ public class ImplChaseInteraction implements IInteraction {
 
     @Override
     public Object interact() {
-    	carnivore.setPower(herbivore.getPower());
+    	carnivore.setPower(1000);
     	carnivore.setCurrentState(carnivore.getNormalState());
         return herbivore;
     }

@@ -15,6 +15,7 @@ public class ImplEatInteraction implements IInteraction {
 
     @Override
     public Object interact() {
+    	herbivore.setPower(plant.getPower());
         herbivore.setCurrentState(herbivore.getNormalState());
         return this.plant;
     }
