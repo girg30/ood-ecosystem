@@ -2,20 +2,18 @@ package com.annvcit.model;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Point;
 import java.awt.Rectangle;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import com.annvcit.util.Util;
+
 /**
  * Lion (Sư tử) là một loài động vật ăn thịt ở Africa
  */
 public class Lion extends ACarnivore {
-
-	private Rectangle body;
-	private Rectangle radiusBound;
 
 	private int enemyEat;
 	private int count = 0;
@@ -33,8 +31,10 @@ public class Lion extends ACarnivore {
 
 		this.w = 16;
 		this.h = 16;
+		
 		this.body = new Rectangle(x, y, w, h);
 		this.moves = new ArrayList<String>();
+		
 		for (int i = 0; i < loops; i++)
 			moves.add("up");
 		for (int i = 0; i < loops; i++)
@@ -57,9 +57,14 @@ public class Lion extends ACarnivore {
 		}
 
 		// lion
-		g.setColor(Color.ORANGE);
+		if (sex == 'm') {
+			color = Color.ORANGE;
+			w = 20; h = 20;
+		} else color = new Color(242, 207, 148);
+		
+		g.setColor(color);
 		g.fillOval(body.x, body.y, body.width, body.height);
-
+			
 		if (this.getCurrentState() instanceof ImplHungryState) {
 			// it's radius
 			int radiusX = body.x - (radius - body.width) / 2;
@@ -143,7 +148,7 @@ public class Lion extends ACarnivore {
 		double minDistance = Integer.MAX_VALUE;
 		Antelope antelope = null;
 		for (int i = 0; i < antelopeList.size(); i++) {
-			distance = distance(this.body, antelopeList.get(i).getBody());
+			distance = Util.distance(this.body, antelopeList.get(i).getBody());
 			if (distance < minDistance) {
 				minDistance = distance;
 				antelope = antelopeList.get(i);
@@ -155,7 +160,7 @@ public class Lion extends ACarnivore {
 		return antelope;
 	}
 
-	public void moveToVictim(List<Antelope> antelopeList) {
+	public void goHunt(List<Antelope> antelopeList) {
 		int step = 2;
 		this.antelopeList = antelopeList; // TODO ? what for? làm sao nó apply lên screen được
 		List<Antelope> victimList = findVictim(antelopeList);
@@ -208,14 +213,4 @@ public class Lion extends ACarnivore {
 			ex.printStackTrace();
 		}
 	}
-
-	private double distance(Rectangle r1, Rectangle r2) {
-
-		Point p1 = new Point(r1.x + r1.width / 2, r1.y + r1.height / 2);
-		Point p2 = new Point(r2.x + r2.width / 2, r2.y + r2.height / 2);
-
-		return Math.sqrt(Math.pow(p2.getX() - p1.getX(), 2)
-				+ Math.pow(p2.getY() - p1.getY(), 2));
-	}
-
 }
