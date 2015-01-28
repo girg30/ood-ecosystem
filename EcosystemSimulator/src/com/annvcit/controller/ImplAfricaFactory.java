@@ -22,25 +22,19 @@ public class ImplAfricaFactory implements ICreatureFactory {
 	private List<Lion> lionList;
 	private List<Antelope> antelopeList;
 
-	@SuppressWarnings("unused")
-	private int lion; // amount of lion
-	@SuppressWarnings("unused")
-	private int antelope; // amount of antelopes
-
 	Random random = new Random();
 
 	public ImplAfricaFactory() {}
 	
 	public ImplAfricaFactory(int lions, int antelopes) {
-		this.lion = lions;
-		this.antelope = antelopes;
-
 		lionList = new ArrayList<>();
 		antelopeList = new ArrayList<>();
 
 		// initialize objects
 		for (int i = 0; i < lions; i++) {
-			lionList.add(new Lion(random.nextInt(800), random.nextInt(600)));
+			Lion lion = new Lion(random.nextInt(800), random.nextInt(600));
+			lion.setSex('m');
+			lionList.add(lion);
 		}
 
 		for (int i = 0; i < 5; i++) {
@@ -56,14 +50,24 @@ public class ImplAfricaFactory implements ICreatureFactory {
 
 	}
 
+	@Override
+	public void drawAnimals(Graphics g) {
+		for (Antelope antelope : antelopeList) {
+			antelope.draw(g);
+		}
+		for (Lion lion : lionList) {
+			lion.draw(g);
+		}
+	}
+	
 	public void askLionMove() {
 		for (Lion lion : lionList) {
 			if (lion.getCurrentState() instanceof ImplHungryState) {
-				lion.moveToVictim(this.antelopeList);
+				lion.goHunt(this.antelopeList);
 			}
 		}
 	}
-
+	
 	@Override
 	public ACarnivore createCarnivore() {
 		return new Lion(random.nextInt(800), random.nextInt(600));
@@ -79,13 +83,4 @@ public class ImplAfricaFactory implements ICreatureFactory {
 		return new Grass();
 	}
 
-	@Override
-	public void drawAnimals(Graphics g) {
-		for (Antelope antelope : antelopeList) {
-			antelope.draw(g);
-		}
-		for (Lion lion : lionList) {
-			lion.draw(g);
-		}
-	}
 }

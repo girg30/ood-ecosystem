@@ -1,6 +1,8 @@
 package com.annvcit.model;
 
 import java.awt.Graphics;
+import java.awt.Rectangle;
+import java.awt.Color;
 
 /**
  * Lớp trừu tượng. Lớp cha của các loài động vật.
@@ -20,6 +22,9 @@ public abstract class AAnimal {
         
         this.x = x;
         this.y = y;
+        
+        // set default sex
+        sex = 'f';
     }
 
     public AAnimal() {}
@@ -88,16 +93,18 @@ public abstract class AAnimal {
     //           ATTRIBUTES          *
     //********************************
     
-    private IAnimalState normalState;
-    private IAnimalState starvedState;
-    private IAnimalState hungryState;
-    private IAnimalState currentState;
+    protected IAnimalState normalState;
+    protected IAnimalState starvedState;
+    protected IAnimalState hungryState;
+    protected IAnimalState currentState;
     
-    private char sex; // m (male) and f (female)
+    protected char sex; // m (male) and f (female)
     
     /*position, width, height*/
     protected int x, y, w, h;
-    protected boolean removed = false;
-    
     protected int xd=2, yd=2; // x direction, y direction
+    
+    protected Rectangle body;
+    protected Rectangle radiusBound;
+    protected Color color;
 }
