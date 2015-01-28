@@ -25,7 +25,7 @@ import com.annvcit.util.Observer;
 public class ImplAfricaFactory implements ICreatureFactory, Observer {
 
 	private List<Lion> lionList;
-	private List<Antelope> antelopeList;
+	private List<AHerbivore> antelopeList;
 	private InteractionFactory interactionFactory;
 
 	Random random = new Random();
@@ -67,7 +67,7 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 
 	@Override
 	public void drawAnimals(Graphics g) {
-		for (Antelope antelope : antelopeList) {
+		for (AHerbivore antelope : antelopeList) {
 			antelope.draw(g);
 		}
 		for (Lion lion : lionList) {
@@ -117,6 +117,6 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 		return new Grass();
 	}
 
-	public List<Antelope> getAntelopeList() { return this.antelopeList; }
+	public List<AHerbivore> getAntelopeList() { return this.antelopeList; }
 	
 }

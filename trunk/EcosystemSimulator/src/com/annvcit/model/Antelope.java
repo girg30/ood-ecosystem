@@ -25,7 +25,5 @@ public class Antelope extends AHerbivore {
 		g.fillOval(body.x, body.y, body.width, body.height);
 		move();
 	}
-	
-	public Rectangle getBody() { return this.body; }
 
 }
