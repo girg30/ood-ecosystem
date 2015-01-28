@@ -37,7 +37,6 @@ public class InteractionFactory {
      * */
     public IInteraction chInteraction(ACarnivore aCarnivore,
             AHerbivore aHerbivore) {
-    	System.out.println("Lion tai InteractionFactory: " + aCarnivore);
         if (aCarnivore.getCurrentState() instanceof ImplHungryState) {
             return new ImplChaseInteraction(aCarnivore, aHerbivore);
         }

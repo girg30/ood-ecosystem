@@ -3,6 +3,7 @@ package com.annvcit.model;
 public class Message {
 	
 	public static final String HUNT = "HUNT HERBIVORES...";
+	public static final String EAT = "EAT PLANT...";
 	
 	private String content;
 	

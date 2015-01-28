@@ -8,7 +8,6 @@ import java.util.Collections;
 import java.util.List;
 
 import com.annvcit.util.Observer;
-import com.annvcit.util.Util;
 import com.annvcit.util.Observable;
 
 /**
@@ -175,7 +174,7 @@ public abstract class AAnimal implements Observable{
 	//				Observable						    *
 	//***************************************************
 	
-	private Observer africa;
+	private Observer environment;
 	private boolean isChanged = false;
 	
 	@Override
@@ -185,19 +184,20 @@ public abstract class AAnimal implements Observable{
 	
 	@Override
 	public void addObserver(Observer observer) {
-		africa = observer;
+		environment = observer;
 	}
 	
 	@Override 
 	public void removeObserver(Observer observer) {
-		africa = null;
+		environment = null;
 	}
 	
 	@Override
 	public void notifyObservers(Object... objects) {
 		if (isChanged) {
-			africa.update(objects);
+			environment.update(objects);
 		}
+		isChanged = false;
 	}
 	
 	
@@ -220,8 +220,8 @@ public abstract class AAnimal implements Observable{
 	protected int radius = 500; // bán kính tìm mồi
     
     protected Rectangle body;
-    protected Rectangle radiusBound;
     protected Color color;
+    protected Rectangle radiusBound;
     
     protected int count = 0;
 	protected int loops = 2;
