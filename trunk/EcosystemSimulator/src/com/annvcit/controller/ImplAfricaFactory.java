@@ -2,7 +2,6 @@ package com.annvcit.controller;
 
 import java.awt.Color;
 import java.awt.Graphics;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -14,11 +13,11 @@ import com.annvcit.model.APlant;
 import com.annvcit.model.Antelope;
 import com.annvcit.model.Grass;
 import com.annvcit.model.ImplHungryState;
+import com.annvcit.model.ImplStarvedState;
 import com.annvcit.model.Lion;
 import com.annvcit.model.InteractionFactory;
 import com.annvcit.model.Message;
 import com.annvcit.model.ImplDeathState;
-
 import com.annvcit.util.Observer;
 
 /**
@@ -27,7 +26,7 @@ import com.annvcit.util.Observer;
  */
 public class ImplAfricaFactory implements ICreatureFactory, Observer {
 
-	private List<Lion> lionList;
+	private List<ACarnivore> lionList;
 	private List<AHerbivore> antelopeList;
 	private InteractionFactory interactionFactory;
 	private List<APlant> grassList;
@@ -85,7 +84,7 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 	public void drawAnimals(Graphics g) {
 		for (APlant grass : grassList) grass.draw(g);
 		
-		Iterator<Lion> iteratorLion = lionList.iterator();
+		Iterator<ACarnivore> iteratorLion = lionList.iterator();
 		while (iteratorLion.hasNext()) {
 			Lion lion = ((Lion) iteratorLion.next());
 			if(!(lion.getCurrentState() instanceof ImplDeathState))
@@ -113,11 +112,24 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 	}
 	
 	public void askCarnivoreMove() {
-		for (Lion lion : lionList) {
+		
+		Iterator<ACarnivore> iter = lionList.iterator();
+		while(iter.hasNext()){
+			Lion lion = (Lion)iter.next();
 			if (lion.getCurrentState() instanceof ImplHungryState) {
 				lion.goHunt(this.antelopeList);
+			} 
+			if (lion.getCurrentState() instanceof ImplStarvedState) {
+				lion.goFight(lionList);
 			}
 		}
+//		for (ACarnivore lion : lionList) {
+//			if (lion.getCurrentState() instanceof ImplHungryState) {
+//				lion.goHunt(this.antelopeList);
+//			} else if (lion.getCurrentState() instanceof ImplStarvedState) {
+//				lion.goFight(lionList);
+//			}
+//		}
 	}
 	
 	@Override
@@ -163,6 +175,13 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 				antelopeList.remove(o);
 				System.out.println("Antelope chet");
 			}
+			break;
+		case Message.FIGHT_ME:
+			Lion lion1 = (Lion) objects[1];
+			Lion lion2 = (Lion) objects[2];
+			
+			Lion victim = (Lion)interactionFactory.cchhInteraction(lion1,lion2).interact();
+			victim.setCurrentState(victim.getDeathState());
 			break;
 		}
 	}

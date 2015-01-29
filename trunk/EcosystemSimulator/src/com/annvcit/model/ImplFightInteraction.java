@@ -1,7 +1,5 @@
 package com.annvcit.model;
 
-import java.util.Random;
-
 /**
  * Tương tác chiến đấu. Xảy ra khi 2 đv gặp nhau trog tình trạng khang hiếm thức ăn
  * (chết đói)
@@ -18,17 +16,19 @@ public class ImplFightInteraction implements IInteraction {
 
     @Override
     public Object interact() {
-        Random random = new Random();
-        AAnimal result = null;
-        int number = random.nextInt(10);
-        if (number >5) {
-            a2.setCurrentState(a2.getNormalState());
-            result = a1;
-        }
-        else {
-            a1.setCurrentState(a1.getNormalState());
-            result = a2;
-        }
-        return result;
+//        Random random = new Random();
+//        AAnimal result = null;
+//        int number = random.nextInt(10);
+//        if (number >5) {
+//            a2.setCurrentState(a2.getNormalState());
+//            result = a1;
+//        }
+//        else {
+//            a1.setCurrentState(a1.getNormalState());
+//            result = a2;
+//        }
+    	
+    	if(a1.getPower() > a2.getPower()) return a2;
+        return a1;
     }
 }

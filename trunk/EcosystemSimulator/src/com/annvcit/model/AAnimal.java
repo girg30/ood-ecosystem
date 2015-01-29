@@ -230,5 +230,5 @@ public abstract class AAnimal implements Observable{
 	protected int speed = 1;// very high
 	protected List<String> moves;
 	
-	public static final int DEAD_LINE = -100;
+	public static final int DEAD_LINE = -350;
 }
