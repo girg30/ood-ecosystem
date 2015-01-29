@@ -12,4 +12,11 @@ public class Util {
 		return Math.sqrt(Math.pow(p2.getX() - p1.getX(), 2)
 				+ Math.pow(p2.getY() - p1.getY(), 2));
 	}
+	public static void setDelay(int speed){
+		try {
+			Thread.sleep(speed);
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
 }

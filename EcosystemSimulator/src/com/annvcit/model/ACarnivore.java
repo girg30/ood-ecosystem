@@ -103,7 +103,7 @@ public abstract class ACarnivore extends AAnimal {
 			
 		}
 	
-		setDelay(speed);
+		Util.setDelay(speed);
 	}
 	
 	public void goFight(List<ACarnivore> cannivoreList){ 
@@ -136,12 +136,7 @@ public abstract class ACarnivore extends AAnimal {
 			notifyObservers(messageHunt, this, victim);
 		}
 	
-		setDelay(speed);
+		Util.setDelay(speed);
 	}
 	
-	@Override
-	public boolean equals(Object o){
-		ACarnivore other = (ACarnivore)o;
-		return this.hashCode() == other.hashCode();
-	}
 }

@@ -1,8 +1,8 @@
 package com.annvcit.model;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
-import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -96,7 +96,7 @@ public class Antelope extends AHerbivore {
 			
 		}
 	
-		setDelay(speed);
+		Util.setDelay(speed);
 		
 	}
 
