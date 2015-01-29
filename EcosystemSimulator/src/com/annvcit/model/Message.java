@@ -4,6 +4,7 @@ public class Message {
 	
 	public static final String HUNT = "HUNT HERBIVORES...";
 	public static final String EAT = "EAT PLANT...";
+	public static final String REMOVE_ME = "REMOVE ME PLEASE, I'M ALREADY DEAD";
 	
 	private String content;
 	
