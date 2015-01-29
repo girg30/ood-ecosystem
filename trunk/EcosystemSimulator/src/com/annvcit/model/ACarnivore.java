@@ -47,11 +47,12 @@ public abstract class ACarnivore extends AAnimal {
 		double minDistance = Integer.MAX_VALUE;
 		ACarnivore carnivore = null;
 		for (int i = 0; i < carnivoreList.size(); i++) {
-			distance = Util.distance(this.body, carnivoreList.get(i).getBody());
-			System.out.println(distance);
-			if (distance < minDistance) {
-				minDistance = distance;
-				carnivore = carnivoreList.get(i);
+			if(!this.equals(carnivoreList.get(i))){
+				distance = Util.distance(this.body, carnivoreList.get(i).getBody());
+				if (distance < minDistance) {
+					minDistance = distance;
+					carnivore = carnivoreList.get(i);
+				}
 			}
 		}
 		return carnivore;
@@ -105,7 +106,8 @@ public abstract class ACarnivore extends AAnimal {
 		setDelay(speed);
 	}
 	
-	public void goFight(List<ACarnivore> cannivoreList){ System.out.println("vo con");
+	public void goFight(List<ACarnivore> cannivoreList){ 
+		System.out.println("vo con");
 		int step = 2;
 		List<ACarnivore> victimList = findCarnivore(cannivoreList);
 		ACarnivore victim = nearestCarnivore(victimList);
@@ -135,5 +137,11 @@ public abstract class ACarnivore extends AAnimal {
 		}
 	
 		setDelay(speed);
+	}
+	
+	@Override
+	public boolean equals(Object o){
+		ACarnivore other = (ACarnivore)o;
+		return this.hashCode() == other.hashCode();
 	}
 }
