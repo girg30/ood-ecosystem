@@ -67,6 +67,10 @@ public abstract class AAnimal implements Observable{
         return this.sex != anotherAnimal.getSex();
     }
     
+    public boolean isMale() {
+    	return this.sex == 'm';
+    }
+    
     public abstract void draw(Graphics g);
     
 	public void move() {
@@ -144,18 +148,6 @@ public abstract class AAnimal implements Observable{
     //           SETTERS             *
     //********************************
     
-    public void setNormalState(IAnimalState normalState) {
-        this.normalState = normalState;
-    }
-
-    public void setStarvedState(IAnimalState starvedState) {
-        this.starvedState = starvedState;
-    }
-
-    public void setHungryState(IAnimalState hungryState) {
-        this.hungryState = hungryState;
-    }
-
     public void setCurrentState(IAnimalState currentState) {
         this.currentState = currentState;
     }

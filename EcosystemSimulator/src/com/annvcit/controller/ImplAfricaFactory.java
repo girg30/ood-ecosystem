@@ -120,6 +120,7 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 				lion.goHunt(this.antelopeList);
 			} 
 			if (lion.getCurrentState() instanceof ImplStarvedState) {
+				System.out.println("starved");
 				lion.goFight(lionList);
 			}
 		}
@@ -177,11 +178,14 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			}
 			break;
 		case Message.FIGHT_ME:
-			Lion lion1 = (Lion) objects[1];
-			Lion lion2 = (Lion) objects[2];
+			ACarnivore lion1 = (ACarnivore) objects[1];
+			ACarnivore lion2 = (ACarnivore) objects[2];
 			
-			Lion victim = (Lion)interactionFactory.cchhInteraction(lion1,lion2).interact();
+			ACarnivore victim = (ACarnivore)interactionFactory.cchhInteraction(lion1,lion2).interact();
+			System.out.println(lion1.getBody().intersects(lion2.getBody()));
 			victim.setCurrentState(victim.getDeathState());
+//			victim.removeObserver(this);
+			
 			break;
 		}
 	}

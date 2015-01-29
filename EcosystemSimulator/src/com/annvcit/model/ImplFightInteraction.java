@@ -16,19 +16,19 @@ public class ImplFightInteraction implements IInteraction {
 
     @Override
     public Object interact() {
-//        Random random = new Random();
-//        AAnimal result = null;
-//        int number = random.nextInt(10);
-//        if (number >5) {
-//            a2.setCurrentState(a2.getNormalState());
-//            result = a1;
-//        }
-//        else {
-//            a1.setCurrentState(a1.getNormalState());
-//            result = a2;
-//        }
-    	
-    	if(a1.getPower() > a2.getPower()) return a2;
-        return a1;
+
+    	AAnimal willBeRemoved = null;
+    	if(a1.getPower() + 100 > a2.getPower()) {
+//    		a1.setCurrentState(a1.getNormalState());
+//    		a1.setPower(1000);
+    		willBeRemoved = a2;
+//    		a2.setCurrentState(a2.getDeathState());
+    	} else {
+//    		a2.setCurrentState(a2.getNormalState());
+//    		a2.setPower(1000);
+    		willBeRemoved = a1;
+//    		a1.setCurrentState(a1.getDeathState());
+    	}
+        return willBeRemoved;
     }
 }
