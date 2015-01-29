@@ -8,6 +8,7 @@ import java.util.List;
 public abstract class AHerbivore extends AAnimal {
 	public AHerbivore(int x, int y) { 
 		super(x, y); 
+		radius = 200;
 	}
 	
 	public AHerbivore() {} 

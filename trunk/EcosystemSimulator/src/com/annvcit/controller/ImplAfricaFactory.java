@@ -2,9 +2,11 @@ package com.annvcit.controller;
 
 import java.awt.Color;
 import java.awt.Graphics;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Iterator;
 
 import com.annvcit.model.ACarnivore;
 import com.annvcit.model.AHerbivore;
@@ -15,6 +17,7 @@ import com.annvcit.model.ImplHungryState;
 import com.annvcit.model.Lion;
 import com.annvcit.model.InteractionFactory;
 import com.annvcit.model.Message;
+import com.annvcit.model.ImplDeathState;
 
 import com.annvcit.util.Observer;
 
@@ -70,7 +73,7 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			antelopeList.add(antelope);
 		}
 		
-		for (int i = 0; i < 1500; i++) {
+		for (int i = 0; i < 30; i++) {
 			APlant grass = new Grass(random.nextInt(800), random.nextInt(600));
 			grass.addObserver(this);
 			grassList.add(grass);
@@ -81,8 +84,27 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 	@Override
 	public void drawAnimals(Graphics g) {
 		for (APlant grass : grassList) grass.draw(g);
-		for (Lion lion : lionList) lion.draw(g);
-		for (AHerbivore antelope : antelopeList) antelope.draw(g);
+		
+		Iterator<Lion> iteratorLion = lionList.iterator();
+		while (iteratorLion.hasNext()) {
+			Lion lion = ((Lion) iteratorLion.next());
+			if(!(lion.getCurrentState() instanceof ImplDeathState))
+				lion.draw(g);
+			else {
+				if (!(lion.getPower() < Lion.DEAD_LINE)) lion.draw(g);
+			}
+		}
+		
+		Iterator<AHerbivore> iteratorAntelope = antelopeList.iterator();
+		while (iteratorAntelope.hasNext()) {
+			Antelope antelope = ((Antelope) iteratorAntelope.next());
+			if (!(antelope.getCurrentState() instanceof ImplDeathState))
+				antelope.draw(g);
+			else {
+				if (!(antelope.getPower() < Antelope.DEAD_LINE)) antelope.draw(g);
+			}
+			
+		}
 		
 		g.setColor(Color.WHITE);
 		g.drawString("amount of Antelope: " + antelopeList.size() , 20, 20);
@@ -129,6 +151,19 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			grassList.remove(grass);
 			break;
 			
+		case Message.REMOVE_ME:
+			Object o = objects[1];
+			if (o instanceof Lion) {
+				((Lion) o).removeObserver(this);
+				lionList.remove(o);
+				System.out.println("Lion chet");
+			}
+			if (o instanceof Antelope) {
+				((Antelope) o).removeObserver(this);
+				antelopeList.remove(o);
+				System.out.println("Antelope chet");
+			}
+			break;
 		}
 	}
 	

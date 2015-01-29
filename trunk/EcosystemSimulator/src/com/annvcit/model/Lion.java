@@ -22,9 +22,23 @@ public class Lion extends ACarnivore {
 
 	public void draw(Graphics g) {
 		power--;
-		System.out.println(power);
-		if (power == 700) this.setCurrentState(this.getHungryState()); 
+		if (this.getCurrentState() instanceof ImplDeathState) {
+			g.setColor(Color.RED);
+			g.fillOval(body.x, body.y, body.width, body.height);
+			if (power == DEAD_LINE*2) {
+				setChanged();
+				Message removeMeMessage = new Message(Message.REMOVE_ME);
+				notifyObservers(removeMeMessage, this);
+			}
+			return;
+		}
 		
+		if (power == 700) this.setCurrentState(this.getHungryState()); 
+		if (power < 0) {
+			this.setCurrentState(this.getDeathState());
+			
+		}
+
 		// lion
 		if (sex == 'm') {
 			color = Color.ORANGE;
@@ -32,9 +46,6 @@ public class Lion extends ACarnivore {
 		} else color = new Color(242, 207, 148);
 		
 		g.setColor(color);
-		if (power < 0) {
-			g.setColor(Color.RED);
-		}
 		g.fillOval(body.x, body.y, body.width, body.height);
 			
 		if (this.getCurrentState() instanceof ImplHungryState) {

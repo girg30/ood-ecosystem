@@ -24,6 +24,7 @@ public abstract class AAnimal implements Observable{
         normalState = new ImplNormalState();
         starvedState = new ImplStarvedState();
         hungryState = new ImplHungryState();
+        deathState = new ImplDeathState();
         currentState =  normalState;
         
         this.x = x;
@@ -137,7 +138,8 @@ public abstract class AAnimal implements Observable{
     public Rectangle getBody() { return this.body; }	
 	public int getPower() { return this.power; }
 	public Rectangle getRadiusBound() { return this.radiusBound; }
-    
+    public IAnimalState getDeathState() { return this.deathState; }
+	
     //********************************
     //           SETTERS             *
     //********************************
@@ -169,7 +171,6 @@ public abstract class AAnimal implements Observable{
     public void setYd(int value) { this.yd = value; }
     public void setPower(int value) { this.power = value; }
     
-	
 	//***************************************************
 	//				Observable						    *
 	//***************************************************
@@ -210,6 +211,7 @@ public abstract class AAnimal implements Observable{
     protected IAnimalState starvedState;
     protected IAnimalState hungryState;
     protected IAnimalState currentState;
+    protected IAnimalState deathState;
     
     protected char sex; // m (male) and f (female)
     protected int power = 1000;
@@ -227,4 +229,6 @@ public abstract class AAnimal implements Observable{
 	protected int loops = 2;
 	protected int speed = 1;// very high
 	protected List<String> moves;
+	
+	public static final int DEAD_LINE = -100;
 }

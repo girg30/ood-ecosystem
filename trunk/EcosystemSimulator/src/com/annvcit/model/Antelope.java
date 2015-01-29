@@ -26,8 +26,21 @@ public class Antelope extends AHerbivore {
 	@Override
 	public void draw(Graphics g) {
 		power--;
+		if (this.getCurrentState() instanceof ImplDeathState) {
+			g.setColor(new Color(128, 4, 26));
+			g.fillOval(body.x, body.y, body.width, body.height);
+			if (power == DEAD_LINE*2) {
+				setChanged();
+				Message removeMeMessage = new Message(Message.REMOVE_ME);
+				notifyObservers(removeMeMessage, this);
+			}
+			return;
+		}
 		
 		if (power == 500) this.setCurrentState(this.getHungryState());
+		if (power < 0) {
+			this.setCurrentState(this.getDeathState());
+		}
 		
 		// lion
 		if (sex == 'm') {
