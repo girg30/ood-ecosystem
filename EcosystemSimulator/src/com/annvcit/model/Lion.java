@@ -18,9 +18,9 @@ public class Lion extends ACarnivore {
 	}
 
 	public void draw(Graphics g) {
-
+		radius = 200; // reset, để khi nó hết "chết đói" thì radius bình thường
 		// lion
-		if (isMale()) {
+		if (isMale()) { // lúc mới vô thì vẽ mấy cái hình này cho vui
 			color = Color.ORANGE;
 			w = 20;
 			h = 20;
@@ -35,20 +35,19 @@ public class Lion extends ACarnivore {
 		int radiusY = body.y - (radius - body.height) / 2;
 		radiusBound = new Rectangle(radiusX, radiusY, radius, radius);
 
-		power--;
+		power--; // theo thời gian thì năng lượng của nó sẽ bị giảm (giảm theo hàm paint thôi :D)
 
-		System.out.println(power);
 		if (power == 700)
 			this.setCurrentState(this.getHungryState());
 		if (power == 0)
 			this.setCurrentState(this.getStarvedState());
-		if (power < DEAD_LINE * 2)
+		if (power < DEAD_LINE )
 			this.setCurrentState(this.getDeathState());
 
 		// *******************************************************//
 
 		if (this.getCurrentState() instanceof ImplHungryState) {
-
+			// bật chế độ săn mồi
 			g.setColor(Color.WHITE);
 			g.drawOval(radiusBound.x, radiusBound.y, radiusBound.width,
 					radiusBound.height);
@@ -56,7 +55,7 @@ public class Lion extends ACarnivore {
 		}
 
 		if (this.getCurrentState() instanceof ImplDeathState) {
-			System.out.println("Death");
+			// request lên environment để được remove
 			g.setColor(Color.RED);
 			g.fillOval(body.x, body.y, body.width, body.height);
 
@@ -69,11 +68,16 @@ public class Lion extends ACarnivore {
 		}
 
 		if (this.getCurrentState() instanceof ImplStarvedState) {
-			// TODO KHÔNG VÔ ĐÂY ĐƯỢC, GIỜ PHẢI LÀM SAO?????
+			// đói quá => chết đói => mở rộng bán kính tìm thức ăn => ăn luôn đồng loại bất kể
+			// đực, cái, già, trẻ, phụ ấu, gái mới lớn...
+			radius = 500;
+			radiusX = body.x - (radius - body.width) / 2;
+			radiusY = body.y - (radius - body.height) / 2;
+			radiusBound = new Rectangle(radiusX, radiusY, radius, radius);
+
 			g.setColor(Color.RED);
 			g.drawOval(radiusBound.x, radiusBound.y, radiusBound.width,
 					radiusBound.height);
-			System.out.println("color red");
 
 		}
 

@@ -107,7 +107,6 @@ public abstract class ACarnivore extends AAnimal {
 	}
 	
 	public void goFight(List<ACarnivore> cannivoreList){ 
-		System.out.println("vo con");
 		int step = 2;
 		List<ACarnivore> victimList = findCarnivore(cannivoreList);
 		ACarnivore victim = nearestCarnivore(victimList);
