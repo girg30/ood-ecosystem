@@ -1,5 +1,7 @@
 package com.annvcit.model;
 
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 import com.annvcit.controller.ImplAfricaFactory;
@@ -14,6 +16,14 @@ public class EcosystemTest {
 		Ecosystem africa = new Ecosystem(new ImplAfricaFactory());
 		// chuyển qua finnish at runtime
 		Ecosystem finnish = new Ecosystem(new ImplFinnishFactory());
+	}
+	
+	@Test
+	public void testEquals(){
+		Antelope a = new Antelope();
+		Object b = a;
+		
+		assertTrue(a.equals((Antelope)b));
 	}
 	
 }

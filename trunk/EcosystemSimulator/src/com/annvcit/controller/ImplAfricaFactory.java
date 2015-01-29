@@ -3,22 +3,25 @@ package com.annvcit.controller;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
-import java.util.Iterator;
+import java.util.Vector;
+import java.util.concurrent.CopyOnWriteArrayList;//avoid ConcurrentModificationException
 
 import com.annvcit.model.ACarnivore;
 import com.annvcit.model.AHerbivore;
 import com.annvcit.model.APlant;
 import com.annvcit.model.Antelope;
 import com.annvcit.model.Grass;
+import com.annvcit.model.ImplDeathState;
 import com.annvcit.model.ImplHungryState;
 import com.annvcit.model.ImplStarvedState;
-import com.annvcit.model.Lion;
 import com.annvcit.model.InteractionFactory;
+import com.annvcit.model.Lion;
 import com.annvcit.model.Message;
-import com.annvcit.model.ImplDeathState;
 import com.annvcit.util.Observer;
+import com.annvcit.util.Util;
 
 /**
  * Lợp hiện thực, thực hiện công việc tạo ra các sản phẩm thành phần cụ thể cần
@@ -28,18 +31,20 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 
 	private List<ACarnivore> lionList;
 	private List<AHerbivore> antelopeList;
-	private InteractionFactory interactionFactory;
 	private List<APlant> grassList;
 
+	private InteractionFactory interactionFactory;
+	
 	Random random = new Random();
 
 	public ImplAfricaFactory() {}
 	
 	public ImplAfricaFactory(int lions, int antelopes) {
-		lionList = new ArrayList<>();
-		antelopeList = new ArrayList<>();
+	
 		interactionFactory = new InteractionFactory();
-		grassList = new ArrayList<>();
+		lionList = new CopyOnWriteArrayList<>();
+		antelopeList = new CopyOnWriteArrayList<>();
+		grassList = new CopyOnWriteArrayList<>();
 		
 		int numSex = -1;
 		int numState = -1;
@@ -90,7 +95,7 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			if(!(lion.getCurrentState() instanceof ImplDeathState))
 				lion.draw(g);
 			else {
-				if (!(lion.getPower() < Lion.DEAD_LINE)) lion.draw(g);
+				if (lion.getPower() > Lion.DEAD_LINE) lion.draw(g);
 			}
 		}
 		
@@ -182,13 +187,17 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			ACarnivore lion2 = (ACarnivore) objects[2];
 			
 			ACarnivore victim = (ACarnivore)interactionFactory.cchhInteraction(lion1,lion2).interact();
-			System.out.println(lion1.getBody().intersects(lion2.getBody()));
-			victim.setCurrentState(victim.getDeathState());
-//			victim.removeObserver(this);
+			System.out.println(victim.getCurrentState());
+			
+			victim.removeObserver(this);
+			lionList.remove(victim);
+
+//			Util.setDelay(500);
 			
 			break;
 		}
 	}
+	
 	
 	@Override
 	public ACarnivore createCarnivore() {

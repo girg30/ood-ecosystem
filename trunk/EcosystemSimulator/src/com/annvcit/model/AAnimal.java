@@ -9,6 +9,7 @@ import java.util.List;
 
 import com.annvcit.util.Observer;
 import com.annvcit.util.Observable;
+import com.annvcit.util.Util;
 
 /**
  * Lớp trừu tượng. Lớp cha của các loài động vật.
@@ -97,16 +98,10 @@ public abstract class AAnimal implements Observable{
 			break;
 		}
 
-		setDelay(speed);
+		Util.setDelay(speed);
 	}
 	
-	protected void setDelay(int speed){
-		try {
-			Thread.sleep(speed);
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
-	}
+	
 
 	private void moveLeft() {
 		body.x -= xd;
@@ -222,5 +217,5 @@ public abstract class AAnimal implements Observable{
 	protected int speed = 1;// very high
 	protected List<String> moves;
 	
-	public static final int DEAD_LINE = -350;
+	public static final int DEAD_LINE = -250;
 }

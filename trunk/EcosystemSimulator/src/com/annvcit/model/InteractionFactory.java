@@ -21,6 +21,7 @@ public class InteractionFactory {
          * */
         if (a1 instanceof ACarnivore && a2 instanceof ACarnivore ||
                 a1 instanceof AHerbivore && a2 instanceof AHerbivore) {
+        	
             if (a1.getCurrentState() instanceof ImplStarvedState ||
                     a2.getCurrentState() instanceof ImplStarvedState) {
                 return new ImplFightInteraction(a1, a2);
