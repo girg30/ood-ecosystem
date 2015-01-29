@@ -17,10 +17,12 @@ public interface ICreatureFactory {
 
     public APlant createPlant();
 
-    public void drawAnimals(Graphics g);
+    public void draw(Graphics g);
     
     public void askCarnivoreMove();
     
     public void askHerbivoreMove();
+    
+    void respawn();
     
 }

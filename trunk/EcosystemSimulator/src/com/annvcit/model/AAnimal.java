@@ -206,7 +206,7 @@ public abstract class AAnimal implements Observable{
     /*position, width, height*/
     protected int x, y, w, h;
     protected int xd=2, yd=2; // x direction, y direction
-	protected int radius = 500; // bán kính tìm mồi
+	protected int radius = 200; // bán kính tìm mồi
     
     protected Rectangle body;
     protected Color color;
