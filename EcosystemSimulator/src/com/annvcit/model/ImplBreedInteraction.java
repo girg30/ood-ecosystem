@@ -36,12 +36,8 @@ public class ImplBreedInteraction implements IInteraction {
         if (random.nextInt(2) == 1) child.setSex(AAnimal.MALE);
         else child.setSex(AAnimal.FEMALE);
         
-        System.out.println(child.radiusBound == null);
-        System.out.println(child.body == null);
-        		
-        
-        male.setCurrentState(male.getNormalState());
-        female.setCurrentState(female.getNormalState());
+        male.setCurrentState(male.getHungryState());
+        female.setCurrentState(female.getHungryState());
         
         male.setWantBreed(-10);
         female.setWantBreed(-10);

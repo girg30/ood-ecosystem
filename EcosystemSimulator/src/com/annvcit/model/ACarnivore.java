@@ -34,7 +34,7 @@ public abstract class ACarnivore extends AAnimal {
 		List<ACarnivore> victimList = new ArrayList<>();
 
 		for (ACarnivore a : carnivoreList) {
-			if (this.radiusBound.intersects(a.getBody())) {
+			if (this.radiusBound.intersects(a.getBody()) && !a.isChild()) {
 				victimList.add(a);
 			}
 		}
@@ -162,7 +162,6 @@ public abstract class ACarnivore extends AAnimal {
 		}
 	
 		if (body.intersects(partner.getBody())) {
-			System.out.println("ACarnivore.goBreed()");
 			Message messageHunt = new Message(Message.MAKE_BABY);
 			setChanged();
 			notifyObservers(messageHunt, this, partner);
