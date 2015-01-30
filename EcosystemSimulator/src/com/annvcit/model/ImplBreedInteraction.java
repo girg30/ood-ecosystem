@@ -2,6 +2,8 @@ package com.annvcit.model;
 
 import java.util.Random;
 
+import com.annvcit.util.ImageResource;
+
 /**
  * Tương tác sinh sản giữa 2 con động vật opposite sex
  * */
@@ -20,21 +22,29 @@ public class ImplBreedInteraction implements IInteraction {
         AAnimal child = null;
         int x = (male.x + female.x)/2;
         int y = (male.y + female.y)/2;
-        int width = 8;
-        int height = 8;
+//        int width = 8;
+//        int height = 8;
         
-        if (male instanceof Lion && female instanceof Lion) child = new Lion(x,y);
+        Random random = new Random();
+        if (male instanceof Lion && female instanceof Lion) {
+        	child = new Lion(x,y);
+        	
+	        if (random.nextInt(2) == 1) child.setSex(AAnimal.MALE);
+	        else child.setSex(AAnimal.FEMALE);
+	        child.isChild(true);
+        	
+        	child.setAvartar(child.isMale() ? ImageResource.LION_MALE_CHILD_NORMAL : ImageResource.LION_FEMALE_CHILD_NORMAL);
+        }
         if (male instanceof Wolf && female instanceof Wolf) child = new Wolf();
-        if (male instanceof Antelope && female instanceof Antelope) child = new Antelope(x,y);
+        if (male instanceof Antelope && female instanceof Antelope) {
+        	child = new Antelope(x,y);
+//        	child.setAvartar(child.isMale() ? Avartar.LION_MALE_CHILD_NORMAL : Avartar.LION_FEMALE_CHILD_NORMAL);
+        }
         if (male instanceof Rabbit && female instanceof Rabbit) child = new Rabbit();
         
-        child.getBody().width = width;
-        child.getBody().height = height;
+//        child.getBody().width = width;
+//        child.getBody().height = height;
         child.setRadius(100);
-        child.isChild(true);
-        Random random = new Random();
-        if (random.nextInt(2) == 1) child.setSex(AAnimal.MALE);
-        else child.setSex(AAnimal.FEMALE);
         
         male.setCurrentState(male.getHungryState());
         female.setCurrentState(female.getHungryState());

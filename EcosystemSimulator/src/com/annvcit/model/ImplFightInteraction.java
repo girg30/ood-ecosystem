@@ -2,6 +2,8 @@ package com.annvcit.model;
 
 import java.util.Random;
 
+import com.annvcit.util.ImageResource;
+
 /**
  * Tương tác chiến đấu. Xảy ra khi 2 đv gặp nhau trog tình trạng khang hiếm thức ăn
  * (chết đói)
@@ -35,6 +37,7 @@ public class ImplFightInteraction implements IInteraction {
     	}
     	victim.setPower(AAnimal.DEAD_LINE);
     	victim.setCurrentState(victim.getDeathState());
+    	victim.setAvartar(victim.isMale() ? ImageResource.LION_MALE_DEAD : ImageResource.LION_FEMALE_DEAD);
         return victim;
     }
 }

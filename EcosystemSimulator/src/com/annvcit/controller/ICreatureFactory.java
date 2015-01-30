@@ -16,6 +16,8 @@ public interface ICreatureFactory {
     public AHerbivore createHerbivore();
 
     public APlant createPlant();
+    
+    public void drawBackground(Graphics g);
 
     public void draw(Graphics g);
     

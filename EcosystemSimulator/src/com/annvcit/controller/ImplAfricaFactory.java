@@ -20,6 +20,10 @@ import com.annvcit.model.InteractionFactory;
 import com.annvcit.model.Lion;
 import com.annvcit.model.Message;
 import com.annvcit.util.Observer;
+import com.annvcit.util.ImageResource;
+
+import javax.swing.ImageIcon;
+import java.awt.Image;
 
 /**
  * Lợp hiện thực, thực hiện công việc tạo ra các sản phẩm thành phần cụ thể cần
@@ -53,8 +57,8 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			numSex = random.nextInt(2);
 			numState = random.nextInt(2);
 			
-			lion.setSex('m');
-			if (numSex == 1) lion.setSex('f');
+			lion.setSex(AAnimal.MALE);
+			if (numSex > 0) lion.setSex(AAnimal.FEMALE);
 			
 			lion.setCurrentState(lion.getNormalState());
 			if (numState == 1) lion.setCurrentState(lion.getHungryState());
@@ -236,7 +240,7 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			}
 		}
 		
-		if (antelopeListSize < 4) {
+		if (antelopeListSize < 1) {
 			for (int i = 0; i < 7; i++) {
 				Antelope antelope = new Antelope(random.nextInt(800), random
 						.nextInt(600));
@@ -263,6 +267,22 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 				grassList.add(grass);
 			}
 		}
+	}
+
+	@Override
+	public void drawBackground(Graphics g) {
+		ImageIcon icon = new ImageIcon(ImageResource.LAND_TILE);
+		Image landTile = icon.getImage();
+		int x=0, y=0;
+		for(int i = 0; i<50;i++){
+			for(int j = 0; j<50;j++){
+				g.drawImage(landTile, x, y,icon.getIconWidth(), icon.getIconHeight(),null);
+				x+= icon.getIconWidth();
+			}
+			x = 0;
+			y+= icon.getIconHeight();
+		}
+		
 	}
 	
 }

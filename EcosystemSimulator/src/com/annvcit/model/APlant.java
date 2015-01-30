@@ -3,9 +3,15 @@ package com.annvcit.model;
 import java.awt.Color;
 import java.awt.Rectangle;
 import java.awt.Graphics;
+import java.awt.Image;
+
+import java.net.URL;
+
+import javax.swing.ImageIcon;
 
 import com.annvcit.util.Observable;
 import com.annvcit.util.Observer;
+
 
 /**
  * lớp cha của các lòa thực vật
@@ -16,8 +22,21 @@ public abstract class APlant implements Observable {
 	protected Rectangle body;
     protected Color color;
     
+    protected Image avatar;
+    
     private Observer environment;
 	private boolean isChanged = false;
+	
+	public void setAvatar(URL avatarURL) {
+		ImageIcon icon = new ImageIcon(avatarURL);
+		avatar = icon.getImage();
+		
+		w = icon.getIconWidth();
+		h = icon.getIconHeight();
+		
+		body.width = w;
+		body.height = h;
+	}
 	
 	@Override
 	public void setChanged() {
@@ -66,6 +85,7 @@ public abstract class APlant implements Observable {
     }
 
     public APlant() {}
+    
     
     
     //********************************

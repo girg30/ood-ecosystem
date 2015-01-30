@@ -11,6 +11,8 @@ import com.annvcit.util.Util;
  */
 public abstract class ACarnivore extends AAnimal {
 
+	
+	
 	public ACarnivore(int x, int y) { 
 		super(x, y); 
 	}

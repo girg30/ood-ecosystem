@@ -17,11 +17,13 @@ public class Antelope extends AHerbivore {
 	
 	public Antelope(int x, int y) {
 		super(x, y);
-		
-		w = 16; h = 16;
-		
+//		w = 16; h = 16;
 		body = new Rectangle(x, y, w, h);
+		
+//		setAvartar(this.isMale() ? ImageResource.LION_MALE_NORMAL : ImageResource.LION_FEMALE_NORMAL);
 	}
+	
+	
 
 	@Override
 	public void draw(Graphics g) {
