@@ -18,6 +18,7 @@ public class Lion extends ACarnivore {
 	}
 	
 	private int timeout = 500;
+	private int growUpTimeout = 200;
 
 	public void draw(Graphics g) {
 		radius = 200; // reset, để khi nó hết "chết đói" thì radius bình thường
@@ -41,10 +42,20 @@ public class Lion extends ACarnivore {
 		if (!isChild) {
 			wantBreed--;
 			timeout--;
+		} else {
+			growUpTimeout--;
+			if (growUpTimeout < 0) {
+				body.width = 16;
+				body.height = 16;
+				isChild = false;
+				this.setCurrentState(this.getNormalState());
+			}
 		}
+		
 
 		if (timeout < 0) {
 			wantBreed = 800;
+			timeout = 500;
 			this.setCurrentState(this.getStarvedState());
 		}
 		
@@ -74,7 +85,6 @@ public class Lion extends ACarnivore {
 			// request lên environment để được remove
 			g.setColor(Color.RED);
 			g.fillOval(body.x, body.y, body.width, body.height);
-
 			if (power == DEAD_LINE * 2) {
 				setChanged();
 				Message removeMeMessage = new Message(Message.REMOVE_ME);
@@ -89,7 +99,6 @@ public class Lion extends ACarnivore {
 			radiusX = body.x - (radius - body.width) / 2;
 			radiusY = body.y - (radius - body.height) / 2;
 			radiusBound = new Rectangle(radiusX, radiusY, radius, radius);
-
 			g.setColor(Color.RED);
 			g.drawOval(radiusBound.x, radiusBound.y, radiusBound.width,
 					radiusBound.height);

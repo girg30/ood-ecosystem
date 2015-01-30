@@ -174,7 +174,7 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			ACarnivore lion2 = (ACarnivore) objects[2];
 			
 			ACarnivore victim = (ACarnivore)interactionFactory.cchhInteraction(lion1,lion2).interact();
-			
+
 			victim.removeObserver(this);
 			lionList.remove(victim);
 			break;
