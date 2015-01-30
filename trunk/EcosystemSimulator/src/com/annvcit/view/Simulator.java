@@ -1,22 +1,25 @@
 package com.annvcit.view;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-
-import java.awt.Dimension;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics;
-
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
 import com.annvcit.controller.ICreatureFactory;
 import com.annvcit.controller.ImplAfricaFactory;
+import com.annvcit.model.Message;
+import com.annvcit.util.Observer;
 
-public class Simulator extends JPanel implements KeyListener {
+public class Simulator extends JPanel implements KeyListener, Observer {
 	private static final long serialVersionUID = -433666434252405672L;
 	
 	private ICreatureFactory creatureFactory;
+	
+	private String envName = Message.AFRICA_ENV;
 	
 	public Simulator() {
 		setPreferredSize(new Dimension(800, 600));
@@ -30,14 +33,23 @@ public class Simulator extends JPanel implements KeyListener {
 	public void paint(Graphics g) {
 		g.setColor(new Color(99, 68, 29));
 		g.fillRect(0, 0, getWidth(), getHeight());
+		switch(envName){
+		case Message.AFRICA_ENV:
+			drawAfricaEnvironment(g);
+			break;
+		case Message.FINNISH_ENV:
+			break;
+		}
 		
+		g.dispose(); // release resource
+		repaint();
+	}
+	
+	private void drawAfricaEnvironment(Graphics g){
 		creatureFactory.drawBackground(g);
 		creatureFactory.draw(g);
 		creatureFactory.askCarnivoreMove();
 		creatureFactory.askHerbivoreMove();
-		
-		g.dispose(); // release resource
-		repaint();
 	}
 	
 	@Override
@@ -80,5 +92,10 @@ public class Simulator extends JPanel implements KeyListener {
 		game.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		game.setLocationRelativeTo(null);
 		game.setVisible(true);
+	}
+
+	@Override
+	public void update(Object... objects) {
+		envName = (String)objects[0];
 	}
 }

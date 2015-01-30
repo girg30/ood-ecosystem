@@ -7,6 +7,8 @@ public class Message {
 	public static final String REMOVE_ME = "REMOVE ME PLEASE, I'M ALREADY DEAD";
 	public static final String FIGHT_ME = "FIGHTING...";
 	public static final String MAKE_BABY = "COME HERE BABY.....";
+	public static final String AFRICA_ENV ="CHANGE TO AFRICA";
+	public static final String FINNISH_ENV = "CHANGE TO FINISH";
 	
 	private String content;
 	

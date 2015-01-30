@@ -4,8 +4,8 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq l {space :p:113:p, par l {comp rbtnAfrican:::p::p, comp rbtnFinnish:::p::p}, space ::212:x}}"
-			"$verticalGroup": "par l {seq l {space :p:59:p, comp rbtnAfrican:::p::p, space u:::p, comp rbtnFinnish:::p::p, space ::156:x}}"
+			"$horizontalGroup": "par l {seq l {space :p:42:p, par l {seq l {comp rbtnFinnish:::p::p, space ::178:x}, seq l {comp rbtnAfrican:::p::p, space ::49:x, comp button1:::p::p, space :p:26:p}}}}"
+			"$verticalGroup": "par l {seq l {par l {seq {space :p:44:p, comp rbtnAfrican:::p::p}, seq l {space :p:59:p, comp button1:::p::p}}, space :p:18:p, comp rbtnFinnish:::p::p, space ::51:x}}"
 		} ) {
 			name: "this"
 			add( new FormComponent( "javax.swing.JRadioButton" ) {
@@ -18,9 +18,13 @@ new FormModel {
 				"text": "Finnish"
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rbtnFinnishActionPerformed", true ) )
 			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Start Simulator"
+			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 400, 300 )
+			"location": new java.awt.Point( 10, 15 )
+			"size": new java.awt.Dimension( 295, 210 )
 		} )
 	}
 }
