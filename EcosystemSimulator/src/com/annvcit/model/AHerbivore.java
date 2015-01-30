@@ -138,4 +138,65 @@ public abstract class AHerbivore extends AAnimal {
 		}
 		return partnerList;
     }
+    
+    
+    public List<AHerbivore> findCarnivore(List<AHerbivore> herbivoreList) {
+
+		List<AHerbivore> victimList = new ArrayList<>();
+
+		for (AHerbivore a : herbivoreList) {
+			if (this.radiusBound.intersects(a.getBody()) && !a.isChild()) {
+				victimList.add(a);
+			}
+		}
+		return victimList;
+	}
+	
+	public AHerbivore nearestCarnivore(List<AHerbivore> herbivoreList) {
+		double distance = 0;
+		double minDistance = Integer.MAX_VALUE;
+		AHerbivore carnivore = null;
+		for (int i = 0; i < herbivoreList.size(); i++) {
+			if(!this.equals(herbivoreList.get(i))){
+				distance = Util.distance(this.body, herbivoreList.get(i).getBody());
+				if (distance < minDistance) {
+					minDistance = distance;
+					carnivore = herbivoreList.get(i);
+				}
+			}
+		}
+		return carnivore;
+	}
+	
+	public void goFight(List<AHerbivore> herbivoreList){ 
+		int step = 2;
+		List<AHerbivore> victimList = findCarnivore(herbivoreList);
+		AHerbivore victim = nearestCarnivore(victimList);
+	
+		if (victim == null)
+			return;
+	
+		int victimX = victim.getBody().x;
+		int victimY = victim.getBody().y;
+	
+		if (victimX < body.x) {
+			this.body.x -= step;
+		}else if (victimX > body.x) {
+			this.body.x += step;
+		}
+	
+		if (victimY < body.y) {
+			this.body.y -= step;
+		}else if (victimY > body.y) {
+			this.body.y += step;
+		}
+	
+		if (body.intersects(victim.getBody())) {
+			Message messageHunt = new Message(Message.FIGHT_ME);
+			setChanged();
+			notifyObservers(messageHunt, this, victim);
+		}
+	
+		Util.setDelay(speed);
+	}
 }
