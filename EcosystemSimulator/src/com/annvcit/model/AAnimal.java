@@ -38,9 +38,9 @@ public abstract class AAnimal implements Observable {
 
 		this.x = x;
 		this.y = y;
-
+/*
 		this.w = 16;
-		this.h = 16;
+		this.h = 16;*/
 
 		this.body = new Rectangle(x, y, w, h);
 
@@ -304,7 +304,7 @@ public abstract class AAnimal implements Observable {
 
 	protected int count = 0;
 	protected int loops = 2;
-	protected int speed = 1;// very high
+	protected int speed = 10;// very high
 	protected List<String> moves;
 	protected Image avatar;
 

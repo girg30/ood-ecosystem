@@ -16,11 +16,20 @@ public class Antelope extends AHerbivore {
 	public Antelope(int x, int y) {
 		super(x, y);
 //		w = 16; h = 16;
-		body = new Rectangle(x, y, w, h);
 		
 	}
 	
-	private void drawMySelf(Graphics g) {}
+	private void drawMySelf(Graphics g) {
+		radius = 200; // reset, để khi nó hết "chết đói" thì radius bình thường
+				
+		g.drawImage(avatar,body.x,body.y,body.width, body.height,null);
+
+		// it's radius
+		radiusX = body.x - (radius - body.width) / 2;
+		radiusY = body.y - (radius - body.height) / 2;
+		radiusBound = new Rectangle(radiusX, radiusY, radius, radius);
+		
+	}
 	
 	private void drawHungryState(Graphics g) {
 		if (this.getCurrentState() instanceof ImplHungryState) {
@@ -54,11 +63,11 @@ public class Antelope extends AHerbivore {
 	
 	private void drawBreedState(Graphics g) {
 		if(this.getCurrentState() instanceof ImplBreedState){
-			radius = 500;
+			radius = 900;
 			radiusX = body.x - (radius - body.width) / 2;
 			radiusY = body.y - (radius - body.height) / 2;
 			radiusBound = new Rectangle(radiusX, radiusY, radius, radius);
-			g.setColor(Color.GREEN);
+			g.setColor(Color.ORANGE);
 			g.drawOval(radiusBound.x, radiusBound.y, radiusBound.width,
 					radiusBound.height);
 		}
@@ -69,10 +78,10 @@ public class Antelope extends AHerbivore {
 		
 		drawMySelf(g);
 		conditionChangeState();
+		drawBreedState(g);
 		drawHungryState(g);
 		drawStarvedState(g);
 		drawDeathState(g);
-		drawBreedState(g);
 		
 		// lion
 	/*	if (sex == 'm') {
@@ -90,7 +99,7 @@ public class Antelope extends AHerbivore {
 	private int timeout = 500;
 	private int growUpTimeout = 200;
 	
-	private void conditionChangeState() {
+	private void conditionChangeState(){
 		power--; // theo thời gian thì năng lượng của nó sẽ bị giảm (giảm theo hàm paint thôi :D)
 		if (!isChild) {
 			wantBreed--;
@@ -106,6 +115,8 @@ public class Antelope extends AHerbivore {
 			}
 		}
 
+		System.out.println(timeout);
+		
 		if (timeout < 0) {
 			wantBreed = 800;
 			timeout = 500;

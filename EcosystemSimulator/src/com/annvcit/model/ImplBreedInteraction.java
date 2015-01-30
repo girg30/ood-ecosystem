@@ -35,15 +35,16 @@ public class ImplBreedInteraction implements IInteraction {
         	
         	child.setAvartar(child.isMale() ? ImageResource.LION_MALE_CHILD_NORMAL : ImageResource.LION_FEMALE_CHILD_NORMAL);
         }
-        if (male instanceof Wolf && female instanceof Wolf) child = new Wolf();
         if (male instanceof Antelope && female instanceof Antelope) {
         	child = new Antelope(x, y);
-            if (random.nextInt(2) == 1) child.setSex(AAnimal.MALE);
+           
+        	if (random.nextInt(2) == 1) child.setSex(AAnimal.MALE);
 	        else child.setSex(AAnimal.FEMALE);
-	        child.isChild(true);
+        	child.isChild(true);
         	
         	child.setAvartar(child.isMale() ? ImageResource.ANTELOPE_MALE_NORMAL : ImageResource.ANTELOPE_FEMALE_NORMAL);
         }
+        if (male instanceof Wolf && female instanceof Wolf) child = new Wolf();
         if (male instanceof Rabbit && female instanceof Rabbit) child = new Rabbit();
         
 //        child.getBody().width = width;
