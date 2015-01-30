@@ -61,7 +61,6 @@ public class Lion extends ACarnivore {
 				this.setCurrentState(this.getNormalState());
 			}
 		}
-		
 
 		if (timeout < 0) {
 			wantBreed = 800;
@@ -70,17 +69,18 @@ public class Lion extends ACarnivore {
 		}
 		
 		if (wantBreed <= 0 && wantBreed > -5) {
-			wantBreed = -1;
+			wantBreed = wantBreed >-5 ? -10: wantBreed;
 			power = 701;
 			this.setCurrentState(this.getBreedState());
 		}
+		
 		if (power == 700)
 			this.setCurrentState(this.getHungryState());
-		if (power == 0){
+		else if (power == 0){
 			this.setCurrentState(this.getStarvedState());
 			setAvartar(this.isMale() ? ImageResource.LION_MALE_NORMAL : ImageResource.LION_FEMALE_NORMAL);
-		}
-		if (power == DEAD_LINE ){
+		}else if (power <= DEAD_LINE ){
+//			deadTimeout--;
 			this.setCurrentState(this.getDeathState());
 			setAvartar(this.isMale() ? ImageResource.LION_MALE_DEAD : ImageResource.LION_FEMALE_DEAD);
 		}
@@ -92,7 +92,6 @@ public class Lion extends ACarnivore {
 			g.setColor(Color.WHITE);
 			g.drawOval(radiusBound.x, radiusBound.y, radiusBound.width,
 					radiusBound.height);
-
 		}
 
 	}
@@ -102,7 +101,7 @@ public class Lion extends ACarnivore {
 			// request lên environment để được remove
 //			g.setColor(Color.RED);
 //			g.fillOval(body.x, body.y, body.width, body.height);
-			if (power == DEAD_LINE * 2) {
+			if (power <= DEAD_LINE * 2) {
 				setChanged();
 				Message removeMeMessage = new Message(Message.REMOVE_ME);
 				notifyObservers(removeMeMessage, this);

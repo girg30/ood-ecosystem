@@ -192,6 +192,7 @@ public abstract class AAnimal implements Observable {
 	public IAnimalState getBreedState() {
 		return this.breedState;
 	}
+	
 
 	// ********************************
 	// SETTERS *
