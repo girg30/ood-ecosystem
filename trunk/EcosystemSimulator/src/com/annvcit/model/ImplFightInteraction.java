@@ -28,13 +28,18 @@ public class ImplFightInteraction implements IInteraction {
     	
     	if(random == 1 ){
     		victim = a1;
-    		a2.setPower(1000);
-    		a2.setCurrentState(a2.getNormalState());
+    		if(a2 instanceof Lion){
+    			a2.setPower(1000);
+    			a2.setCurrentState(a2.getNormalState());
+    		}
     	}else{
     		victim = a2;
-    		a1.setPower(1000);
-    		a1.setCurrentState(a1.getNormalState());
+    		if(a1 instanceof Lion){
+    			a1.setPower(1000);
+    			a1.setCurrentState(a1.getNormalState());
+    		}
     	}
+    	
     	victim.setPower(AAnimal.DEAD_LINE);
     	victim.setCurrentState(victim.getDeathState());
     	if (victim instanceof Lion)

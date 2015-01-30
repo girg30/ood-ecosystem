@@ -98,6 +98,8 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 				antelope.goEat(this.grassList);
 			} else if (antelope.getCurrentState() instanceof ImplBreedState) {
 				antelope.goBreed(antelopeList);
+			} else if(antelope.getCurrentState() instanceof ImplStarvedState){
+				antelope.goFight(antelopeList);
 			}
 		}
 	}
@@ -135,13 +137,23 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			}
 			break;
 		case Message.FIGHT_ME:
-			ACarnivore lion1 = (ACarnivore) objects[1];
-			ACarnivore lion2 = (ACarnivore) objects[2];
-			
-			ACarnivore victim = (ACarnivore)interactionFactory.cchhInteraction(lion1,lion2).interact();
-
-			victim.removeObserver(this);
-			lionList.remove(victim);
+			if(objects[1] instanceof Lion){
+				ACarnivore lion1 = (ACarnivore) objects[1];
+				ACarnivore lion2 = (ACarnivore) objects[2];
+				
+				ACarnivore victim = (ACarnivore)interactionFactory.cchhInteraction(lion1,lion2).interact();
+	
+				victim.removeObserver(this);
+				lionList.remove(victim);
+			}else{
+				AHerbivore antelope1 = (AHerbivore) objects[1];
+				AHerbivore antelope2 = (AHerbivore) objects[2];
+				
+				AHerbivore victim = (AHerbivore)interactionFactory.cchhInteraction(antelope1,antelope2).interact();
+	
+				victim.removeObserver(this);
+				antelopeList.remove(victim);
+			}
 			break;
 		case Message.MAKE_BABY:
 			AAnimal me = (AAnimal) objects[1];

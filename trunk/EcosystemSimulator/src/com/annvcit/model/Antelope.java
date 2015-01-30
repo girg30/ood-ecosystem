@@ -46,7 +46,17 @@ public class Antelope extends AHerbivore {
 	}
 	
 	private void drawStarvedState(Graphics g) {
-		g.drawImage(avatar, body.x, body.y, body.width, body.height, null);
+		if (this.getCurrentState() instanceof ImplStarvedState) {
+			// đói quá => chết đói => mở rộng bán kính tìm thức ăn => ăn luôn đồng loại bất kể
+			// đực, cái, già, trẻ, phụ ấu, gái mới lớn...
+			radius = 500;
+			radiusX = body.x - (radius - body.width) / 2;
+			radiusY = body.y - (radius - body.height) / 2;
+			radiusBound = new Rectangle(radiusX, radiusY, radius, radius);
+			g.setColor(Color.YELLOW);
+			g.drawOval(radiusBound.x, radiusBound.y, radiusBound.width,
+					radiusBound.height);
+		}
 	}
 	
 	private void drawDeathState(Graphics g) {
@@ -115,8 +125,6 @@ public class Antelope extends AHerbivore {
 			}
 		}
 
-		System.out.println(timeout);
-		
 		if (timeout < 0) {
 			wantBreed = 800;
 			timeout = 500;
