@@ -96,6 +96,9 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 		for (AHerbivore antelope : antelopeList) {
 			if (antelope.getCurrentState() instanceof ImplHungryState) {
 				antelope.goEat(this.grassList);
+			} else if (antelope.getCurrentState() instanceof ImplBreedState) {
+				System.out.println("Breed");
+				antelope.goBreed(antelopeList);
 			}
 		}
 	}
@@ -127,8 +130,7 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			if (o instanceof Lion) {
 				((Lion) o).removeObserver(this);
 				lionList.remove(o);
-			}
-			if (o instanceof Antelope) {
+			} else if (o instanceof Antelope) {
 				((Antelope) o).removeObserver(this);
 				antelopeList.remove(o);
 			}
@@ -149,6 +151,9 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			if (baby instanceof Lion && baby.getBody() != null) {
 				baby.addObserver(this);
 				lionList.add((Lion)baby);
+			} else if (baby instanceof Antelope && baby.getBody() != null) {
+				baby.addObserver(this);
+				antelopeList.add((Antelope)baby);
 			}
 			
 			break;
@@ -219,15 +224,15 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 		int antelopeListSize = antelopeList.size();
 		int grassListSize = grassList.size();
 		
-		if (lionListSize < 2) {
-			createCarnivore();
+		if (lionListSize <= 2) {
+//			createCarnivore();
 		}
 		
-		if (antelopeListSize < 5) {
+		if (antelopeListSize <= 5) {
 			createHerbivore();
 		}
 		
-		if (grassListSize < 7) {
+		if (grassListSize <= 7) {
 			createPlant();
 		}
 	}
