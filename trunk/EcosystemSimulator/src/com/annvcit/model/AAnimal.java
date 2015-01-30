@@ -80,7 +80,7 @@ public abstract class AAnimal implements Observable {
 	}
 
 	public boolean isMale() {
-		return this.sex == 'm';
+		return this.sex == MALE;
 	}
 
 	public abstract void draw(Graphics g);
@@ -269,7 +269,8 @@ public abstract class AAnimal implements Observable {
 	@Override
 	public void notifyObservers(Object... objects) {
 		if (isChanged) {
-			environment.update(objects);
+			if(environment != null)
+				environment.update(objects);
 		}
 		isChanged = false;
 	}

@@ -1,9 +1,5 @@
 package com.annvcit.controller;
 
-import com.annvcit.model.ACarnivore;
-import com.annvcit.model.AHerbivore;
-import com.annvcit.model.APlant;
-
 import java.awt.Graphics;
 
 /**
@@ -11,11 +7,11 @@ import java.awt.Graphics;
  * sinh vật thành phần cho hệ sinh thái.
  */
 public interface ICreatureFactory {
-    public ACarnivore createCarnivore();
+    public void createCarnivore();
 
-    public AHerbivore createHerbivore();
+    public void createHerbivore();
 
-    public APlant createPlant();
+    public void createPlant();
     
     public void drawBackground(Graphics g);
 
