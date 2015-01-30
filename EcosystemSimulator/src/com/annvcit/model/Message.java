@@ -6,6 +6,7 @@ public class Message {
 	public static final String EAT = "EAT PLANT...";
 	public static final String REMOVE_ME = "REMOVE ME PLEASE, I'M ALREADY DEAD";
 	public static final String FIGHT_ME = "FIGHTING...";
+	public static final String MAKE_BABY = "COME HERE BABY.....";
 	
 	private String content;
 	

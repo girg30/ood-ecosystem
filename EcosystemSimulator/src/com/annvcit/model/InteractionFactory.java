@@ -19,17 +19,24 @@ public class InteractionFactory {
          * Cả 2 con cùng là đv ăn thịt hoặc
          * cùng là đv ăn cỏ
          * */
-        if (a1 instanceof ACarnivore && a2 instanceof ACarnivore ||
-                a1 instanceof AHerbivore && a2 instanceof AHerbivore) {
+        boolean bothNotChild = !(a1.isChild() && a2.isChild());
+        if ((a1 instanceof ACarnivore && a2 instanceof ACarnivore && bothNotChild) ||
+                (a1 instanceof AHerbivore && a2 instanceof AHerbivore && bothNotChild)) {
         	
             if (a1.getCurrentState() instanceof ImplStarvedState ||
                     a2.getCurrentState() instanceof ImplStarvedState) {
                 return new ImplFightInteraction(a1, a2);
             } else if (a1.isOppositeSex(a2)) {
-                return new ImplBreedInteraction(a1, a2);
+            	/*
+            	 * 1. cả 2 khác giới
+            	 * 2. chỉ cần 1 want breed (tức là muốn ấy ấy - abcxyz)
+            	 * */
+            	if (a1.getCurrentState() instanceof ImplBreedState
+            			|| a2.getCurrentState() instanceof ImplBreedState)
+            		return new ImplBreedInteraction(a1, a2);
             }
         }
-        return new ImplNothingTakePlaceInteraction();
+        return new ImplNothingTakePlaceInteraction(a1, a2);
     }
 
     /**

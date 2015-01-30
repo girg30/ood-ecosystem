@@ -13,7 +13,6 @@ public abstract class ACarnivore extends AAnimal {
 
 	public ACarnivore(int x, int y) { 
 		super(x, y); 
-		radius = 800;
 	}
 	
 	public ACarnivore() {}
@@ -138,4 +137,67 @@ public abstract class ACarnivore extends AAnimal {
 		Util.setDelay(speed);
 	}
 	
+	public void goBreed(List<ACarnivore> oppositeSexAnimal) {
+    	int step = 2;
+		List<ACarnivore> partnerList = findOppositeAnimal(oppositeSexAnimal);
+		ACarnivore partner = nearestOppositeSexAnimal(partnerList);
+	
+		if (partner == null) {
+			return;
+		}
+	
+		int partnerX = partner.getBody().x;
+		int partnerY = partner.getBody().y;
+	
+		if (partnerX < body.x) {
+			this.body.x -= step;
+		}else if (partnerX > body.x) {
+			this.body.x += step;
+		}
+	
+		if (partnerY < body.y) {
+			this.body.y -= step;
+		}else if (partnerY > body.y) {
+			this.body.y += step;
+		}
+	
+		if (body.intersects(partner.getBody())) {
+			System.out.println("ACarnivore.goBreed()");
+			Message messageHunt = new Message(Message.MAKE_BABY);
+			setChanged();
+			notifyObservers(messageHunt, this, partner);
+		}
+	
+		Util.setDelay(speed);
+    }
+    
+    public ACarnivore nearestOppositeSexAnimal(List<ACarnivore> partnerList) {
+    	double distance = 0;
+		double minDistance = Integer.MAX_VALUE;
+		ACarnivore partner = null;
+		for (int i = 0; i < partnerList.size(); i++) {
+			if(!this.equals(partnerList.get(i))){
+				if (this.isOppositeSex(partnerList.get(i))) {
+					distance = Util.distance(this.body, partnerList.get(i).getBody());
+					if (distance < minDistance) {
+						minDistance = distance;
+						partner = partnerList.get(i);
+					}
+				}
+			}
+		}
+		if (partner == null) this.setCurrentState(this.getStarvedState());
+		return partner;
+    }
+    
+    public List<ACarnivore> findOppositeAnimal(List<ACarnivore> inRadiusBound){
+    	List<ACarnivore> partnerList = new ArrayList<>();
+
+		for (ACarnivore a : inRadiusBound) {
+			if (this.radiusBound.intersects(a.getBody())) {
+				partnerList.add(a);
+			}
+		}
+		return partnerList;
+    }
 }

@@ -1,14 +1,14 @@
 package com.annvcit.model;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
-import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.annvcit.util.Observer;
 import com.annvcit.util.Observable;
+import com.annvcit.util.Observer;
 import com.annvcit.util.Util;
 
 /**
@@ -26,7 +26,11 @@ public abstract class AAnimal implements Observable{
         starvedState = new ImplStarvedState();
         hungryState = new ImplHungryState();
         deathState = new ImplDeathState();
+        breedState = new ImplBreedState();
         currentState =  normalState;
+        
+        isChild = false;
+        wantBreed = 300;
         
         this.x = x;
         this.y = y;
@@ -129,6 +133,7 @@ public abstract class AAnimal implements Observable{
     public int getH() { return h; }
 
     public char getSex() { return sex; }
+    public boolean isChild() { return this.isChild; }
     
     public IAnimalState getNormalState() { return normalState; }
     public IAnimalState getStarvedState() { return starvedState; }
@@ -138,6 +143,7 @@ public abstract class AAnimal implements Observable{
 	public int getPower() { return this.power; }
 	public Rectangle getRadiusBound() { return this.radiusBound; }
     public IAnimalState getDeathState() { return this.deathState; }
+    public IAnimalState getBreedState() { return this.breedState; }
 	
     //********************************
     //           SETTERS             *
@@ -151,12 +157,22 @@ public abstract class AAnimal implements Observable{
         this.sex = sex;
     }
     
+    public void isChild(boolean value) {
+    	this.isChild = value;
+    }
+    
+    public void setRadius(int value) {
+    	this.radius = value;
+    }
+    
     public void setSpeed(int value) { this.speed = value; }
     
     public void setXd(int value) { this.xd = value; }
     
     public void setYd(int value) { this.yd = value; }
     public void setPower(int value) { this.power = value; }
+    
+    public void setWantBreed(int value) { this.wantBreed = value;}
     
 	//***************************************************
 	//				Observable						    *
@@ -199,6 +215,7 @@ public abstract class AAnimal implements Observable{
     protected IAnimalState hungryState;
     protected IAnimalState currentState;
     protected IAnimalState deathState;
+    protected IAnimalState breedState;
     
     protected char sex; // m (male) and f (female)
     protected int power = 1000;
@@ -207,7 +224,9 @@ public abstract class AAnimal implements Observable{
     protected int x, y, w, h;
     protected int xd=2, yd=2; // x direction, y direction
 	protected int radius = 200; // bán kính tìm mồi
-    
+    protected int wantBreed;
+    protected boolean isChild;
+	
     protected Rectangle body;
     protected Color color;
     protected Rectangle radiusBound;
@@ -218,4 +237,6 @@ public abstract class AAnimal implements Observable{
 	protected List<String> moves;
 	
 	public static final int DEAD_LINE = -250;
+	public static final char MALE = 'f';
+	public static final char FEMALE = 'm';
 }
