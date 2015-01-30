@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.CopyOnWriteArrayList;//avoid ConcurrentModificationException
 
+import com.annvcit.model.AAnimal;
 import com.annvcit.model.ACarnivore;
 import com.annvcit.model.AHerbivore;
 import com.annvcit.model.APlant;
@@ -14,6 +15,7 @@ import com.annvcit.model.Antelope;
 import com.annvcit.model.Grass;
 import com.annvcit.model.ImplHungryState;
 import com.annvcit.model.ImplStarvedState;
+import com.annvcit.model.ImplBreedState;
 import com.annvcit.model.InteractionFactory;
 import com.annvcit.model.Lion;
 import com.annvcit.model.Message;
@@ -119,6 +121,8 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 				lion.goHunt(this.antelopeList);
 			} else if (lion.getCurrentState() instanceof ImplStarvedState) {
 				lion.goFight(lionList);
+			} else if (lion.getCurrentState() instanceof ImplBreedState){
+				lion.goBreed(lionList);
 			}
 		}
 	}
@@ -173,6 +177,16 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 			
 			victim.removeObserver(this);
 			lionList.remove(victim);
+			break;
+		case Message.MAKE_BABY:
+			AAnimal me = (AAnimal) objects[1];
+			AAnimal you = (AAnimal) objects[2];
+			AAnimal baby = (AAnimal) interactionFactory.cchhInteraction(me,you).interact();
+			if (baby instanceof Lion && baby.getBody() != null) {
+				baby.addObserver(this);
+				lionList.add((Lion)baby);
+			}
+			
 			break;
 		}
 	}
@@ -252,3 +266,4 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 	}
 	
 }
+
