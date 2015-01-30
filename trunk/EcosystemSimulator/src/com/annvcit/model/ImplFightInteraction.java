@@ -37,7 +37,10 @@ public class ImplFightInteraction implements IInteraction {
     	}
     	victim.setPower(AAnimal.DEAD_LINE);
     	victim.setCurrentState(victim.getDeathState());
-    	victim.setAvartar(victim.isMale() ? ImageResource.LION_MALE_DEAD : ImageResource.LION_FEMALE_DEAD);
+    	if (victim instanceof Lion)
+    		victim.setAvartar(victim.isMale() ? ImageResource.LION_MALE_DEAD : ImageResource.LION_FEMALE_DEAD);
+    	else if (victim instanceof Antelope)
+    		victim.setAvartar(victim.isMale() ? ImageResource.ANTELOPE_MALE_DEAD : ImageResource.ANTELOPE_FEMALE_DEAD);
         return victim;
     }
 }
