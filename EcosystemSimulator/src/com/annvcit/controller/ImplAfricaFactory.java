@@ -2,10 +2,13 @@ package com.annvcit.controller;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.CopyOnWriteArrayList;//avoid ConcurrentModificationException
+
+import javax.swing.ImageIcon;
 
 import com.annvcit.model.AAnimal;
 import com.annvcit.model.ACarnivore;
@@ -13,17 +16,14 @@ import com.annvcit.model.AHerbivore;
 import com.annvcit.model.APlant;
 import com.annvcit.model.Antelope;
 import com.annvcit.model.Grass;
+import com.annvcit.model.ImplBreedState;
 import com.annvcit.model.ImplHungryState;
 import com.annvcit.model.ImplStarvedState;
-import com.annvcit.model.ImplBreedState;
 import com.annvcit.model.InteractionFactory;
 import com.annvcit.model.Lion;
 import com.annvcit.model.Message;
-import com.annvcit.util.Observer;
 import com.annvcit.util.ImageResource;
-
-import javax.swing.ImageIcon;
-import java.awt.Image;
+import com.annvcit.util.Observer;
 
 /**
  * Lợp hiện thực, thực hiện công việc tạo ra các sản phẩm thành phần cụ thể cần
@@ -47,50 +47,10 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 		antelopeList = new CopyOnWriteArrayList<>();
 		grassList = new CopyOnWriteArrayList<>();
 
-		int numSex = -1;
-		int numState = -1;
-		
 		// initialize objects
-		for (int i = 0; i < lions; i++) {
-			Lion lion = new Lion(random.nextInt(800), random.nextInt(600));
-			
-			numSex = random.nextInt(2);
-			numState = random.nextInt(2);
-			
-			lion.setSex(AAnimal.MALE);
-			if (numSex > 0) lion.setSex(AAnimal.FEMALE);
-			
-			lion.setCurrentState(lion.getNormalState());
-			if (numState == 1) lion.setCurrentState(lion.getHungryState());
-			
-			lion.addObserver(this);
-			lionList.add(lion);
-			
-		}
-
-		for (int i = 0; i < antelopes; i++) {
-			Antelope antelope = new Antelope(random.nextInt(800), random
-					.nextInt(600));
-			
-			numSex = random.nextInt(2);
-			numState = random.nextInt(2);
-			
-			antelope.setSex('m');
-			if (numSex == 1) antelope.setSex('f');
-			
-			antelope.setCurrentState(antelope.getNormalState());
-			if (numState == 1) antelope.setCurrentState(antelope.getHungryState());
-			
-			antelope.setPower(random.nextInt(900) + 300);
-			antelope.addObserver(this);
-			antelopeList.add(antelope);
-		}
-		
-		for (int i = 0; i < grasses; i++) {
-			APlant grass = new Grass(random.nextInt(800), random.nextInt(600));
-			grass.addObserver(this);
-			grassList.add(grass);
-		}
+		createCarnivore();
+		createHerbivore();
+		createPlant();
 
 	}
 
@@ -197,18 +157,59 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 	
 	
 	@Override
-	public ACarnivore createCarnivore() {
-		return new Lion(random.nextInt(800), random.nextInt(600));
+	public void createCarnivore() {
+		int numSex = -1;
+		int numState = -1;
+		for (int i = 0; i < 5; i++) {
+			Lion lion = new Lion(random.nextInt(800), random.nextInt(600));
+			
+			numSex = random.nextInt(2);
+			numState = random.nextInt(2);
+			
+			lion.setSex(AAnimal.MALE);
+			if (numSex == 1) lion.setSex(AAnimal.FEMALE);
+			
+			lion.setAvartar(lion.isMale() ? ImageResource.LION_MALE_NORMAL : ImageResource.LION_FEMALE_NORMAL);
+			lion.setCurrentState(lion.getNormalState());
+			if (numState == 1) lion.setCurrentState(lion.getHungryState());
+			
+			lion.addObserver(this);
+			lionList.add(lion);
+			
+		}
 	}
 
 	@Override
-	public AHerbivore createHerbivore() {
-		return new Antelope(random.nextInt(800), random.nextInt(600));
+	public void createHerbivore() {
+		int numSex = -1;
+		int numState = -1;
+		
+		for (int i = 0; i < 10; i++) {
+			Antelope antelope = new Antelope(random.nextInt(800), random
+					.nextInt(600));
+			
+			numSex = random.nextInt(2);
+			numState = random.nextInt(2);
+			
+			antelope.setSex(AAnimal.MALE);
+			if (numSex == 1) antelope.setSex(AAnimal.FEMALE);
+			
+			antelope.setAvartar(antelope.isMale() ? ImageResource.ANTELOPE_MALE_NORMAL : ImageResource.ANTELOPE_FEMALE_NORMAL);
+			if (numState == 1) antelope.setCurrentState(antelope.getHungryState());
+			
+			antelope.setPower(random.nextInt(900) + 300);
+			antelope.addObserver(this);
+			antelopeList.add(antelope);
+		}
 	}
 
 	@Override
-	public APlant createPlant() {
-		return new Grass();
+	public void createPlant() {
+		for (int i = 0; i < 15; i++) {
+			APlant grass = new Grass(random.nextInt(800), random.nextInt(600));
+			grass.addObserver(this);
+			grassList.add(grass);
+		}
 	}
 
 	public List<AHerbivore> getAntelopeList() { return this.antelopeList; }
@@ -218,54 +219,16 @@ public class ImplAfricaFactory implements ICreatureFactory, Observer {
 		int antelopeListSize = antelopeList.size();
 		int grassListSize = grassList.size();
 		
-		int numSex = -1;
-		int numState = -1;
-		
 		if (lionListSize < 2) {
-			for (int i = 0; i < 5; i++) {
-				Lion lion = new Lion(random.nextInt(800), random.nextInt(600));
-				
-				numSex = random.nextInt(2);
-				numState = random.nextInt(2);
-				
-				lion.setSex('m');
-				if (numSex == 1) lion.setSex('f');
-				
-				lion.setCurrentState(lion.getNormalState());
-				if (numState == 1) lion.setCurrentState(lion.getHungryState());
-				
-				lion.addObserver(this);
-				lionList.add(lion);
-				
-			}
+			createCarnivore();
 		}
 		
-		if (antelopeListSize < 1) {
-			for (int i = 0; i < 7; i++) {
-				Antelope antelope = new Antelope(random.nextInt(800), random
-						.nextInt(600));
-				
-				numSex = random.nextInt(2);
-				numState = random.nextInt(2);
-				
-				antelope.setSex('m');
-				if (numSex == 1) antelope.setSex('f');
-				
-				antelope.setCurrentState(antelope.getNormalState());
-				if (numState == 1) antelope.setCurrentState(antelope.getHungryState());
-				
-				antelope.setPower(random.nextInt(900) + 300);
-				antelope.addObserver(this);
-				antelopeList.add(antelope);
-			}
+		if (antelopeListSize < 5) {
+			createHerbivore();
 		}
 		
 		if (grassListSize < 7) {
-			for (int i = 0; i < 15; i++) {
-				APlant grass = new Grass(random.nextInt(800), random.nextInt(600));
-				grass.addObserver(this);
-				grassList.add(grass);
-			}
+			createPlant();
 		}
 	}
 

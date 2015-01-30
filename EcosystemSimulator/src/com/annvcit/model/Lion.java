@@ -16,12 +16,6 @@ public class Lion extends ACarnivore {
 
 	public Lion(int x, int y) {
 		super(x, y);
-		if(isMale()){
-			setAvartar(ImageResource.LION_MALE_NORMAL);
-		}else{
-			setAvartar(ImageResource.LION_FEMALE_NORMAL);
-		}
-		
 	}
 	
 	
@@ -82,8 +76,10 @@ public class Lion extends ACarnivore {
 		}
 		if (power == 700)
 			this.setCurrentState(this.getHungryState());
-		if (power == 0)
+		if (power == 0){
 			this.setCurrentState(this.getStarvedState());
+			setAvartar(this.isMale() ? ImageResource.LION_MALE_NORMAL : ImageResource.LION_FEMALE_NORMAL);
+		}
 		if (power == DEAD_LINE ){
 			this.setCurrentState(this.getDeathState());
 			setAvartar(this.isMale() ? ImageResource.LION_MALE_DEAD : ImageResource.LION_FEMALE_DEAD);
@@ -145,8 +141,8 @@ public class Lion extends ACarnivore {
 		drawMySelf(g);
 		conditionChangeState();
 		drawHungryState(g);
-		drawDeathState(g);
 		drawStarvedState(g);
+		drawDeathState(g);
 		drawBreedState(g);
 		
 	}
