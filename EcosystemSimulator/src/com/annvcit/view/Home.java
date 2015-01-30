@@ -4,19 +4,20 @@
 
 package com.annvcit.view;
 
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import javax.swing.*;
+import javax.swing.ButtonGroup;
+import javax.swing.GroupLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JRadioButton;
+import javax.swing.LayoutStyle;
 
 import com.annvcit.controller.HomeEvent;
 
-/**
- * @author Chuc An Nguyen Van
- * 
- * màn hình khởi chạy của simulator
- */
-public class Home extends JFrame {
+public class Home extends JFrame{
 
 	
 	private static final long serialVersionUID = 1L;
@@ -28,10 +29,15 @@ public class Home extends JFrame {
 		this.rbtnAfrican.setSelected(true);
 		group.add(rbtnAfrican);
 		group.add(rbtnFinnish);
-		this.setTitle("Ecosystem Simulator");
+		this.setTitle("Home");
 		
 		// add event cho jframe
 		homeEvent = new HomeEvent(this);
+		button1.addActionListener(homeEvent);
+	}
+	
+	public JButton getStartButton(){
+		return this.button1;
 	}
 
 	public static void main(String[] args) {
@@ -74,6 +80,7 @@ public class Home extends JFrame {
 		// Generated using JFormDesigner Evaluation license - Chuc An Nguyen Van
 		rbtnAfrican = new JRadioButton();
 		rbtnFinnish = new JRadioButton();
+		button1 = new JButton();
 
 		//======== this ========
 		Container contentPane = getContentPane();
@@ -96,25 +103,38 @@ public class Home extends JFrame {
 			}
 		});
 
+		//---- button1 ----
+		button1.setText("Start Simulator");
+
 		GroupLayout contentPaneLayout = new GroupLayout(contentPane);
 		contentPane.setLayout(contentPaneLayout);
 		contentPaneLayout.setHorizontalGroup(
 			contentPaneLayout.createParallelGroup()
 				.addGroup(contentPaneLayout.createSequentialGroup()
-					.addGap(113, 113, 113)
+					.addGap(42, 42, 42)
 					.addGroup(contentPaneLayout.createParallelGroup()
-						.addComponent(rbtnAfrican)
-						.addComponent(rbtnFinnish))
-					.addContainerGap(212, Short.MAX_VALUE))
+						.addGroup(contentPaneLayout.createSequentialGroup()
+							.addComponent(rbtnFinnish)
+							.addContainerGap(178, Short.MAX_VALUE))
+						.addGroup(contentPaneLayout.createSequentialGroup()
+							.addComponent(rbtnAfrican)
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+							.addComponent(button1)
+							.addGap(26, 26, 26))))
 		);
 		contentPaneLayout.setVerticalGroup(
 			contentPaneLayout.createParallelGroup()
 				.addGroup(contentPaneLayout.createSequentialGroup()
-					.addGap(59, 59, 59)
-					.addComponent(rbtnAfrican)
-					.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+					.addGroup(contentPaneLayout.createParallelGroup()
+						.addGroup(contentPaneLayout.createSequentialGroup()
+							.addGap(44, 44, 44)
+							.addComponent(rbtnAfrican))
+						.addGroup(contentPaneLayout.createSequentialGroup()
+							.addGap(59, 59, 59)
+							.addComponent(button1)))
+					.addGap(18, 18, 18)
 					.addComponent(rbtnFinnish)
-					.addContainerGap(156, Short.MAX_VALUE))
+					.addContainerGap(51, Short.MAX_VALUE))
 		);
 		pack();
 		setLocationRelativeTo(getOwner());
@@ -125,5 +145,7 @@ public class Home extends JFrame {
 	// Generated using JFormDesigner Evaluation license - Chuc An Nguyen Van
 	private JRadioButton rbtnAfrican;
 	private JRadioButton rbtnFinnish;
+	private JButton button1;
 	// JFormDesigner - End of variables declaration  //GEN-END:variables
+
 }
