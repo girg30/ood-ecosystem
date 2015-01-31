@@ -11,13 +11,15 @@ import javax.swing.JPanel;
 
 import com.annvcit.controller.ICreatureFactory;
 import com.annvcit.controller.ImplAfricaFactory;
+import com.annvcit.controller.ImplFinnishFactory;
 import com.annvcit.model.Message;
 import com.annvcit.util.Observer;
 
 public class Simulator extends JPanel implements KeyListener, Observer {
 	private static final long serialVersionUID = -433666434252405672L;
 	
-	private ICreatureFactory creatureFactory;
+	private ICreatureFactory africaFactory;
+	private ICreatureFactory finnishFactory;
 	
 	private String envName = Message.AFRICA_ENV;
 	
@@ -26,7 +28,8 @@ public class Simulator extends JPanel implements KeyListener, Observer {
 		setFocusable(true);
 		addKeyListener(this);
 		
-		creatureFactory = new ImplAfricaFactory(7,  15, 30);
+		africaFactory = new ImplAfricaFactory(7,  15, 30);
+		finnishFactory = new ImplFinnishFactory(7,15,30);
 		//finnish
 	}
 	
@@ -38,6 +41,7 @@ public class Simulator extends JPanel implements KeyListener, Observer {
 			drawAfricaEnvironment(g);
 			break;
 		case Message.FINNISH_ENV:
+			drawFinnishEnvironment(g);
 			break;
 		}
 		
@@ -46,10 +50,17 @@ public class Simulator extends JPanel implements KeyListener, Observer {
 	}
 	
 	private void drawAfricaEnvironment(Graphics g){
-		creatureFactory.drawBackground(g);
-		creatureFactory.draw(g);
-		creatureFactory.askCarnivoreMove();
-		creatureFactory.askHerbivoreMove();
+		africaFactory.drawBackground(g);
+		africaFactory.draw(g);
+		africaFactory.askCarnivoreMove();
+		africaFactory.askHerbivoreMove();
+	}
+	
+	private void drawFinnishEnvironment(Graphics g){
+		finnishFactory.drawBackground(g);
+		finnishFactory.draw(g);
+		finnishFactory.askCarnivoreMove();
+		finnishFactory.askHerbivoreMove();
 	}
 	
 	@Override

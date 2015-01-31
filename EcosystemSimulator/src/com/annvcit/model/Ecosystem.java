@@ -14,9 +14,9 @@ public class Ecosystem {
     private ACarnivore carnivore;
 
     public Ecosystem(ICreatureFactory fact) {
-        carnivore = fact.createCarnivore();
-        herbivore = fact.createHerbivore();
-        plant = fact.createPlant();
+//        carnivore = fact.createCarnivore();
+//        herbivore = fact.createHerbivore();
+//        plant = fact.createPlant();
     }
 
     public AHerbivore getHerbivore() {

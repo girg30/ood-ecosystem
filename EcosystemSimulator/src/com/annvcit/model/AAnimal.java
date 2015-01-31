@@ -311,4 +311,5 @@ public abstract class AAnimal implements Observable {
 	public static final int DEAD_LINE = -250;
 	public static final char MALE = 'f';
 	public static final char FEMALE = 'm';
+
 }
