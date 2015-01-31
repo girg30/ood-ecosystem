@@ -14,6 +14,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JRadioButton;
 import javax.swing.LayoutStyle;
+import javax.swing.UIManager;
 
 import com.annvcit.controller.HomeEvent;
 
@@ -41,8 +42,14 @@ public class Home extends JFrame{
 	}
 
 	public static void main(String[] args) {
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		Home home = new Home();
 		home.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		home.setLocation(0,0);
 		home.setVisible(true);
 		
 	}
