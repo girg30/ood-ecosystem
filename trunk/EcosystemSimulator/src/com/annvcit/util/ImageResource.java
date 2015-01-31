@@ -23,14 +23,14 @@ public interface ImageResource {
 	URL ANTELOPE_FEMALE_DEAD = ImageResource.class.getResource("/tiles/antelope_female_dead.png");
 	
 	URL WOLF_MALE_NORMAL = ImageResource.class.getResource("/tiles/wolf_male_normal.png");
-	URL WOLF_FEMALE_NORMAL = ImageResource.class.getResource("/tiles/antelope_female_normal.png");
-	URL WOLF_MALE_CHILD_NORMAL = ImageResource.class.getResource("/tiles/lion_male_child_normal.png");
-	URL WOLF_MALE_DEAD = ImageResource.class.getResource("/tiles/antelope_male_dead.png");
-	URL WOLF_FEMALE_DEAD = ImageResource.class.getResource("/tiles/antelope_female_dead.png");
-	URL WOLF_FEMALE_CHILD_NORMAL = ImageResource.class.getResource("/tiles/lion_male_child_normal.png");
+	URL WOLF_FEMALE_NORMAL = ImageResource.class.getResource("/tiles/wolf_female_normal.png");
+	URL WOLF_MALE_CHILD_NORMAL = ImageResource.class.getResource("/tiles/wolf_male_normal.png");
+	URL WOLF_MALE_DEAD = ImageResource.class.getResource("/tiles/wolf_male_dead.png");
+	URL WOLF_FEMALE_DEAD = ImageResource.class.getResource("/tiles/wolf_female_dead.png");
+	URL WOLF_FEMALE_CHILD_NORMAL = ImageResource.class.getResource("/tiles/wolf_female_normal.png");
 
-	URL RABBIT_MALE_NORMAL = ImageResource.class.getResource("/tiles/antelope_male_normal.png");
-	URL RABBIT_FEMALE_NORMAL = ImageResource.class.getResource("/tiles/antelope_female_normal.png");
-	URL RABBIT_MALE_DEAD = ImageResource.class.getResource("/tiles/antelope_male_dead.png");
-	URL RABBIT_FEMALE_DEAD = ImageResource.class.getResource("/tiles/antelope_female_dead.png");
+	URL RABBIT_MALE_NORMAL = ImageResource.class.getResource("/tiles/rabbit_male_normal.png");
+	URL RABBIT_FEMALE_NORMAL = ImageResource.class.getResource("/tiles/rabbit_female_normal.png");
+	URL RABBIT_MALE_DEAD = ImageResource.class.getResource("/tiles/rabbit_male_dead.png");
+	URL RABBIT_FEMALE_DEAD = ImageResource.class.getResource("/tiles/rabbit_female_dead.png");
 }
