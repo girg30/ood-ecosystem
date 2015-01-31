@@ -133,7 +133,7 @@ public class InteractionFactoryTest {
         lion1.setSex('m');
         
         AAnimal lion2 = new Lion();
-        lion2.setStarvedState(lion2.getNormalState());
+        lion2.setCurrentState(lion2.getStarvedState());
         lion2.setSex('f');
         
         // Sẽ thấy 3 dòng Create new Lion phía dưới **extend 1
