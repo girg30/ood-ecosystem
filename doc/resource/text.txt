@@ -1,0 +1,13 @@
+﻿1. Khi Lion đói thì nó sẽ tìm con mồi gần nhất, tiến đến sát con mồi (intersects)
+2. request lên môi trường (africa) 1 Message là hungry.
+3. africa sẽ tạo một đối tượng InteractionFactory
+4. dùng phương thức cchhInteraction(...)
+5. return về ImplChaseInteraction
+6. đối tượng return về chạy phương thức interact()
+7. {
+	set state của Lion về Normal
+	return về đối tượng sẽ được remove
+}	
+
+1. Môi trường là observable, các đv là observer
+2. môi trường sẽ có 1 timer
