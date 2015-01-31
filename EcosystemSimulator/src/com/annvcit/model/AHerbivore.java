@@ -100,7 +100,6 @@ public abstract class AHerbivore extends AAnimal {
 		}
 	
 		if (body.intersects(partner.getBody())) {
-			System.out.println("Fuck here");
 			Message messageHunt = new Message(Message.MAKE_BABY);
 			setChanged();
 			notifyObservers(messageHunt, this, partner);
