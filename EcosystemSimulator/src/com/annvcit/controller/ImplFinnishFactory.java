@@ -186,7 +186,7 @@ public class ImplFinnishFactory implements ICreatureFactory, Observer {
 			wolf.setSex(AAnimal.MALE);
 			if (numSex == 1) wolf.setSex(AAnimal.FEMALE);
 			
-			wolf.setAvartar(wolf.isMale() ? ImageResource.LION_MALE_NORMAL : ImageResource.LION_FEMALE_NORMAL);
+			wolf.setAvartar(wolf.isMale() ? ImageResource.WOLF_MALE_NORMAL : ImageResource.WOLF_FEMALE_NORMAL);
 			wolf.setCurrentState(wolf.getNormalState());
 			if (numState == 1) wolf.setCurrentState(wolf.getHungryState());
 			
@@ -211,7 +211,7 @@ public class ImplFinnishFactory implements ICreatureFactory, Observer {
 			rabbit.setSex(AAnimal.MALE);
 			if (numSex == 1) rabbit.setSex(AAnimal.FEMALE);
 			
-			rabbit.setAvartar(rabbit.isMale() ? ImageResource.ANTELOPE_MALE_NORMAL : ImageResource.ANTELOPE_FEMALE_NORMAL);
+			rabbit.setAvartar(rabbit.isMale() ? ImageResource.RABBIT_MALE_NORMAL : ImageResource.RABBIT_FEMALE_NORMAL);
 			if (numState == 1) rabbit.setCurrentState(rabbit.getHungryState());
 			
 			rabbit.setPower(random.nextInt(900) + 300);
